@@ -1,0 +1,13 @@
+2025-10-22 14:56:01,531 [INFO] AUDIT: {"timestamp_utc": "2025-10-22T09:26:01.531759Z", "user": "siddharth5.intern", "action": "alter_table_request", "details": {"table": "user_data", "alter_cmd": "add 'new_cf'"}}
+2025-10-22 14:56:01,617 [INFO] ZK details: {'stg-hdpsiddharth105.phonepe.nb6': {'ok': True, 'latency_ms': 29.22, 'error': None}, 'stg-hdpsiddharth102.phonepe.nb6': {'ok': True, 'latency_ms': 37.53, 'error': None}, 'stg-hdpsiddharth104.phonepe.nb6': {'ok': True, 'latency_ms': 37.68, 'error': None}, 'kazoo_connect': True}
+2025-10-22 14:56:01,660 [INFO] Disabling table user_data
+2025-10-22 14:56:01,707 [ERROR] Could not disable table: hbase shell returned 127. stdout: 
+ stderr: bash: /usr/bin/hbase: No such file or directory
+Traceback (most recent call last):
+  File "/Users/siddharth5.intern/Desktop/Projects/Scripts/alter_table.py", line 42, in main
+    run_hbase_shell(cfg, f"disable '{args.table}'", logger)
+  File "/Users/siddharth5.intern/Desktop/Projects/Scripts/helpers.py", line 197, in run_hbase_shell
+    raise RuntimeError(f"hbase shell returned {proc.returncode}. stdout: {out}\n stderr: {err}")
+RuntimeError: hbase shell returned 127. stdout: 
+ stderr: bash: /usr/bin/hbase: No such file or directory
+

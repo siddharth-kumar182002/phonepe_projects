@@ -1,0 +1,10 @@
+2025-10-27 09:05:12,983 [INFO] Connecting to stg-hdpsiddharth105.phonepe.nb6(10.57.40.172):2181, use_ssl: False
+2025-10-27 09:05:13,133 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-27 09:05:13,186 [INFO] Closing connection to stg-hdpsiddharth105.phonepe.nb6:2181
+2025-10-27 09:05:13,187 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-27 09:05:13,195 [INFO] Connecting to stg-hdpsiddharth104.phonepe.nb6(10.57.40.171):2181, use_ssl: False
+2025-10-27 09:05:13,289 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-27 09:05:13,391 [INFO] Closing connection to stg-hdpsiddharth104.phonepe.nb6:2181
+2025-10-27 09:05:13,392 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-27 09:05:13,493 [INFO] Scanning hbase:meta to find a sample region...
+2025-10-27 09:05:13,800 [INFO] Found sample region to unassign: my_table,,1759315339043.6ecd485054d191921f3db51fe49748d5.

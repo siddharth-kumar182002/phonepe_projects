@@ -1,0 +1,181 @@
+2025-10-27 11:11:32,126 [INFO] AUDIT: {"timestamp_utc": "2025-10-27T05:41:32.126688Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6"}}
+2025-10-27 11:11:32,127 [INFO] Performing pre-decommission checks...
+2025-10-27 11:11:32,127 [DEBUG] Connecting Kazoo client to stg-hdpsiddharth102.phonepe.nb6:2181,stg-hdpsiddharth104.phonepe.nb6:2181,stg-hdpsiddharth105.phonepe.nb6:2181...
+2025-10-27 11:11:32,135 [INFO] Connecting to stg-hdpsiddharth105.phonepe.nb6(10.57.40.172):2181, use_ssl: False
+2025-10-27 11:11:32,168 [DEBUG] Sending request(xid=None): Connect(protocol_version=0, last_zxid_seen=0, time_out=10000, session_id=0, passwd=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00', read_only=None)
+2025-10-27 11:11:32,611 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-27 11:11:32,611 [DEBUG] Kazoo connected state: CONNECTED
+2025-10-27 11:11:32,662 [DEBUG] Sending request(xid=1): Close()
+2025-10-27 11:11:32,662 [INFO] Closing connection to stg-hdpsiddharth105.phonepe.nb6:2181
+2025-10-27 11:11:32,662 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-27 11:11:32,662 [INFO] ZooKeeper check: OK=True, Details={'state': 'CONNECTED', 'server_version': (3, 5, 10)}
+2025-10-27 11:11:32,662 [INFO] Skipping HDFS health check.
+2025-10-27 11:11:32,662 [INFO] Checking active HBase Master via ZooKeeper...
+2025-10-27 11:11:32,663 [DEBUG] Connecting Kazoo client to stg-hdpsiddharth102.phonepe.nb6:2181,stg-hdpsiddharth104.phonepe.nb6:2181,stg-hdpsiddharth105.phonepe.nb6:2181...
+2025-10-27 11:11:32,666 [INFO] Connecting to stg-hdpsiddharth105.phonepe.nb6(10.57.40.172):2181, use_ssl: False
+2025-10-27 11:11:32,697 [DEBUG] Sending request(xid=None): Connect(protocol_version=0, last_zxid_seen=0, time_out=10000, session_id=0, passwd=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00', read_only=None)
+2025-10-27 11:11:32,729 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-27 11:11:32,729 [DEBUG] Kazoo connected state: CONNECTED
+2025-10-27 11:11:32,729 [DEBUG] Sending request(xid=1): Exists(path='/hbase-unsecure/master', watcher=None)
+2025-10-27 11:11:32,751 [DEBUG] Received response(xid=1): ZnodeStat(czxid=12884948838, mzxid=12884948838, ctime=1760685762347, mtime=1760685762347, version=0, cversion=0, aversion=0, ephemeralOwner=72213291896560244, dataLength=79, numChildren=0, pzxid=12884948838)
+2025-10-27 11:11:32,751 [DEBUG] Sending request(xid=2): GetData(path='/hbase-unsecure/master', watcher=None)
+2025-10-27 11:11:32,776 [DEBUG] Received response(xid=2): (b'\xff\x00\x00\x00\x14master:16000\xba\xdb\x90\x98\x1b\xc3}\x8bPBUF\n+\n\x1fstg-hdpsiddharth102.phonepe.nb6\x10\x80}\x18\xc5\xa8\xb2\x88\x9f3\x10\x00\x18\x8a}', ZnodeStat(czxid=12884948838, mzxid=12884948838, ctime=1760685762347, mtime=1760685762347, version=0, cversion=0, aversion=0, ephemeralOwner=72213291896560244, dataLength=79, numChildren=0, pzxid=12884948838))
+2025-10-27 11:11:32,777 [DEBUG] Raw data from ZK node /hbase-unsecure/master: b'\xff\x00\x00\x00\x14master:16000\xba\xdb\x90\x98\x1b\xc3}\x8bPBUF\n+\n\x1fstg-hdpsiddharth102.phonepe.nb6\x10\x80}\x18\xc5\xa8\xb2\x88\x9f3\x10\x00\x18\x8a}'
+2025-10-27 11:11:32,777 [INFO] Active HBase Master found at stg-hdpsiddharth102.phonepe.nb6 via ZK node /hbase-unsecure/master.
+2025-10-27 11:11:32,777 [DEBUG] Sending request(xid=3): Close()
+2025-10-27 11:11:32,777 [INFO] Closing connection to stg-hdpsiddharth105.phonepe.nb6:2181
+2025-10-27 11:11:32,777 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-27 11:11:32,777 [INFO] HBase Master ZK check: OK=True, Message=Active HBase Master found at stg-hdpsiddharth102.phonepe.nb6 via ZK node /hbase-unsecure/master.
+2025-10-27 11:11:32,777 [INFO] Active HBase Master is stg-hdpsiddharth102.phonepe.nb6 via ZK.
+2025-10-27 11:11:32,777 [DEBUG] Connecting Kazoo client to stg-hdpsiddharth102.phonepe.nb6:2181,stg-hdpsiddharth104.phonepe.nb6:2181,stg-hdpsiddharth105.phonepe.nb6:2181...
+2025-10-27 11:11:32,782 [INFO] Connecting to stg-hdpsiddharth104.phonepe.nb6(10.57.40.171):2181, use_ssl: False
+2025-10-27 11:11:32,805 [DEBUG] Sending request(xid=None): Connect(protocol_version=0, last_zxid_seen=0, time_out=10000, session_id=0, passwd=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00', read_only=None)
+2025-10-27 11:11:32,831 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-27 11:11:32,831 [DEBUG] Kazoo connected state: CONNECTED
+2025-10-27 11:11:32,831 [DEBUG] Sending request(xid=1): Exists(path='/hbase-unsecure/meta-region-server', watcher=None)
+2025-10-27 11:11:32,856 [DEBUG] Received response(xid=1): ZnodeStat(czxid=4294967363, mzxid=12884978169, ctime=1758625365810, mtime=1761542841634, version=36, cversion=0, aversion=0, ephemeralOwner=0, dataLength=78, numChildren=0, pzxid=4294967363)
+2025-10-27 11:11:32,856 [DEBUG] Sending request(xid=2): GetData(path='/hbase-unsecure/meta-region-server', watcher=None)
+2025-10-27 11:11:32,879 [DEBUG] Received response(xid=2): (b'\xff\x00\x00\x00\x14master:16000\x9a\xcc\xcd\xe5s\x0b\xd7>PBUF\n+\n\x1fstg-hdpsiddharth104.phonepe.nb6\x10\x94}\x18\xa5\xc1\x8e\x9e\xa23\x10\x00\x18\x03', ZnodeStat(czxid=4294967363, mzxid=12884978169, ctime=1758625365810, mtime=1761542841634, version=36, cversion=0, aversion=0, ephemeralOwner=0, dataLength=78, numChildren=0, pzxid=4294967363))
+2025-10-27 11:11:32,879 [DEBUG] Raw data from ZK node /hbase-unsecure/meta-region-server: b'\xff\x00\x00\x00\x14master:16000\x9a\xcc\xcd\xe5s\x0b\xd7>PBUF\n+\n\x1fstg-hdpsiddharth104.phonepe.nb6\x10\x94}\x18\xa5\xc1\x8e\x9e\xa23\x10\x00\x18\x03'
+2025-10-27 11:11:32,879 [INFO] Found meta-region-server at stg-hdpsiddharth104.phonepe.nb6 from ZK (regex match).
+2025-10-27 11:11:32,879 [DEBUG] Sending request(xid=3): Close()
+2025-10-27 11:11:32,880 [INFO] Closing connection to stg-hdpsiddharth104.phonepe.nb6:2181
+2025-10-27 11:11:32,880 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-27 11:11:32,880 [INFO] hbase:meta region is hosted on: stg-hdpsiddharth104.phonepe.nb6
+2025-10-27 11:11:32,880 [INFO] Target server stg-hdpsiddharth105.phonepe.nb6 does not host hbase:meta. Safe.
+2025-10-27 11:11:32,880 [INFO] Checking current state and ZK registration of stg-hdpsiddharth105.phonepe.nb6...
+2025-10-27 11:11:32,880 [DEBUG] Getting Ambari state for HBASE_REGIONSERVER on stg-hdpsiddharth105.phonepe.nb6
+2025-10-27 11:11:32,954 [DEBUG] Ambari state for HBASE_REGIONSERVER on stg-hdpsiddharth105.phonepe.nb6 is 'STARTED'
+2025-10-27 11:11:32,954 [DEBUG] Connecting Kazoo client to stg-hdpsiddharth102.phonepe.nb6:2181,stg-hdpsiddharth104.phonepe.nb6:2181,stg-hdpsiddharth105.phonepe.nb6:2181...
+2025-10-27 11:11:32,959 [INFO] Connecting to stg-hdpsiddharth102.phonepe.nb6(10.57.40.169):2181, use_ssl: False
+2025-10-27 11:11:32,983 [DEBUG] Sending request(xid=None): Connect(protocol_version=0, last_zxid_seen=0, time_out=10000, session_id=0, passwd=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00', read_only=None)
+2025-10-27 11:11:33,005 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-27 11:11:33,005 [DEBUG] Kazoo connected state: CONNECTED
+2025-10-27 11:11:33,005 [DEBUG] Sending request(xid=1): Exists(path='/hbase-unsecure/rs', watcher=None)
+2025-10-27 11:11:33,027 [DEBUG] Received response(xid=1): ZnodeStat(czxid=4294967326, mzxid=4294967326, ctime=1758625359656, mtime=1758625359656, version=0, cversion=39, aversion=0, ephemeralOwner=0, dataLength=0, numChildren=3, pzxid=12884978194)
+2025-10-27 11:11:33,027 [DEBUG] Sending request(xid=2): GetChildren(path='/hbase-unsecure/rs', watcher=None)
+2025-10-27 11:11:33,047 [DEBUG] Received response(xid=2): ['stg-hdpsiddharth104.phonepe.nb6,16020,1761536614565', 'stg-hdpsiddharth105.phonepe.nb6,16020,1761542899524', 'stg-hdpsiddharth102.phonepe.nb6,16020,1761293738501']
+2025-10-27 11:11:33,047 [DEBUG] Found 3 region servers in ZK under /hbase-unsecure/rs: ['stg-hdpsiddharth104.phonepe.nb6', 'stg-hdpsiddharth105.phonepe.nb6', 'stg-hdpsiddharth102.phonepe.nb6']
+2025-10-27 11:11:33,047 [DEBUG] Sending request(xid=3): Close()
+2025-10-27 11:11:33,047 [INFO] Closing connection to stg-hdpsiddharth102.phonepe.nb6:2181
+2025-10-27 11:11:33,047 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-27 11:11:33,048 [INFO] Target RegionServer stg-hdpsiddharth105.phonepe.nb6 is STARTED and registered in ZK.
+2025-10-27 11:11:33,048 [INFO] Found 2 other live RegionServers: ['stg-hdpsiddharth104.phonepe.nb6', 'stg-hdpsiddharth102.phonepe.nb6']
+2025-10-27 11:11:33,048 [INFO] Checking for regions in transition (RIT)...
+2025-10-27 11:11:33,048 [DEBUG] Checking for regions in transition (RIT) in ZK...
+2025-10-27 11:11:33,048 [DEBUG] Connecting Kazoo client to stg-hdpsiddharth102.phonepe.nb6:2181,stg-hdpsiddharth104.phonepe.nb6:2181,stg-hdpsiddharth105.phonepe.nb6:2181...
+2025-10-27 11:11:33,052 [INFO] Connecting to stg-hdpsiddharth104.phonepe.nb6(10.57.40.171):2181, use_ssl: False
+2025-10-27 11:11:33,075 [DEBUG] Sending request(xid=None): Connect(protocol_version=0, last_zxid_seen=0, time_out=10000, session_id=0, passwd=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00', read_only=None)
+2025-10-27 11:11:33,098 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-27 11:11:33,099 [DEBUG] Kazoo connected state: CONNECTED
+2025-10-27 11:11:33,099 [DEBUG] Sending request(xid=1): Exists(path='/hbase-unsecure/region-in-transition', watcher=None)
+2025-10-27 11:11:33,133 [DEBUG] RIT znode '/hbase-unsecure/region-in-transition' does not exist.
+2025-10-27 11:11:33,133 [DEBUG] Sending request(xid=2): Exists(path='/hbase-unsecure/rit', watcher=None)
+2025-10-27 11:11:33,153 [DEBUG] RIT znode '/hbase-unsecure/rit' does not exist.
+2025-10-27 11:11:33,153 [DEBUG] No RIT znodes found, assuming 0 regions in transition.
+2025-10-27 11:11:33,153 [DEBUG] Sending request(xid=3): Close()
+2025-10-27 11:11:33,153 [INFO] Closing connection to stg-hdpsiddharth104.phonepe.nb6:2181
+2025-10-27 11:11:33,153 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-27 11:11:33,154 [INFO] Found 0 regions in transition.
+2025-10-27 11:11:33,154 [INFO] Checking HBase balancer state...
+2025-10-27 11:11:33,154 [DEBUG] Checking balancer state via existence of ZK path: /hbase-unsecure/balancer
+2025-10-27 11:11:33,154 [DEBUG] Connecting Kazoo client to stg-hdpsiddharth102.phonepe.nb6:2181,stg-hdpsiddharth104.phonepe.nb6:2181,stg-hdpsiddharth105.phonepe.nb6:2181...
+2025-10-27 11:11:33,160 [INFO] Connecting to stg-hdpsiddharth104.phonepe.nb6(10.57.40.171):2181, use_ssl: False
+2025-10-27 11:11:33,184 [DEBUG] Sending request(xid=None): Connect(protocol_version=0, last_zxid_seen=0, time_out=10000, session_id=0, passwd=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00', read_only=None)
+2025-10-27 11:11:33,206 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-27 11:11:33,207 [DEBUG] Kazoo connected state: CONNECTED
+2025-10-27 11:11:33,207 [DEBUG] Sending request(xid=1): Exists(path='/hbase-unsecure/balancer', watcher=None)
+2025-10-27 11:11:33,228 [DEBUG] Received response(xid=1): ZnodeStat(czxid=12884977743, mzxid=12884978173, ctime=1761534436856, mtime=1761542863065, version=6, cversion=0, aversion=0, ephemeralOwner=0, dataLength=31, numChildren=0, pzxid=12884977743)
+2025-10-27 11:11:33,228 [DEBUG] Balancer znode '/hbase-unsecure/balancer' exists, assuming balancer is ENABLED.
+2025-10-27 11:11:33,229 [DEBUG] Sending request(xid=2): Close()
+2025-10-27 11:11:33,229 [INFO] Closing connection to stg-hdpsiddharth104.phonepe.nb6:2181
+2025-10-27 11:11:33,229 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-27 11:11:33,229 [INFO] HBase balancer is currently ENABLED.
+2025-10-27 11:11:33,229 [INFO] Disabling HBase balancer before region migration...
+2025-10-27 11:11:33,229 [INFO] Disabling HBase balancer via Salt on stg-hdpsiddharth104.phonepe.nb6...
+2025-10-27 11:11:33,229 [INFO] Requesting new Salt API token from https://stg-hdpsiddharth103.phonepe.nb6:8000 for user 'saltapiuser'...
+2025-10-27 11:11:33,563 [INFO] Successfully obtained Salt API token.
+2025-10-27 11:11:33,564 [INFO] Executing Salt command: tgt='stg-hdpsiddharth104.phonepe.nb6', fun='cmd.run', args='["echo 'balance_switch false' | hbase shell -n"]'
+2025-10-27 11:11:47,653 [DEBUG] Raw Salt command result: {'stg-hdpsiddharth104.phonepe.nb6': '/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2401: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name\n/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2366: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name\n/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2461: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_OPTS: invalid variable name\nSLF4J: Class path contains multiple SLF4J bindings.\nSLF4J: Found binding in [jar:file:/usr/odp/3.2.2.0-1/hbase/lib/client-facing-thirdparty/slf4j-reload4j-1.7.33.jar!/org/slf4j/impl/StaticLoggerBinder.class]\nSLF4J: Found binding in [jar:file:/usr/odp/3.2.2.0-1/hadoop/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]\nSLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.\nSLF4J: Actual binding is of type [org.slf4j.impl.Reload4jLoggerFactory]\nhbase:001:0> balance_switch false\nPrevious balancer state : true\nTook 0.7108 seconds\n=> true\nhbase:002:0>'}
+2025-10-27 11:11:47,653 [INFO] Salt cmd.run output from 'stg-hdpsiddharth104.phonepe.nb6': /usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2401: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name
+/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2366: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name
+/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2461: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_OPTS: invalid variable name
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Fou...
+2025-10-27 11:11:47,655 [INFO] HBase balancer state change to False requested successfully.
+2025-10-27 11:11:50,660 [DEBUG] Checking balancer state via existence of ZK path: /hbase-unsecure/balancer
+2025-10-27 11:11:50,660 [DEBUG] Connecting Kazoo client to stg-hdpsiddharth102.phonepe.nb6:2181,stg-hdpsiddharth104.phonepe.nb6:2181,stg-hdpsiddharth105.phonepe.nb6:2181...
+2025-10-27 11:11:50,665 [INFO] Connecting to stg-hdpsiddharth105.phonepe.nb6(10.57.40.172):2181, use_ssl: False
+2025-10-27 11:11:50,689 [DEBUG] Sending request(xid=None): Connect(protocol_version=0, last_zxid_seen=0, time_out=10000, session_id=0, passwd=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00', read_only=None)
+2025-10-27 11:11:50,739 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-27 11:11:50,739 [DEBUG] Kazoo connected state: CONNECTED
+2025-10-27 11:11:50,740 [DEBUG] Sending request(xid=1): Exists(path='/hbase-unsecure/balancer', watcher=None)
+2025-10-27 11:11:50,761 [DEBUG] Received response(xid=1): ZnodeStat(czxid=12884977743, mzxid=12884978248, ctime=1761534436856, mtime=1761543707093, version=7, cversion=0, aversion=0, ephemeralOwner=0, dataLength=31, numChildren=0, pzxid=12884977743)
+2025-10-27 11:11:50,761 [DEBUG] Balancer znode '/hbase-unsecure/balancer' exists, assuming balancer is ENABLED.
+2025-10-27 11:11:50,761 [DEBUG] Sending request(xid=2): Close()
+2025-10-27 11:11:50,761 [INFO] Closing connection to stg-hdpsiddharth105.phonepe.nb6:2181
+2025-10-27 11:11:50,761 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-27 11:11:50,761 [WARNING] Balancer state in ZK (True) does not match desired state (False) shortly after command execution.
+2025-10-27 11:11:50,761 [INFO] Checking for regions hosted on stg-hdpsiddharth105.phonepe.nb6...
+2025-10-27 11:11:50,762 [DEBUG] Scanning hbase:meta for non-meta regions hosted on server: stg-hdpsiddharth105.phonepe.nb6,16020
+2025-10-27 11:11:50,786 [DEBUG] Thrift server probe successful: stg-hdpsiddharth102.phonepe.nb6:9090
+2025-10-27 11:11:50,808 [DEBUG] HappyBase connection opened successfully to stg-hdpsiddharth102.phonepe.nb6:9090.
+2025-10-27 11:11:50,970 [DEBUG] Found 0 unique non-meta regions on stg-hdpsiddharth105.phonepe.nb6.
+2025-10-27 11:11:50,970 [INFO] No non-meta regions found on server stg-hdpsiddharth105.phonepe.nb6.
+2025-10-27 11:11:50,970 [INFO] Proceeding to stop the HBase RegionServer component on stg-hdpsiddharth105.phonepe.nb6 via Ambari...
+2025-10-27 11:11:51,118 [INFO] Ambari action requested to stop HBASE_REGIONSERVER on stg-hdpsiddharth105.phonepe.nb6.
+2025-10-27 11:11:51,118 [INFO] Allowing some time for Ambari to process the stop command...
+2025-10-27 11:12:01,120 [INFO] Re-enabling HBase balancer...
+2025-10-27 11:12:01,121 [INFO] Enabling HBase balancer via Salt on stg-hdpsiddharth104.phonepe.nb6...
+2025-10-27 11:12:01,121 [DEBUG] Using cached Salt API token.
+2025-10-27 11:12:01,121 [INFO] Executing Salt command: tgt='stg-hdpsiddharth104.phonepe.nb6', fun='cmd.run', args='["echo 'balance_switch true' | hbase shell -n"]'
+2025-10-27 11:12:15,435 [DEBUG] Raw Salt command result: {'stg-hdpsiddharth104.phonepe.nb6': '/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2401: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name\n/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2366: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name\n/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2461: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_OPTS: invalid variable name\nSLF4J: Class path contains multiple SLF4J bindings.\nSLF4J: Found binding in [jar:file:/usr/odp/3.2.2.0-1/hbase/lib/client-facing-thirdparty/slf4j-reload4j-1.7.33.jar!/org/slf4j/impl/StaticLoggerBinder.class]\nSLF4J: Found binding in [jar:file:/usr/odp/3.2.2.0-1/hadoop/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]\nSLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.\nSLF4J: Actual binding is of type [org.slf4j.impl.Reload4jLoggerFactory]\nhbase:001:0> balance_switch true\nPrevious balancer state : false\nTook 0.6899 seconds\n=> false\nhbase:002:0>'}
+2025-10-27 11:12:15,436 [INFO] Salt cmd.run output from 'stg-hdpsiddharth104.phonepe.nb6': /usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2401: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name
+/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2366: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name
+/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2461: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_OPTS: invalid variable name
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Fou...
+2025-10-27 11:12:15,437 [INFO] HBase balancer state change to True requested successfully.
+2025-10-27 11:12:18,443 [DEBUG] Checking balancer state via existence of ZK path: /hbase-unsecure/balancer
+2025-10-27 11:12:18,445 [DEBUG] Connecting Kazoo client to stg-hdpsiddharth102.phonepe.nb6:2181,stg-hdpsiddharth104.phonepe.nb6:2181,stg-hdpsiddharth105.phonepe.nb6:2181...
+2025-10-27 11:12:18,457 [INFO] Connecting to stg-hdpsiddharth102.phonepe.nb6(10.57.40.169):2181, use_ssl: False
+2025-10-27 11:12:18,484 [DEBUG] Sending request(xid=None): Connect(protocol_version=0, last_zxid_seen=0, time_out=10000, session_id=0, passwd=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00', read_only=None)
+2025-10-27 11:12:18,514 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-27 11:12:18,515 [DEBUG] Kazoo connected state: CONNECTED
+2025-10-27 11:12:18,516 [DEBUG] Sending request(xid=1): Exists(path='/hbase-unsecure/balancer', watcher=None)
+2025-10-27 11:12:18,537 [DEBUG] Received response(xid=1): ZnodeStat(czxid=12884977743, mzxid=12884978257, ctime=1761534436856, mtime=1761543734895, version=8, cversion=0, aversion=0, ephemeralOwner=0, dataLength=31, numChildren=0, pzxid=12884977743)
+2025-10-27 11:12:18,537 [DEBUG] Balancer znode '/hbase-unsecure/balancer' exists, assuming balancer is ENABLED.
+2025-10-27 11:12:18,537 [DEBUG] Sending request(xid=2): Close()
+2025-10-27 11:12:18,537 [INFO] Closing connection to stg-hdpsiddharth102.phonepe.nb6:2181
+2025-10-27 11:12:18,538 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-27 11:12:18,538 [INFO] Balancer state confirmed as True in ZK.
+2025-10-27 11:12:18,538 [INFO] Performing post-decommission checks...
+2025-10-27 11:12:18,538 [DEBUG] Connecting Kazoo client to stg-hdpsiddharth102.phonepe.nb6:2181,stg-hdpsiddharth104.phonepe.nb6:2181,stg-hdpsiddharth105.phonepe.nb6:2181...
+2025-10-27 11:12:18,541 [INFO] Connecting to stg-hdpsiddharth104.phonepe.nb6(10.57.40.171):2181, use_ssl: False
+2025-10-27 11:12:18,567 [DEBUG] Sending request(xid=None): Connect(protocol_version=0, last_zxid_seen=0, time_out=10000, session_id=0, passwd=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00', read_only=None)
+2025-10-27 11:12:18,593 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-27 11:12:18,594 [DEBUG] Kazoo connected state: CONNECTED
+2025-10-27 11:12:18,595 [DEBUG] Sending request(xid=1): Exists(path='/hbase-unsecure/rs', watcher=None)
+2025-10-27 11:12:18,620 [DEBUG] Received response(xid=1): ZnodeStat(czxid=4294967326, mzxid=4294967326, ctime=1758625359656, mtime=1758625359656, version=0, cversion=40, aversion=0, ephemeralOwner=0, dataLength=0, numChildren=2, pzxid=12884978252)
+2025-10-27 11:12:18,621 [DEBUG] Sending request(xid=2): GetChildren(path='/hbase-unsecure/rs', watcher=None)
+2025-10-27 11:12:18,644 [DEBUG] Received response(xid=2): ['stg-hdpsiddharth104.phonepe.nb6,16020,1761536614565', 'stg-hdpsiddharth102.phonepe.nb6,16020,1761293738501']
+2025-10-27 11:12:18,645 [DEBUG] Found 2 region servers in ZK under /hbase-unsecure/rs: ['stg-hdpsiddharth104.phonepe.nb6', 'stg-hdpsiddharth102.phonepe.nb6']
+2025-10-27 11:12:18,645 [DEBUG] Sending request(xid=3): Close()
+2025-10-27 11:12:18,645 [INFO] Closing connection to stg-hdpsiddharth104.phonepe.nb6:2181
+2025-10-27 11:12:18,646 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-27 11:12:18,646 [INFO] Host stg-hdpsiddharth105.phonepe.nb6 confirmed removed from ZooKeeper /rs list.
+2025-10-27 11:12:18,646 [INFO] Decommission flow completed for stg-hdpsiddharth105.phonepe.nb6 in 46.52 seconds.
+2025-10-27 11:12:18,647 [INFO] AUDIT: {"timestamp_utc": "2025-10-27T05:42:18.647201Z", "user": "siddharth5.intern", "action": "decommission_complete", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6", "duration_seconds": 46.519651651382446}}
+2025-10-27 11:12:18,650 [INFO] Report written to logs/report_decommission_1761543738.json
+2025-10-27 11:12:18,650 [DEBUG] Checking balancer state via existence of ZK path: /hbase-unsecure/balancer
+2025-10-27 11:12:18,651 [DEBUG] Connecting Kazoo client to stg-hdpsiddharth102.phonepe.nb6:2181,stg-hdpsiddharth104.phonepe.nb6:2181,stg-hdpsiddharth105.phonepe.nb6:2181...
+2025-10-27 11:12:18,654 [INFO] Connecting to stg-hdpsiddharth104.phonepe.nb6(10.57.40.171):2181, use_ssl: False
+2025-10-27 11:12:18,675 [DEBUG] Sending request(xid=None): Connect(protocol_version=0, last_zxid_seen=0, time_out=10000, session_id=0, passwd=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00', read_only=None)
+2025-10-27 11:12:18,696 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-27 11:12:18,697 [DEBUG] Kazoo connected state: CONNECTED
+2025-10-27 11:12:18,697 [DEBUG] Sending request(xid=1): Exists(path='/hbase-unsecure/balancer', watcher=None)
+2025-10-27 11:12:18,732 [DEBUG] Received response(xid=1): ZnodeStat(czxid=12884977743, mzxid=12884978257, ctime=1761534436856, mtime=1761543734895, version=8, cversion=0, aversion=0, ephemeralOwner=0, dataLength=31, numChildren=0, pzxid=12884977743)
+2025-10-27 11:12:18,733 [DEBUG] Balancer znode '/hbase-unsecure/balancer' exists, assuming balancer is ENABLED.
+2025-10-27 11:12:18,733 [DEBUG] Sending request(xid=2): Close()
+2025-10-27 11:12:18,733 [INFO] Closing connection to stg-hdpsiddharth104.phonepe.nb6:2181
+2025-10-27 11:12:18,733 [INFO] Zookeeper session closed, state: CLOSED

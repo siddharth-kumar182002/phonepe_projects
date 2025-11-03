@@ -1,0 +1,16 @@
+2025-10-27 14:20:17,061 [INFO] AUDIT: {"timestamp_utc": "2025-10-27T08:50:17.061444Z", "user": "siddharth5.intern", "action": "stop_rs_request", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6"}}
+2025-10-27 14:20:17,061 [INFO] Performing pre-stop checks...
+2025-10-27 14:20:17,062 [DEBUG] Connecting Kazoo client to stg-hdpsiddharth102.phonepe.nb6:2181,stg-hdpsiddharth104.phonepe.nb6:2181,stg-hdpsiddharth105.phonepe.nb6:2181...
+2025-10-27 14:20:17,101 [WARNING] Cannot resolve stg-hdpsiddharth102.phonepe.nb6: [Errno 8] nodename nor servname provided, or not known
+2025-10-27 14:20:17,140 [WARNING] Cannot resolve stg-hdpsiddharth104.phonepe.nb6: [Errno 8] nodename nor servname provided, or not known
+2025-10-27 14:20:17,193 [WARNING] Cannot resolve stg-hdpsiddharth105.phonepe.nb6: [Errno 8] nodename nor servname provided, or not known
+2025-10-27 14:20:17,716 [WARNING] Cannot resolve stg-hdpsiddharth102.phonepe.nb6: [Errno 8] nodename nor servname provided, or not known
+2025-10-27 14:20:17,717 [WARNING] Cannot resolve stg-hdpsiddharth104.phonepe.nb6: [Errno 8] nodename nor servname provided, or not known
+2025-10-27 14:20:17,719 [WARNING] Cannot resolve stg-hdpsiddharth105.phonepe.nb6: [Errno 8] nodename nor servname provided, or not known
+2025-10-27 14:20:18,507 [WARNING] Cannot resolve stg-hdpsiddharth102.phonepe.nb6: [Errno 8] nodename nor servname provided, or not known
+2025-10-27 14:20:18,510 [WARNING] Cannot resolve stg-hdpsiddharth104.phonepe.nb6: [Errno 8] nodename nor servname provided, or not known
+2025-10-27 14:20:18,512 [WARNING] Cannot resolve stg-hdpsiddharth105.phonepe.nb6: [Errno 8] nodename nor servname provided, or not known
+2025-10-27 14:20:19,946 [WARNING] Cannot resolve stg-hdpsiddharth102.phonepe.nb6: [Errno 8] nodename nor servname provided, or not known
+2025-10-27 14:20:19,950 [WARNING] Cannot resolve stg-hdpsiddharth104.phonepe.nb6: [Errno 8] nodename nor servname provided, or not known
+2025-10-27 14:20:19,954 [WARNING] Cannot resolve stg-hdpsiddharth105.phonepe.nb6: [Errno 8] nodename nor servname provided, or not known
+2025-10-27 14:20:19,955 [WARNING] Failed connecting to Zookeeper within the connection retry policy.

@@ -1,0 +1,5 @@
+{
+  "host": "stg-hdpsiddharth105.phonepe.nb6",
+  "duration_seconds": 0.2546560764312744,
+  "error": "HDFS is not healthy (Could not find any NameNode host via Ambari.)."
+}

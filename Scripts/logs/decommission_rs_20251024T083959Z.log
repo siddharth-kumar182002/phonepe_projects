@@ -1,0 +1,17 @@
+2025-10-24 14:09:59,996 [INFO] AUDIT: {"timestamp_utc": "2025-10-24T08:39:59.996093Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6"}}
+2025-10-24 14:09:59,996 [INFO] Performing pre-decommission checks...
+2025-10-24 14:10:00,015 [INFO] Connecting to stg-hdpsiddharth102.phonepe.nb6(10.57.40.169):2181, use_ssl: False
+2025-10-24 14:10:00,077 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-24 14:10:00,124 [INFO] Closing connection to stg-hdpsiddharth102.phonepe.nb6:2181
+2025-10-24 14:10:00,124 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-24 14:10:00,124 [INFO] ZooKeeper check: OK=True, Details={'state': 'CONNECTED', 'server_version': (3, 5, 10)}
+2025-10-24 14:10:00,124 [INFO] Skipping HDFS health check via Ambari API.
+2025-10-24 14:10:00,124 [INFO] Checking HBase Master status via Ambari...
+2025-10-24 14:10:00,188 [INFO] HBase Master check: OK=False, Message=No HBase Master components found via Ambari.
+2025-10-24 14:10:00,189 [ERROR] Decommission script failed after 0.19 seconds: HBase Master is not healthy (No HBase Master components found via Ambari.).
+Traceback (most recent call last):
+  File "/Users/siddharth5.intern/Desktop/Projects/Scripts/decommission_rs.py", line 286, in main
+    if not master_ok: raise RuntimeError(f"HBase Master is not healthy ({master_msg}).")
+RuntimeError: HBase Master is not healthy (No HBase Master components found via Ambari.).
+2025-10-24 14:10:00,189 [INFO] AUDIT: {"timestamp_utc": "2025-10-24T08:40:00.189698Z", "user": "siddharth5.intern", "action": "decommission_failed", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6", "duration_seconds": 0.19236421585083008, "error": "HBase Master is not healthy (No HBase Master components found via Ambari.)."}}
+2025-10-24 14:10:00,190 [INFO] Report written to logs/report_decommission_failed_1761295200.json

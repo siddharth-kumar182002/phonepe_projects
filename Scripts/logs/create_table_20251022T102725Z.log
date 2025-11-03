@@ -1,0 +1,14 @@
+2025-10-22 15:57:25,679 [INFO] AUDIT: {"timestamp_utc": "2025-10-22T10:27:25.679581Z", "user": "siddharth5.intern", "action": "create_table_request", "details": {"table": "user_data_test2", "cfs": ["cf1", "cf2"]}}
+2025-10-22 15:57:25,680 [INFO] Running pre-checks...
+2025-10-22 15:57:25,680 [INFO] Connecting Kazoo client to stg-hdpsiddharth102.phonepe.nb6:2181,stg-hdpsiddharth104.phonepe.nb6:2181,stg-hdpsiddharth105.phonepe.nb6:2181...
+2025-10-22 15:57:25,685 [INFO] Connecting to stg-hdpsiddharth105.phonepe.nb6(10.57.40.172):2181, use_ssl: False
+2025-10-22 15:57:25,708 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-22 15:57:25,709 [INFO] Kazoo connected state: CONNECTED
+2025-10-22 15:57:25,730 [INFO] Closing connection to stg-hdpsiddharth105.phonepe.nb6:2181
+2025-10-22 15:57:25,730 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-22 15:57:25,730 [INFO] ZooKeeper check: {'state': 'CONNECTED', 'server_version': (3, 5, 10)}
+2025-10-22 15:57:25,802 [INFO] Attempting to create table user_data_test2 with CFs ['cf1', 'cf2'] via HappyBase
+2025-10-22 15:57:27,041 [INFO] Create table command issued via HappyBase.
+2025-10-22 15:57:29,092 [INFO] Table user_data_test2 successfully created.
+2025-10-22 15:57:29,093 [INFO] AUDIT: {"timestamp_utc": "2025-10-22T10:27:29.093741Z", "user": "siddharth5.intern", "action": "create_table_complete", "details": {"table": "user_data_test2", "success": true}}
+2025-10-22 15:57:29,096 [INFO] Done.

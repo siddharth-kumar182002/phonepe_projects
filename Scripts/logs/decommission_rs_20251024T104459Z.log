@@ -1,0 +1,51 @@
+2025-10-24 16:14:59,394 [INFO] AUDIT: {"timestamp_utc": "2025-10-24T10:44:59.394219Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6"}}
+2025-10-24 16:14:59,394 [INFO] Performing pre-decommission checks...
+2025-10-24 16:14:59,395 [DEBUG] Connecting Kazoo client to stg-hdpsiddharth102.phonepe.nb6:2181,stg-hdpsiddharth104.phonepe.nb6:2181,stg-hdpsiddharth105.phonepe.nb6:2181...
+2025-10-24 16:14:59,473 [INFO] Connecting to stg-hdpsiddharth105.phonepe.nb6(10.57.40.172):2181, use_ssl: False
+2025-10-24 16:14:59,508 [DEBUG] Sending request(xid=None): Connect(protocol_version=0, last_zxid_seen=0, time_out=10000, session_id=0, passwd=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00', read_only=None)
+2025-10-24 16:14:59,536 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-24 16:14:59,536 [DEBUG] Kazoo connected state: CONNECTED
+2025-10-24 16:14:59,589 [DEBUG] Sending request(xid=1): Close()
+2025-10-24 16:14:59,590 [INFO] Closing connection to stg-hdpsiddharth105.phonepe.nb6:2181
+2025-10-24 16:14:59,590 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-24 16:14:59,590 [INFO] ZooKeeper check: OK=True, Details={'state': 'CONNECTED', 'server_version': (3, 5, 10)}
+2025-10-24 16:14:59,590 [INFO] Skipping HDFS health check.
+2025-10-24 16:14:59,590 [INFO] Checking active HBase Master via ZooKeeper...
+2025-10-24 16:14:59,590 [DEBUG] Connecting Kazoo client to stg-hdpsiddharth102.phonepe.nb6:2181,stg-hdpsiddharth104.phonepe.nb6:2181,stg-hdpsiddharth105.phonepe.nb6:2181...
+2025-10-24 16:14:59,593 [INFO] Connecting to stg-hdpsiddharth105.phonepe.nb6(10.57.40.172):2181, use_ssl: False
+2025-10-24 16:14:59,620 [DEBUG] Sending request(xid=None): Connect(protocol_version=0, last_zxid_seen=0, time_out=10000, session_id=0, passwd=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00', read_only=None)
+2025-10-24 16:14:59,647 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-24 16:14:59,647 [DEBUG] Kazoo connected state: CONNECTED
+2025-10-24 16:14:59,647 [DEBUG] Sending request(xid=1): Exists(path='/hbase-unsecure/master', watcher=None)
+2025-10-24 16:14:59,669 [DEBUG] Received response(xid=1): ZnodeStat(czxid=12884948838, mzxid=12884948838, ctime=1760685762347, mtime=1760685762347, version=0, cversion=0, aversion=0, ephemeralOwner=72213291896560244, dataLength=79, numChildren=0, pzxid=12884948838)
+2025-10-24 16:14:59,669 [DEBUG] Sending request(xid=2): GetData(path='/hbase-unsecure/master', watcher=None)
+2025-10-24 16:14:59,691 [DEBUG] Received response(xid=2): (b'\xff\x00\x00\x00\x14master:16000\xba\xdb\x90\x98\x1b\xc3}\x8bPBUF\n+\n\x1fstg-hdpsiddharth102.phonepe.nb6\x10\x80}\x18\xc5\xa8\xb2\x88\x9f3\x10\x00\x18\x8a}', ZnodeStat(czxid=12884948838, mzxid=12884948838, ctime=1760685762347, mtime=1760685762347, version=0, cversion=0, aversion=0, ephemeralOwner=72213291896560244, dataLength=79, numChildren=0, pzxid=12884948838))
+2025-10-24 16:14:59,691 [DEBUG] Raw data from ZK node /hbase-unsecure/master: b'\xff\x00\x00\x00\x14master:16000\xba\xdb\x90\x98\x1b\xc3}\x8bPBUF\n+\n\x1fstg-hdpsiddharth102.phonepe.nb6\x10\x80}\x18\xc5\xa8\xb2\x88\x9f3\x10\x00\x18\x8a}'
+2025-10-24 16:14:59,691 [INFO] Active HBase Master found at stg-hdpsiddharth102.phonepe.nb6 via ZK node /hbase-unsecure/master.
+2025-10-24 16:14:59,691 [DEBUG] Sending request(xid=3): Close()
+2025-10-24 16:14:59,691 [INFO] Closing connection to stg-hdpsiddharth105.phonepe.nb6:2181
+2025-10-24 16:14:59,691 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-24 16:14:59,691 [INFO] HBase Master ZK check: OK=True, Message=Active HBase Master found at stg-hdpsiddharth102.phonepe.nb6 via ZK node /hbase-unsecure/master.
+2025-10-24 16:14:59,691 [INFO] Active HBase Master is stg-hdpsiddharth102.phonepe.nb6 via ZK.
+2025-10-24 16:14:59,692 [DEBUG] Connecting Kazoo client to stg-hdpsiddharth102.phonepe.nb6:2181,stg-hdpsiddharth104.phonepe.nb6:2181,stg-hdpsiddharth105.phonepe.nb6:2181...
+2025-10-24 16:14:59,694 [INFO] Connecting to stg-hdpsiddharth104.phonepe.nb6(10.57.40.171):2181, use_ssl: False
+2025-10-24 16:14:59,717 [DEBUG] Sending request(xid=None): Connect(protocol_version=0, last_zxid_seen=0, time_out=10000, session_id=0, passwd=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00', read_only=None)
+2025-10-24 16:14:59,747 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-24 16:14:59,748 [DEBUG] Kazoo connected state: CONNECTED
+2025-10-24 16:14:59,748 [DEBUG] Sending request(xid=1): Exists(path='/hbase-unsecure/meta-region-server', watcher=None)
+2025-10-24 16:14:59,773 [DEBUG] Received response(xid=1): ZnodeStat(czxid=4294967363, mzxid=12884969471, ctime=1758625365810, mtime=1761297203169, version=24, cversion=0, aversion=0, ephemeralOwner=0, dataLength=78, numChildren=0, pzxid=4294967363)
+2025-10-24 16:14:59,773 [DEBUG] Sending request(xid=2): GetData(path='/hbase-unsecure/meta-region-server', watcher=None)
+2025-10-24 16:14:59,801 [DEBUG] Received response(xid=2): (b'\xff\x00\x00\x00\x14master:16000\xd7\xe5Hzr\xb0\x91+PBUF\n+\n\x1fstg-hdpsiddharth105.phonepe.nb6\x10\x94}\x18\xf5\xf3\xf0\xab\xa13\x10\x00\x18\x03', ZnodeStat(czxid=4294967363, mzxid=12884969471, ctime=1758625365810, mtime=1761297203169, version=24, cversion=0, aversion=0, ephemeralOwner=0, dataLength=78, numChildren=0, pzxid=4294967363))
+2025-10-24 16:14:59,802 [DEBUG] Raw data from ZK node /hbase-unsecure/meta-region-server: b'\xff\x00\x00\x00\x14master:16000\xd7\xe5Hzr\xb0\x91+PBUF\n+\n\x1fstg-hdpsiddharth105.phonepe.nb6\x10\x94}\x18\xf5\xf3\xf0\xab\xa13\x10\x00\x18\x03'
+2025-10-24 16:14:59,802 [INFO] Found meta-region-server at stg-hdpsiddharth105.phonepe.nb6 from ZK (regex match).
+2025-10-24 16:14:59,803 [DEBUG] Sending request(xid=3): Close()
+2025-10-24 16:14:59,803 [INFO] Closing connection to stg-hdpsiddharth104.phonepe.nb6:2181
+2025-10-24 16:14:59,803 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-24 16:14:59,804 [INFO] hbase:meta region is hosted on: stg-hdpsiddharth105.phonepe.nb6
+2025-10-24 16:14:59,804 [ERROR] Decommission script failed after 0.41 seconds: CRITICAL: Target server stg-hdpsiddharth105.phonepe.nb6 hosts hbase:meta. Manual move required first.
+Traceback (most recent call last):
+  File "/Users/siddharth5.intern/Desktop/Projects/Scripts/decommission_rs.py", line 296, in main
+    raise RuntimeError(f"CRITICAL: Target server {args.host} hosts hbase:meta. Manual move required first.")
+RuntimeError: CRITICAL: Target server stg-hdpsiddharth105.phonepe.nb6 hosts hbase:meta. Manual move required first.
+2025-10-24 16:14:59,805 [INFO] AUDIT: {"timestamp_utc": "2025-10-24T10:44:59.805799Z", "user": "siddharth5.intern", "action": "decommission_failed", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6", "duration_seconds": 0.4095742702484131, "error": "CRITICAL: Target server stg-hdpsiddharth105.phonepe.nb6 hosts hbase:meta. Manual move required first."}}
+2025-10-24 16:14:59,806 [INFO] Report written to logs/report_decommission_failed_1761302699.json

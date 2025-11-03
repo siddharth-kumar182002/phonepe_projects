@@ -1,0 +1,5 @@
+{
+  "host": "stg-hdpsiddharth104.phonepe.nb6",
+  "duration_seconds": 1.9588720798492432,
+  "error": "Could not determine balancer state: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte"
+}

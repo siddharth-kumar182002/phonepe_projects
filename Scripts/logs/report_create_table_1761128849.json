@@ -1,0 +1,8 @@
+{
+  "table": "user_data_test2",
+  "cfs": [
+    "cf1",
+    "cf2"
+  ],
+  "result": "SUCCESS"
+}

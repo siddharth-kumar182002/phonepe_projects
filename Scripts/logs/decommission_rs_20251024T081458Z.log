@@ -1,0 +1,28 @@
+2025-10-24 13:44:58,023 [INFO] AUDIT: {"timestamp_utc": "2025-10-24T08:14:58.023413Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth102.phonepe.nb6"}}
+2025-10-24 13:44:58,023 [INFO] Performing pre-decommission checks...
+2025-10-24 13:44:58,029 [INFO] Connecting to stg-hdpsiddharth102.phonepe.nb6(10.57.40.169):2181, use_ssl: False
+2025-10-24 13:44:58,079 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-24 13:44:58,126 [INFO] Closing connection to stg-hdpsiddharth102.phonepe.nb6:2181
+2025-10-24 13:44:58,126 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-24 13:44:58,126 [INFO] ZooKeeper check result: OK=True, Details={'state': 'CONNECTED', 'server_version': (3, 5, 10)}
+2025-10-24 13:44:58,129 [INFO] Connecting to stg-hdpsiddharth105.phonepe.nb6(10.57.40.172):2181, use_ssl: False
+2025-10-24 13:44:58,176 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-24 13:44:58,225 [INFO] Found meta-region-server at stg-hdpsiddharth104.phonepe.nb6 from ZK (regex match).
+2025-10-24 13:44:58,225 [INFO] Closing connection to stg-hdpsiddharth105.phonepe.nb6:2181
+2025-10-24 13:44:58,226 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-24 13:44:58,226 [INFO] hbase:meta region is hosted on: stg-hdpsiddharth104.phonepe.nb6
+2025-10-24 13:44:58,226 [INFO] Target server stg-hdpsiddharth102.phonepe.nb6 does not host hbase:meta. Safe to proceed.
+2025-10-24 13:44:58,226 [INFO] Checking for regions hosted on stg-hdpsiddharth102.phonepe.nb6 using HappyBase meta scan...
+2025-10-24 13:44:58,460 [INFO] No user regions found hosted on server stg-hdpsiddharth102.phonepe.nb6. Proceeding directly to stop the component.
+2025-10-24 13:44:58,461 [INFO] Proceeding to stop the HBase RegionServer component on stg-hdpsiddharth102.phonepe.nb6 via Ambari...
+2025-10-24 13:44:58,618 [INFO] Ambari action requested to stop HBASE_REGIONSERVER on stg-hdpsiddharth102.phonepe.nb6.
+2025-10-24 13:44:58,619 [INFO] Allowing some time for Ambari to process the stop command...
+2025-10-24 13:45:08,623 [INFO] Performing post-decommission checks...
+2025-10-24 13:45:08,632 [INFO] Connecting to stg-hdpsiddharth105.phonepe.nb6(10.57.40.172):2181, use_ssl: False
+2025-10-24 13:45:08,683 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-24 13:45:08,730 [INFO] Closing connection to stg-hdpsiddharth105.phonepe.nb6:2181
+2025-10-24 13:45:08,731 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-24 13:45:08,733 [INFO] Host stg-hdpsiddharth102.phonepe.nb6 successfully confirmed removed from ZooKeeper /rs list.
+2025-10-24 13:45:08,733 [INFO] Decommission flow completed for stg-hdpsiddharth102.phonepe.nb6 in 10.71 seconds.
+2025-10-24 13:45:08,733 [INFO] AUDIT: {"timestamp_utc": "2025-10-24T08:15:08.733808Z", "user": "siddharth5.intern", "action": "decommission_complete", "details": {"host": "stg-hdpsiddharth102.phonepe.nb6", "duration_seconds": 10.710004329681396}}
+2025-10-24 13:45:08,734 [INFO] Report written to logs/report_decommission_1761293708.json

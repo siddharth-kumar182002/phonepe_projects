@@ -1,0 +1,188 @@
+2025-10-26 23:31:37,202 [INFO] AUDIT: {"timestamp_utc": "2025-10-26T18:01:37.202556Z", "user": "siddharth5.intern", "action": "alter_table_request", "details": {"table": "new_logs", "alter_cmd": "NAME => 'audit'"}}
+2025-10-26 23:31:37,203 [INFO] Running pre-checks...
+2025-10-26 23:31:37,203 [DEBUG] Connecting Kazoo client to stg-hdpsiddharth102.phonepe.nb6:2181,stg-hdpsiddharth104.phonepe.nb6:2181,stg-hdpsiddharth105.phonepe.nb6:2181...
+2025-10-26 23:31:37,213 [INFO] Connecting to stg-hdpsiddharth102.phonepe.nb6(10.57.40.169):2181, use_ssl: False
+2025-10-26 23:31:37,252 [DEBUG] Sending request(xid=None): Connect(protocol_version=0, last_zxid_seen=0, time_out=10000, session_id=0, passwd=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00', read_only=None)
+2025-10-26 23:31:37,303 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-26 23:31:37,303 [DEBUG] Kazoo connected state: CONNECTED
+2025-10-26 23:31:37,405 [DEBUG] Sending request(xid=1): Close()
+2025-10-26 23:31:37,406 [INFO] Closing connection to stg-hdpsiddharth102.phonepe.nb6:2181
+2025-10-26 23:31:37,406 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-26 23:31:37,406 [INFO] ZooKeeper check: OK=True, Details={'state': 'CONNECTED', 'server_version': (3, 5, 10)}
+2025-10-26 23:31:37,406 [INFO] Skipping HDFS health check.
+2025-10-26 23:31:37,406 [INFO] Checking active HBase Master via ZooKeeper...
+2025-10-26 23:31:37,406 [DEBUG] Connecting Kazoo client to stg-hdpsiddharth102.phonepe.nb6:2181,stg-hdpsiddharth104.phonepe.nb6:2181,stg-hdpsiddharth105.phonepe.nb6:2181...
+2025-10-26 23:31:37,411 [INFO] Connecting to stg-hdpsiddharth104.phonepe.nb6(10.57.40.171):2181, use_ssl: False
+2025-10-26 23:31:37,459 [DEBUG] Sending request(xid=None): Connect(protocol_version=0, last_zxid_seen=0, time_out=10000, session_id=0, passwd=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00', read_only=None)
+2025-10-26 23:31:37,510 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-26 23:31:37,511 [DEBUG] Kazoo connected state: CONNECTED
+2025-10-26 23:31:37,512 [DEBUG] Sending request(xid=1): Exists(path='/hbase-unsecure/master', watcher=None)
+2025-10-26 23:31:37,561 [DEBUG] Received response(xid=1): ZnodeStat(czxid=12884948838, mzxid=12884948838, ctime=1760685762347, mtime=1760685762347, version=0, cversion=0, aversion=0, ephemeralOwner=72213291896560244, dataLength=79, numChildren=0, pzxid=12884948838)
+2025-10-26 23:31:37,562 [DEBUG] Sending request(xid=2): GetData(path='/hbase-unsecure/master', watcher=None)
+2025-10-26 23:31:37,612 [DEBUG] Received response(xid=2): (b'\xff\x00\x00\x00\x14master:16000\xba\xdb\x90\x98\x1b\xc3}\x8bPBUF\n+\n\x1fstg-hdpsiddharth102.phonepe.nb6\x10\x80}\x18\xc5\xa8\xb2\x88\x9f3\x10\x00\x18\x8a}', ZnodeStat(czxid=12884948838, mzxid=12884948838, ctime=1760685762347, mtime=1760685762347, version=0, cversion=0, aversion=0, ephemeralOwner=72213291896560244, dataLength=79, numChildren=0, pzxid=12884948838))
+2025-10-26 23:31:37,613 [DEBUG] Raw data from ZK node /hbase-unsecure/master: b'\xff\x00\x00\x00\x14master:16000\xba\xdb\x90\x98\x1b\xc3}\x8bPBUF\n+\n\x1fstg-hdpsiddharth102.phonepe.nb6\x10\x80}\x18\xc5\xa8\xb2\x88\x9f3\x10\x00\x18\x8a}'
+2025-10-26 23:31:37,614 [INFO] Active HBase Master found at stg-hdpsiddharth102.phonepe.nb6 via ZK node /hbase-unsecure/master.
+2025-10-26 23:31:37,615 [DEBUG] Sending request(xid=3): Close()
+2025-10-26 23:31:37,615 [INFO] Closing connection to stg-hdpsiddharth104.phonepe.nb6:2181
+2025-10-26 23:31:37,615 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-26 23:31:37,615 [INFO] HBase Master ZK check: OK=True, Message=Active HBase Master found at stg-hdpsiddharth102.phonepe.nb6 via ZK node /hbase-unsecure/master.
+2025-10-26 23:31:37,616 [INFO] Active HBase Master is stg-hdpsiddharth102.phonepe.nb6 via ZK.
+2025-10-26 23:31:37,616 [INFO] Checking if table 'new_logs' exists...
+2025-10-26 23:31:37,663 [DEBUG] Thrift server probe successful: stg-hdpsiddharth102.phonepe.nb6:9090
+2025-10-26 23:31:37,713 [DEBUG] HappyBase connection opened successfully to stg-hdpsiddharth102.phonepe.nb6:9090.
+2025-10-26 23:31:37,765 [DEBUG] Table 'new_logs' exists check via HappyBase: True. (Tables found: ['my_table', 'new_customer_data', 'new_logs', 'test_auto', 'user_data', 'user_data_test2'])
+2025-10-26 23:31:37,766 [INFO] Table 'new_logs' exists.
+2025-10-26 23:31:37,766 [INFO] Checking for regions in transition (RIT)...
+2025-10-26 23:31:37,767 [DEBUG] Checking for regions in transition (RIT) in ZK...
+2025-10-26 23:31:37,767 [DEBUG] Connecting Kazoo client to stg-hdpsiddharth102.phonepe.nb6:2181,stg-hdpsiddharth104.phonepe.nb6:2181,stg-hdpsiddharth105.phonepe.nb6:2181...
+2025-10-26 23:31:37,775 [INFO] Connecting to stg-hdpsiddharth102.phonepe.nb6(10.57.40.169):2181, use_ssl: False
+2025-10-26 23:31:37,814 [DEBUG] Sending request(xid=None): Connect(protocol_version=0, last_zxid_seen=0, time_out=10000, session_id=0, passwd=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00', read_only=None)
+2025-10-26 23:31:37,866 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-26 23:31:37,866 [DEBUG] Kazoo connected state: CONNECTED
+2025-10-26 23:31:37,866 [DEBUG] Sending request(xid=1): Exists(path='/hbase-unsecure/region-in-transition', watcher=None)
+2025-10-26 23:31:37,922 [DEBUG] RIT znode '/hbase-unsecure/region-in-transition' does not exist.
+2025-10-26 23:31:37,922 [DEBUG] Sending request(xid=2): Exists(path='/hbase-unsecure/rit', watcher=None)
+2025-10-26 23:31:37,969 [DEBUG] RIT znode '/hbase-unsecure/rit' does not exist.
+2025-10-26 23:31:37,969 [DEBUG] No RIT znodes found, assuming 0 regions in transition.
+2025-10-26 23:31:37,969 [DEBUG] Sending request(xid=3): Close()
+2025-10-26 23:31:37,969 [INFO] Closing connection to stg-hdpsiddharth102.phonepe.nb6:2181
+2025-10-26 23:31:37,969 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-26 23:31:37,969 [INFO] Found 0 regions in transition.
+2025-10-26 23:31:37,969 [INFO] Checking HBase balancer state (will be disabled during alter if active)...
+2025-10-26 23:31:37,969 [DEBUG] Checking balancer state at ZK path: /hbase-unsecure/balancer
+2025-10-26 23:31:37,969 [DEBUG] Connecting Kazoo client to stg-hdpsiddharth102.phonepe.nb6:2181,stg-hdpsiddharth104.phonepe.nb6:2181,stg-hdpsiddharth105.phonepe.nb6:2181...
+2025-10-26 23:31:37,974 [INFO] Connecting to stg-hdpsiddharth105.phonepe.nb6(10.57.40.172):2181, use_ssl: False
+2025-10-26 23:31:38,020 [DEBUG] Sending request(xid=None): Connect(protocol_version=0, last_zxid_seen=0, time_out=10000, session_id=0, passwd=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00', read_only=None)
+2025-10-26 23:31:38,073 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-26 23:31:38,073 [DEBUG] Kazoo connected state: CONNECTED
+2025-10-26 23:31:38,074 [DEBUG] Sending request(xid=1): Exists(path='/hbase-unsecure/balancer', watcher=None)
+2025-10-26 23:31:38,123 [DEBUG] Balancer state znode does not exist, assuming balancer is disabled.
+2025-10-26 23:31:38,123 [DEBUG] Sending request(xid=2): Close()
+2025-10-26 23:31:38,123 [INFO] Closing connection to stg-hdpsiddharth105.phonepe.nb6:2181
+2025-10-26 23:31:38,124 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-26 23:31:38,124 [INFO] HBase balancer is currently DISABLED.
+2025-10-26 23:31:38,124 [INFO] Attempting to alter table 'new_logs' with command part: NAME => 'audit' using Salt API...
+2025-10-26 23:31:38,124 [DEBUG] Checking balancer state at ZK path: /hbase-unsecure/balancer
+2025-10-26 23:31:38,124 [DEBUG] Connecting Kazoo client to stg-hdpsiddharth102.phonepe.nb6:2181,stg-hdpsiddharth104.phonepe.nb6:2181,stg-hdpsiddharth105.phonepe.nb6:2181...
+2025-10-26 23:31:38,129 [INFO] Connecting to stg-hdpsiddharth102.phonepe.nb6(10.57.40.169):2181, use_ssl: False
+2025-10-26 23:31:38,173 [DEBUG] Sending request(xid=None): Connect(protocol_version=0, last_zxid_seen=0, time_out=10000, session_id=0, passwd=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00', read_only=None)
+2025-10-26 23:31:38,226 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-26 23:31:38,227 [DEBUG] Kazoo connected state: CONNECTED
+2025-10-26 23:31:38,228 [DEBUG] Sending request(xid=1): Exists(path='/hbase-unsecure/balancer', watcher=None)
+2025-10-26 23:31:38,278 [DEBUG] Balancer state znode does not exist, assuming balancer is disabled.
+2025-10-26 23:31:38,279 [DEBUG] Sending request(xid=2): Close()
+2025-10-26 23:31:38,279 [INFO] Closing connection to stg-hdpsiddharth102.phonepe.nb6:2181
+2025-10-26 23:31:38,279 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-26 23:31:38,282 [INFO] Disabling table new_logs via Salt on stg-hdpsiddharth104.phonepe.nb6...
+2025-10-26 23:31:38,283 [INFO] Requesting new Salt API token from https://stg-hdpsiddharth103.phonepe.nb6:8000 for user 'saltapiuser'...
+2025-10-26 23:31:38,843 [INFO] Successfully obtained Salt API token.
+2025-10-26 23:31:38,845 [INFO] Executing Salt command: tgt='stg-hdpsiddharth104.phonepe.nb6', fun='cmd.run', args='["echo 'disable 'new_logs'' | hbase shell -n"]'
+2025-10-26 23:31:52,167 [DEBUG] Raw Salt command result: {'stg-hdpsiddharth104.phonepe.nb6': "/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2401: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name\n/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2366: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name\n/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2461: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_OPTS: invalid variable name\nSLF4J: Class path contains multiple SLF4J bindings.\nSLF4J: Found binding in [jar:file:/usr/odp/3.2.2.0-1/hbase/lib/client-facing-thirdparty/slf4j-reload4j-1.7.33.jar!/org/slf4j/impl/StaticLoggerBinder.class]\nSLF4J: Found binding in [jar:file:/usr/odp/3.2.2.0-1/hadoop/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]\nSLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.\nSLF4J: Actual binding is of type [org.slf4j.impl.Reload4jLoggerFactory]\nhbase:001:0> disable new_logs\nNameError: undefined local variable or method `new_logs' for #<HBaseReceiver:0x643ecfef>\n                  evaluate at (hbase):1\n                      eval at org/jruby/RubyKernel.java:1048\n                  evaluate at uri:classloader:/META-INF/jruby.home/lib/ruby/stdlib/irb/workspace.rb:85\n                  evaluate at uri:classloader:/META-INF/jruby.home/lib/ruby/stdlib/irb/context.rb:380\n                eval_input at uri:classloader:/irb/hirb.rb:114\n             signal_status at uri:classloader:/META-INF/jruby.home/lib/ruby/stdlib/irb.rb:623\n                eval_input at uri:classloader:/irb/hirb.rb:111\n  each_top_level_statement at uri:classloader:/META-INF/jruby.home/lib/ruby/stdlib/irb/ruby-lex.rb:246\n                      loop at org/jruby/RubyKernel.java:1442\n  each_top_level_statement at uri:classloader:/META-INF/jruby.home/lib/ruby/stdlib/irb/ruby-lex.rb:232\n                     catch at org/jruby/RubyKernel.java:1189\n  each_top_level_statement at uri:classloader:/META-INF/jruby.home/lib/ruby/stdlib/irb/ruby-lex.rb:231\n                eval_input at uri:classloader:/irb/hirb.rb:110\n                       run at uri:classloader:/META-INF/jruby.home/lib/ruby/stdlib/irb.rb:428\n                     catch at org/jruby/RubyKernel.java:1189\n                       run at uri:classloader:/META-INF/jruby.home/lib/ruby/stdlib/irb.rb:427\n                    <main> at classpath:/jar-bootstrap.rb:223"}
+2025-10-26 23:31:52,168 [INFO] Salt cmd.run output from 'stg-hdpsiddharth104.phonepe.nb6': /usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2401: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name
+/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2366: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name
+/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2461: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_OPTS: invalid variable name
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Fou...
+2025-10-26 23:31:52,168 [ERROR] Salt command 'cmd.run' output on 'stg-hdpsiddharth104.phonepe.nb6' indicates failure:
+/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2401: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name
+/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2366: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name
+/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2461: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_OPTS: invalid variable name
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/odp/3.2.2.0-1/hbase/lib/client-facing-thirdparty/slf4j-reload4j-1.7.33.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/odp/3.2.2.0-1/hadoop/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Reload4jLoggerFactory]
+hbase:001:0> disable new_logs
+NameError: undefined local variable or method `new_logs' for #<HBaseReceiver:0x643ecfef>
+                  evaluate at (hbase):1
+                      eval at org/jruby/RubyKernel.java:1048
+                  evaluate at uri:classloader:/META-INF/jruby.home/lib/ruby/stdlib/irb/workspace.rb:85
+                  evaluate at uri:classloader:/META-INF/jruby.home/lib/ruby/stdlib/irb/context.rb:380
+                eval_input at uri:classloader:/irb/hirb.rb:114
+             signal_status at uri:classloader:/META-INF/jruby.home/lib/ruby/stdlib/irb.rb:623
+                eval_input at uri:classloader:/irb/hirb.rb:111
+  each_top_level_statement at uri:classloader:/META-INF/jruby.home/lib/ruby/stdlib/irb/ruby-lex.rb:246
+                      loop at org/jruby/RubyKernel.java:1442
+  each_top_level_statement at uri:classloader:/META-INF/jruby.home/lib/ruby/stdlib/irb/ruby-lex.rb:232
+                     catch at org/jruby/RubyKernel.java:1189
+  each_top_level_statement at uri:classloader:/META-INF/jruby.home/lib/ruby/stdlib/irb/ruby-lex.rb:231
+                eval_input at uri:classloader:/irb/hirb.rb:110
+                       run at uri:classloader:/META-INF/jruby.home/lib/ruby/stdlib/irb.rb:428
+                     catch at org/jruby/RubyKernel.java:1189
+                       run at uri:classloader:/META-INF/jruby.home/lib/ruby/stdlib/irb.rb:427
+                    <main> at classpath:/jar-bootstrap.rb:223
+2025-10-26 23:31:52,168 [ERROR] Unexpected error during Salt command execution or result processing: Salt command failed on minion 'stg-hdpsiddharth104.phonepe.nb6'. Output indicates error.
+Traceback (most recent call last):
+  File "/Users/siddharth5.intern/Desktop/Projects/Scripts/helpers.py", line 1699, in run_salt_command
+    raise RuntimeError(f"Salt command failed on minion '{target}'. Output indicates error.")
+RuntimeError: Salt command failed on minion 'stg-hdpsiddharth104.phonepe.nb6'. Output indicates error.
+2025-10-26 23:31:52,172 [ERROR] Disable or Alter command failed via Salt: Salt command failed on minion 'stg-hdpsiddharth104.phonepe.nb6'. Output indicates error.
+Traceback (most recent call last):
+  File "/Users/siddharth5.intern/Desktop/Projects/Scripts/helpers.py", line 1770, in alter_table_salt
+    run_salt_command(cfg, target_minion, 'cmd.run', [disable_cmd_salt], logger, timeout=120)
+  File "/Users/siddharth5.intern/Desktop/Projects/Scripts/helpers.py", line 1699, in run_salt_command
+    raise RuntimeError(f"Salt command failed on minion '{target}'. Output indicates error.")
+RuntimeError: Salt command failed on minion 'stg-hdpsiddharth104.phonepe.nb6'. Output indicates error.
+2025-10-26 23:31:52,172 [WARNING] Attempting to re-enable table new_logs after alter failure...
+2025-10-26 23:31:52,172 [DEBUG] Using cached Salt API token.
+2025-10-26 23:31:52,172 [INFO] Executing Salt command: tgt='stg-hdpsiddharth104.phonepe.nb6', fun='cmd.run', args='["echo 'enable 'new_logs'' | hbase shell -n"]'
+2025-10-26 23:32:05,106 [DEBUG] Raw Salt command result: {'stg-hdpsiddharth104.phonepe.nb6': "/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2401: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name\n/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2366: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name\n/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2461: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_OPTS: invalid variable name\nSLF4J: Class path contains multiple SLF4J bindings.\nSLF4J: Found binding in [jar:file:/usr/odp/3.2.2.0-1/hbase/lib/client-facing-thirdparty/slf4j-reload4j-1.7.33.jar!/org/slf4j/impl/StaticLoggerBinder.class]\nSLF4J: Found binding in [jar:file:/usr/odp/3.2.2.0-1/hadoop/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]\nSLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.\nSLF4J: Actual binding is of type [org.slf4j.impl.Reload4jLoggerFactory]\nhbase:001:0> enable new_logs\nNameError: undefined local variable or method `new_logs' for #<HBaseReceiver:0x643ecfef>\n                  evaluate at (hbase):1\n                      eval at org/jruby/RubyKernel.java:1048\n                  evaluate at uri:classloader:/META-INF/jruby.home/lib/ruby/stdlib/irb/workspace.rb:85\n                  evaluate at uri:classloader:/META-INF/jruby.home/lib/ruby/stdlib/irb/context.rb:380\n                eval_input at uri:classloader:/irb/hirb.rb:114\n             signal_status at uri:classloader:/META-INF/jruby.home/lib/ruby/stdlib/irb.rb:623\n                eval_input at uri:classloader:/irb/hirb.rb:111\n  each_top_level_statement at uri:classloader:/META-INF/jruby.home/lib/ruby/stdlib/irb/ruby-lex.rb:246\n                      loop at org/jruby/RubyKernel.java:1442\n  each_top_level_statement at uri:classloader:/META-INF/jruby.home/lib/ruby/stdlib/irb/ruby-lex.rb:232\n                     catch at org/jruby/RubyKernel.java:1189\n  each_top_level_statement at uri:classloader:/META-INF/jruby.home/lib/ruby/stdlib/irb/ruby-lex.rb:231\n                eval_input at uri:classloader:/irb/hirb.rb:110\n                       run at uri:classloader:/META-INF/jruby.home/lib/ruby/stdlib/irb.rb:428\n                     catch at org/jruby/RubyKernel.java:1189\n                       run at uri:classloader:/META-INF/jruby.home/lib/ruby/stdlib/irb.rb:427\n                    <main> at classpath:/jar-bootstrap.rb:223"}
+2025-10-26 23:32:05,108 [INFO] Salt cmd.run output from 'stg-hdpsiddharth104.phonepe.nb6': /usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2401: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name
+/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2366: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name
+/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2461: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_OPTS: invalid variable name
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Fou...
+2025-10-26 23:32:05,108 [ERROR] Salt command 'cmd.run' output on 'stg-hdpsiddharth104.phonepe.nb6' indicates failure:
+/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2401: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name
+/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2366: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name
+/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2461: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_OPTS: invalid variable name
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/odp/3.2.2.0-1/hbase/lib/client-facing-thirdparty/slf4j-reload4j-1.7.33.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/odp/3.2.2.0-1/hadoop/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Reload4jLoggerFactory]
+hbase:001:0> enable new_logs
+NameError: undefined local variable or method `new_logs' for #<HBaseReceiver:0x643ecfef>
+                  evaluate at (hbase):1
+                      eval at org/jruby/RubyKernel.java:1048
+                  evaluate at uri:classloader:/META-INF/jruby.home/lib/ruby/stdlib/irb/workspace.rb:85
+                  evaluate at uri:classloader:/META-INF/jruby.home/lib/ruby/stdlib/irb/context.rb:380
+                eval_input at uri:classloader:/irb/hirb.rb:114
+             signal_status at uri:classloader:/META-INF/jruby.home/lib/ruby/stdlib/irb.rb:623
+                eval_input at uri:classloader:/irb/hirb.rb:111
+  each_top_level_statement at uri:classloader:/META-INF/jruby.home/lib/ruby/stdlib/irb/ruby-lex.rb:246
+                      loop at org/jruby/RubyKernel.java:1442
+  each_top_level_statement at uri:classloader:/META-INF/jruby.home/lib/ruby/stdlib/irb/ruby-lex.rb:232
+                     catch at org/jruby/RubyKernel.java:1189
+  each_top_level_statement at uri:classloader:/META-INF/jruby.home/lib/ruby/stdlib/irb/ruby-lex.rb:231
+                eval_input at uri:classloader:/irb/hirb.rb:110
+                       run at uri:classloader:/META-INF/jruby.home/lib/ruby/stdlib/irb.rb:428
+                     catch at org/jruby/RubyKernel.java:1189
+                       run at uri:classloader:/META-INF/jruby.home/lib/ruby/stdlib/irb.rb:427
+                    <main> at classpath:/jar-bootstrap.rb:223
+2025-10-26 23:32:05,108 [ERROR] Unexpected error during Salt command execution or result processing: Salt command failed on minion 'stg-hdpsiddharth104.phonepe.nb6'. Output indicates error.
+Traceback (most recent call last):
+  File "/Users/siddharth5.intern/Desktop/Projects/Scripts/helpers.py", line 1770, in alter_table_salt
+    run_salt_command(cfg, target_minion, 'cmd.run', [disable_cmd_salt], logger, timeout=120)
+  File "/Users/siddharth5.intern/Desktop/Projects/Scripts/helpers.py", line 1699, in run_salt_command
+    raise RuntimeError(f"Salt command failed on minion '{target}'. Output indicates error.")
+RuntimeError: Salt command failed on minion 'stg-hdpsiddharth104.phonepe.nb6'. Output indicates error.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/siddharth5.intern/Desktop/Projects/Scripts/helpers.py", line 1699, in run_salt_command
+    raise RuntimeError(f"Salt command failed on minion '{target}'. Output indicates error.")
+RuntimeError: Salt command failed on minion 'stg-hdpsiddharth104.phonepe.nb6'. Output indicates error.
+2025-10-26 23:32:05,109 [CRITICAL] CRITICAL: Failed to re-enable table new_logs via Salt after alter failed. MANUAL INTERVENTION REQUIRED. Error: Salt command failed on minion 'stg-hdpsiddharth104.phonepe.nb6'. Output indicates error.
+2025-10-26 23:32:05,113 [ERROR] Alter operation failed: Salt command failed on minion 'stg-hdpsiddharth104.phonepe.nb6'. Output indicates error.
+Traceback (most recent call last):
+  File "/Users/siddharth5.intern/Desktop/Projects/Scripts/alter_table.py", line 284, in main
+    alter_table_salt(cfg, args.table, args.alter_cmd, logger)
+  File "/Users/siddharth5.intern/Desktop/Projects/Scripts/helpers.py", line 1770, in alter_table_salt
+    run_salt_command(cfg, target_minion, 'cmd.run', [disable_cmd_salt], logger, timeout=120)
+  File "/Users/siddharth5.intern/Desktop/Projects/Scripts/helpers.py", line 1699, in run_salt_command
+    raise RuntimeError(f"Salt command failed on minion '{target}'. Output indicates error.")
+RuntimeError: Salt command failed on minion 'stg-hdpsiddharth104.phonepe.nb6'. Output indicates error.
+2025-10-26 23:32:05,116 [INFO] AUDIT: {"timestamp_utc": "2025-10-26T18:02:05.116010Z", "user": "siddharth5.intern", "action": "alter_table_failed", "details": {"table": "new_logs", "alter_cmd": "NAME => 'audit'", "error": "Salt command failed on minion 'stg-hdpsiddharth104.phonepe.nb6'. Output indicates error."}}
+2025-10-26 23:32:05,117 [INFO] Report written to logs/report_alter_table_failed_1761501725.json

@@ -1,0 +1,26 @@
+2025-10-23 11:19:09,985 [INFO] AUDIT: {"timestamp_utc": "2025-10-23T05:49:09.985893Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6"}}
+2025-10-23 11:19:09,986 [INFO] Performing pre-decommission checks...
+2025-10-23 11:19:09,992 [INFO] Connecting to stg-hdpsiddharth102.phonepe.nb6(10.57.40.169):2181, use_ssl: False
+2025-10-23 11:19:10,047 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-23 11:19:10,094 [INFO] Closing connection to stg-hdpsiddharth102.phonepe.nb6:2181
+2025-10-23 11:19:10,094 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-23 11:19:10,095 [INFO] ZooKeeper check result: OK=True, Details={'state': 'CONNECTED', 'server_version': (3, 5, 10)}
+2025-10-23 11:19:10,098 [INFO] Connecting to stg-hdpsiddharth104.phonepe.nb6(10.57.40.171):2181, use_ssl: False
+2025-10-23 11:19:10,144 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-23 11:19:10,189 [WARNING] Could not find server_name via regex, trying fallback string search.
+2025-10-23 11:19:10,189 [ERROR] Failed to get hbase:meta location from ZK: Could not parse server name from meta znode data: b'\xff\x00\x00\x00\x14master:160001\xefP\x9a\x1d\xa0%\x18PBUF\n+\n\x1fstg-hdpsiddharth104.phonepe.nb6\x10\x94}\x18\xdc\xd2\xdc\xfc\xa03\x10\x00\x18\x03'
+Traceback (most recent call last):
+  File "/Users/siddharth5.intern/Desktop/Projects/Scripts/helpers.py", line 227, in get_meta_server_from_zk
+    raise ValueError(f"Could not parse server name from meta znode data: {data_str}")
+ValueError: Could not parse server name from meta znode data: b'\xff\x00\x00\x00\x14master:160001\xefP\x9a\x1d\xa0%\x18PBUF\n+\n\x1fstg-hdpsiddharth104.phonepe.nb6\x10\x94}\x18\xdc\xd2\xdc\xfc\xa03\x10\x00\x18\x03'
+2025-10-23 11:19:10,192 [INFO] Closing connection to stg-hdpsiddharth104.phonepe.nb6:2181
+2025-10-23 11:19:10,192 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-23 11:19:10,192 [ERROR] Decommission script failed after 0.21 seconds: Could not parse server name from meta znode data: b'\xff\x00\x00\x00\x14master:160001\xefP\x9a\x1d\xa0%\x18PBUF\n+\n\x1fstg-hdpsiddharth104.phonepe.nb6\x10\x94}\x18\xdc\xd2\xdc\xfc\xa03\x10\x00\x18\x03'
+Traceback (most recent call last):
+  File "/Users/siddharth5.intern/Desktop/Projects/Scripts/decommission_rs.py", line 84, in main
+    meta_host = get_meta_server_from_zk(cfg, logger)
+  File "/Users/siddharth5.intern/Desktop/Projects/Scripts/helpers.py", line 227, in get_meta_server_from_zk
+    raise ValueError(f"Could not parse server name from meta znode data: {data_str}")
+ValueError: Could not parse server name from meta znode data: b'\xff\x00\x00\x00\x14master:160001\xefP\x9a\x1d\xa0%\x18PBUF\n+\n\x1fstg-hdpsiddharth104.phonepe.nb6\x10\x94}\x18\xdc\xd2\xdc\xfc\xa03\x10\x00\x18\x03'
+2025-10-23 11:19:10,193 [INFO] AUDIT: {"timestamp_utc": "2025-10-23T05:49:10.193034Z", "user": "siddharth5.intern", "action": "decommission_failed", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6", "duration_seconds": 0.20590591430664062, "error": "Could not parse server name from meta znode data: b'\\xff\\x00\\x00\\x00\\x14master:160001\\xefP\\x9a\\x1d\\xa0%\\x18PBUF\\n+\\n\\x1fstg-hdpsiddharth104.phonepe.nb6\\x10\\x94}\\x18\\xdc\\xd2\\xdc\\xfc\\xa03\\x10\\x00\\x18\\x03'"}}
+2025-10-23 11:19:10,193 [INFO] Report written to logs/report_decommission_failed_1761198550.json

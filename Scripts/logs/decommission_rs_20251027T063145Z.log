@@ -1,0 +1,189 @@
+2025-10-27 12:01:45,092 [INFO] AUDIT: {"timestamp_utc": "2025-10-27T06:31:45.092390Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6"}}
+2025-10-27 12:01:45,092 [INFO] Performing pre-decommission checks...
+2025-10-27 12:01:45,093 [DEBUG] Connecting Kazoo client to stg-hdpsiddharth102.phonepe.nb6:2181,stg-hdpsiddharth104.phonepe.nb6:2181,stg-hdpsiddharth105.phonepe.nb6:2181...
+2025-10-27 12:01:45,098 [INFO] Connecting to stg-hdpsiddharth102.phonepe.nb6(10.57.40.169):2181, use_ssl: False
+2025-10-27 12:01:45,120 [DEBUG] Sending request(xid=None): Connect(protocol_version=0, last_zxid_seen=0, time_out=10000, session_id=0, passwd=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00', read_only=None)
+2025-10-27 12:01:45,144 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-27 12:01:45,144 [DEBUG] Kazoo connected state: CONNECTED
+2025-10-27 12:01:45,187 [DEBUG] Sending request(xid=1): Close()
+2025-10-27 12:01:45,188 [INFO] Closing connection to stg-hdpsiddharth102.phonepe.nb6:2181
+2025-10-27 12:01:45,188 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-27 12:01:45,188 [INFO] ZooKeeper check: OK=True, Details={'state': 'CONNECTED', 'server_version': (3, 5, 10)}
+2025-10-27 12:01:45,188 [INFO] Skipping HDFS health check.
+2025-10-27 12:01:45,188 [INFO] Checking active HBase Master via ZooKeeper...
+2025-10-27 12:01:45,188 [DEBUG] Connecting Kazoo client to stg-hdpsiddharth102.phonepe.nb6:2181,stg-hdpsiddharth104.phonepe.nb6:2181,stg-hdpsiddharth105.phonepe.nb6:2181...
+2025-10-27 12:01:45,193 [INFO] Connecting to stg-hdpsiddharth102.phonepe.nb6(10.57.40.169):2181, use_ssl: False
+2025-10-27 12:01:45,213 [DEBUG] Sending request(xid=None): Connect(protocol_version=0, last_zxid_seen=0, time_out=10000, session_id=0, passwd=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00', read_only=None)
+2025-10-27 12:01:45,238 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-27 12:01:45,238 [DEBUG] Kazoo connected state: CONNECTED
+2025-10-27 12:01:45,238 [DEBUG] Sending request(xid=1): Exists(path='/hbase-unsecure/master', watcher=None)
+2025-10-27 12:01:45,294 [DEBUG] Received response(xid=1): ZnodeStat(czxid=12884948838, mzxid=12884948838, ctime=1760685762347, mtime=1760685762347, version=0, cversion=0, aversion=0, ephemeralOwner=72213291896560244, dataLength=79, numChildren=0, pzxid=12884948838)
+2025-10-27 12:01:45,294 [DEBUG] Sending request(xid=2): GetData(path='/hbase-unsecure/master', watcher=None)
+2025-10-27 12:01:45,315 [DEBUG] Received response(xid=2): (b'\xff\x00\x00\x00\x14master:16000\xba\xdb\x90\x98\x1b\xc3}\x8bPBUF\n+\n\x1fstg-hdpsiddharth102.phonepe.nb6\x10\x80}\x18\xc5\xa8\xb2\x88\x9f3\x10\x00\x18\x8a}', ZnodeStat(czxid=12884948838, mzxid=12884948838, ctime=1760685762347, mtime=1760685762347, version=0, cversion=0, aversion=0, ephemeralOwner=72213291896560244, dataLength=79, numChildren=0, pzxid=12884948838))
+2025-10-27 12:01:45,316 [DEBUG] Raw data from ZK node /hbase-unsecure/master: b'\xff\x00\x00\x00\x14master:16000\xba\xdb\x90\x98\x1b\xc3}\x8bPBUF\n+\n\x1fstg-hdpsiddharth102.phonepe.nb6\x10\x80}\x18\xc5\xa8\xb2\x88\x9f3\x10\x00\x18\x8a}'
+2025-10-27 12:01:45,316 [INFO] Active HBase Master found at stg-hdpsiddharth102.phonepe.nb6 via ZK node /hbase-unsecure/master.
+2025-10-27 12:01:45,316 [DEBUG] Sending request(xid=3): Close()
+2025-10-27 12:01:45,316 [INFO] Closing connection to stg-hdpsiddharth102.phonepe.nb6:2181
+2025-10-27 12:01:45,316 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-27 12:01:45,316 [INFO] HBase Master ZK check: OK=True, Message=Active HBase Master found at stg-hdpsiddharth102.phonepe.nb6 via ZK node /hbase-unsecure/master.
+2025-10-27 12:01:45,316 [INFO] Active HBase Master is stg-hdpsiddharth102.phonepe.nb6 via ZK.
+2025-10-27 12:01:45,316 [DEBUG] Connecting Kazoo client to stg-hdpsiddharth102.phonepe.nb6:2181,stg-hdpsiddharth104.phonepe.nb6:2181,stg-hdpsiddharth105.phonepe.nb6:2181...
+2025-10-27 12:01:45,320 [INFO] Connecting to stg-hdpsiddharth105.phonepe.nb6(10.57.40.172):2181, use_ssl: False
+2025-10-27 12:01:45,340 [DEBUG] Sending request(xid=None): Connect(protocol_version=0, last_zxid_seen=0, time_out=10000, session_id=0, passwd=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00', read_only=None)
+2025-10-27 12:01:45,363 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-27 12:01:45,363 [DEBUG] Kazoo connected state: CONNECTED
+2025-10-27 12:01:45,364 [DEBUG] Sending request(xid=1): Exists(path='/hbase-unsecure/meta-region-server', watcher=None)
+2025-10-27 12:01:45,383 [DEBUG] Received response(xid=1): ZnodeStat(czxid=4294967363, mzxid=12884978490, ctime=1758625365810, mtime=1761546531976, version=49, cversion=0, aversion=0, ephemeralOwner=0, dataLength=78, numChildren=0, pzxid=4294967363)
+2025-10-27 12:01:45,383 [DEBUG] Sending request(xid=2): GetData(path='/hbase-unsecure/meta-region-server', watcher=None)
+2025-10-27 12:01:45,403 [DEBUG] Received response(xid=2): (b'\xff\x00\x00\x00\x14master:16000\xc2\xb9\x81\x1fr\xffc4PBUF\n+\n\x1fstg-hdpsiddharth105.phonepe.nb6\x10\x94}\x18\xff\xe3\xd9\xa2\xa23\x10\x00\x18\x03', ZnodeStat(czxid=4294967363, mzxid=12884978490, ctime=1758625365810, mtime=1761546531976, version=49, cversion=0, aversion=0, ephemeralOwner=0, dataLength=78, numChildren=0, pzxid=4294967363))
+2025-10-27 12:01:45,404 [DEBUG] Raw data from ZK node /hbase-unsecure/meta-region-server: b'\xff\x00\x00\x00\x14master:16000\xc2\xb9\x81\x1fr\xffc4PBUF\n+\n\x1fstg-hdpsiddharth105.phonepe.nb6\x10\x94}\x18\xff\xe3\xd9\xa2\xa23\x10\x00\x18\x03'
+2025-10-27 12:01:45,404 [INFO] Found meta-region-server at stg-hdpsiddharth105.phonepe.nb6 from ZK (regex match).
+2025-10-27 12:01:45,404 [DEBUG] Sending request(xid=3): Close()
+2025-10-27 12:01:45,404 [INFO] Closing connection to stg-hdpsiddharth105.phonepe.nb6:2181
+2025-10-27 12:01:45,404 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-27 12:01:45,404 [INFO] hbase:meta region is hosted on: stg-hdpsiddharth105.phonepe.nb6
+2025-10-27 12:01:45,404 [WARNING] WARNING: Target server stg-hdpsiddharth105.phonepe.nb6 hosts hbase:meta. Proceeding with decommission, but this is risky.
+2025-10-27 12:01:45,404 [INFO] Checking current state and ZK registration of stg-hdpsiddharth105.phonepe.nb6...
+2025-10-27 12:01:45,404 [DEBUG] Getting Ambari state for HBASE_REGIONSERVER on stg-hdpsiddharth105.phonepe.nb6
+2025-10-27 12:01:45,501 [DEBUG] Ambari state for HBASE_REGIONSERVER on stg-hdpsiddharth105.phonepe.nb6 is 'STARTED'
+2025-10-27 12:01:45,501 [DEBUG] Connecting Kazoo client to stg-hdpsiddharth102.phonepe.nb6:2181,stg-hdpsiddharth104.phonepe.nb6:2181,stg-hdpsiddharth105.phonepe.nb6:2181...
+2025-10-27 12:01:45,506 [INFO] Connecting to stg-hdpsiddharth104.phonepe.nb6(10.57.40.171):2181, use_ssl: False
+2025-10-27 12:01:45,528 [DEBUG] Sending request(xid=None): Connect(protocol_version=0, last_zxid_seen=0, time_out=10000, session_id=0, passwd=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00', read_only=None)
+2025-10-27 12:01:45,569 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-27 12:01:45,572 [DEBUG] Kazoo connected state: CONNECTED
+2025-10-27 12:01:45,572 [DEBUG] Sending request(xid=1): Exists(path='/hbase-unsecure/rs', watcher=None)
+2025-10-27 12:01:45,615 [DEBUG] Received response(xid=1): ZnodeStat(czxid=4294967326, mzxid=4294967326, ctime=1758625359656, mtime=1758625359656, version=0, cversion=45, aversion=0, ephemeralOwner=0, dataLength=0, numChildren=3, pzxid=12884978469)
+2025-10-27 12:01:45,615 [DEBUG] Sending request(xid=2): GetChildren(path='/hbase-unsecure/rs', watcher=None)
+2025-10-27 12:01:45,636 [DEBUG] Received response(xid=2): ['stg-hdpsiddharth105.phonepe.nb6,16020,1761546236415', 'stg-hdpsiddharth104.phonepe.nb6,16020,1761536614565', 'stg-hdpsiddharth102.phonepe.nb6,16020,1761293738501']
+2025-10-27 12:01:45,636 [DEBUG] Found 3 region servers in ZK under /hbase-unsecure/rs: ['stg-hdpsiddharth105.phonepe.nb6', 'stg-hdpsiddharth104.phonepe.nb6', 'stg-hdpsiddharth102.phonepe.nb6']
+2025-10-27 12:01:45,636 [DEBUG] Sending request(xid=3): Close()
+2025-10-27 12:01:45,636 [INFO] Closing connection to stg-hdpsiddharth104.phonepe.nb6:2181
+2025-10-27 12:01:45,636 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-27 12:01:45,636 [INFO] Target RegionServer stg-hdpsiddharth105.phonepe.nb6 is STARTED and registered in ZK.
+2025-10-27 12:01:45,636 [INFO] Found 2 other live RegionServers: ['stg-hdpsiddharth104.phonepe.nb6', 'stg-hdpsiddharth102.phonepe.nb6']
+2025-10-27 12:01:45,636 [INFO] Checking for regions in transition (RIT)...
+2025-10-27 12:01:45,636 [DEBUG] Checking for regions in transition (RIT) in ZK...
+2025-10-27 12:01:45,636 [DEBUG] Connecting Kazoo client to stg-hdpsiddharth102.phonepe.nb6:2181,stg-hdpsiddharth104.phonepe.nb6:2181,stg-hdpsiddharth105.phonepe.nb6:2181...
+2025-10-27 12:01:45,644 [INFO] Connecting to stg-hdpsiddharth104.phonepe.nb6(10.57.40.171):2181, use_ssl: False
+2025-10-27 12:01:45,664 [DEBUG] Sending request(xid=None): Connect(protocol_version=0, last_zxid_seen=0, time_out=10000, session_id=0, passwd=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00', read_only=None)
+2025-10-27 12:01:45,686 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-27 12:01:45,687 [DEBUG] Kazoo connected state: CONNECTED
+2025-10-27 12:01:45,687 [DEBUG] Sending request(xid=1): Exists(path='/hbase-unsecure/region-in-transition', watcher=None)
+2025-10-27 12:01:45,706 [DEBUG] RIT znode '/hbase-unsecure/region-in-transition' does not exist.
+2025-10-27 12:01:45,707 [DEBUG] Sending request(xid=2): Exists(path='/hbase-unsecure/rit', watcher=None)
+2025-10-27 12:01:45,727 [DEBUG] RIT znode '/hbase-unsecure/rit' does not exist.
+2025-10-27 12:01:45,727 [DEBUG] No RIT znodes found, assuming 0 regions in transition.
+2025-10-27 12:01:45,727 [DEBUG] Sending request(xid=3): Close()
+2025-10-27 12:01:45,727 [INFO] Closing connection to stg-hdpsiddharth104.phonepe.nb6:2181
+2025-10-27 12:01:45,727 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-27 12:01:45,727 [INFO] Found 0 regions in transition.
+2025-10-27 12:01:45,727 [INFO] Checking HBase balancer state...
+2025-10-27 12:01:45,727 [DEBUG] Checking balancer state via existence of ZK path: /hbase-unsecure/balancer
+2025-10-27 12:01:45,727 [DEBUG] Connecting Kazoo client to stg-hdpsiddharth102.phonepe.nb6:2181,stg-hdpsiddharth104.phonepe.nb6:2181,stg-hdpsiddharth105.phonepe.nb6:2181...
+2025-10-27 12:01:45,734 [INFO] Connecting to stg-hdpsiddharth104.phonepe.nb6(10.57.40.171):2181, use_ssl: False
+2025-10-27 12:01:45,767 [DEBUG] Sending request(xid=None): Connect(protocol_version=0, last_zxid_seen=0, time_out=10000, session_id=0, passwd=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00', read_only=None)
+2025-10-27 12:01:45,794 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-27 12:01:45,794 [DEBUG] Kazoo connected state: CONNECTED
+2025-10-27 12:01:45,794 [DEBUG] Sending request(xid=1): Exists(path='/hbase-unsecure/balancer', watcher=None)
+2025-10-27 12:01:45,815 [DEBUG] Received response(xid=1): ZnodeStat(czxid=12884977743, mzxid=12884978453, ctime=1761534436856, mtime=1761546221040, version=12, cversion=0, aversion=0, ephemeralOwner=0, dataLength=31, numChildren=0, pzxid=12884977743)
+2025-10-27 12:01:45,815 [DEBUG] Balancer znode '/hbase-unsecure/balancer' exists, assuming balancer is ENABLED.
+2025-10-27 12:01:45,816 [DEBUG] Sending request(xid=2): Close()
+2025-10-27 12:01:45,816 [INFO] Closing connection to stg-hdpsiddharth104.phonepe.nb6:2181
+2025-10-27 12:01:45,816 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-27 12:01:45,816 [INFO] HBase balancer is currently ENABLED.
+2025-10-27 12:01:45,816 [INFO] Disabling HBase balancer before region migration...
+2025-10-27 12:01:45,816 [INFO] Disabling HBase balancer via Salt on stg-hdpsiddharth104.phonepe.nb6...
+2025-10-27 12:01:45,816 [INFO] Requesting new Salt API token from https://stg-hdpsiddharth103.phonepe.nb6:8000 for user 'saltapiuser'...
+2025-10-27 12:01:46,097 [INFO] Successfully obtained Salt API token.
+2025-10-27 12:01:46,098 [INFO] Executing Salt command: tgt='stg-hdpsiddharth104.phonepe.nb6', fun='cmd.run', args='["echo 'balance_switch false' | hbase shell -n"]'
+2025-10-27 12:01:59,860 [DEBUG] Raw Salt command result: {'stg-hdpsiddharth104.phonepe.nb6': '/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2401: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name\n/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2366: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name\n/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2461: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_OPTS: invalid variable name\nSLF4J: Class path contains multiple SLF4J bindings.\nSLF4J: Found binding in [jar:file:/usr/odp/3.2.2.0-1/hbase/lib/client-facing-thirdparty/slf4j-reload4j-1.7.33.jar!/org/slf4j/impl/StaticLoggerBinder.class]\nSLF4J: Found binding in [jar:file:/usr/odp/3.2.2.0-1/hadoop/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]\nSLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.\nSLF4J: Actual binding is of type [org.slf4j.impl.Reload4jLoggerFactory]\nhbase:001:0> balance_switch false\nPrevious balancer state : true\nTook 0.6898 seconds\n=> true\nhbase:002:0>'}
+2025-10-27 12:01:59,861 [INFO] Salt cmd.run output from 'stg-hdpsiddharth104.phonepe.nb6': /usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2401: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name
+/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2366: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name
+/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2461: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_OPTS: invalid variable name
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Fou...
+2025-10-27 12:01:59,863 [INFO] HBase balancer state change to False requested successfully.
+2025-10-27 12:02:02,869 [DEBUG] Checking balancer state via existence of ZK path: /hbase-unsecure/balancer
+2025-10-27 12:02:02,870 [DEBUG] Connecting Kazoo client to stg-hdpsiddharth102.phonepe.nb6:2181,stg-hdpsiddharth104.phonepe.nb6:2181,stg-hdpsiddharth105.phonepe.nb6:2181...
+2025-10-27 12:02:02,881 [INFO] Connecting to stg-hdpsiddharth105.phonepe.nb6(10.57.40.172):2181, use_ssl: False
+2025-10-27 12:02:02,904 [DEBUG] Sending request(xid=None): Connect(protocol_version=0, last_zxid_seen=0, time_out=10000, session_id=0, passwd=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00', read_only=None)
+2025-10-27 12:02:02,942 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-27 12:02:02,942 [DEBUG] Kazoo connected state: CONNECTED
+2025-10-27 12:02:02,943 [DEBUG] Sending request(xid=1): Exists(path='/hbase-unsecure/balancer', watcher=None)
+2025-10-27 12:02:02,961 [DEBUG] Received response(xid=1): ZnodeStat(czxid=12884977743, mzxid=12884978511, ctime=1761534436856, mtime=1761546719330, version=13, cversion=0, aversion=0, ephemeralOwner=0, dataLength=31, numChildren=0, pzxid=12884977743)
+2025-10-27 12:02:02,961 [DEBUG] Balancer znode '/hbase-unsecure/balancer' exists, assuming balancer is ENABLED.
+2025-10-27 12:02:02,962 [DEBUG] Sending request(xid=2): Close()
+2025-10-27 12:02:02,962 [INFO] Closing connection to stg-hdpsiddharth105.phonepe.nb6:2181
+2025-10-27 12:02:02,963 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-27 12:02:02,964 [WARNING] Balancer state in ZK (True) does not match desired state (False) shortly after command execution.
+2025-10-27 12:02:02,964 [INFO] Checking for regions hosted on stg-hdpsiddharth105.phonepe.nb6...
+2025-10-27 12:02:02,964 [DEBUG] Scanning hbase:meta for non-meta regions hosted on server: stg-hdpsiddharth105.phonepe.nb6:16020
+2025-10-27 12:02:02,986 [DEBUG] Thrift server probe successful: stg-hdpsiddharth102.phonepe.nb6:9090
+2025-10-27 12:02:03,021 [DEBUG] HappyBase connection opened successfully to stg-hdpsiddharth102.phonepe.nb6:9090.
+2025-10-27 12:02:03,229 [DEBUG] Found 87 unique non-meta regions on stg-hdpsiddharth105.phonepe.nb6.
+2025-10-27 12:02:03,230 [INFO] Found 87 non-meta regions. Attempting to unassign them...
+2025-10-27 12:02:03,230 [INFO] Attempting to unassign region ycsb_test_table,user000000000269662,1761505625391.b2551fbb94bb5f4977976fc80773be37. via Salt/hbase shell (force=true)...
+2025-10-27 12:02:03,230 [DEBUG] Using cached Salt API token.
+2025-10-27 12:02:03,230 [INFO] Executing Salt command: tgt='stg-hdpsiddharth104.phonepe.nb6', fun='cmd.run', args='['echo "unassign \'ycsb_test_table,user000000000269662,1761505625391.b2551fbb94bb5f4977976fc80773be37.\', true" | hbase shell -n']'
+2025-10-27 12:02:18,183 [DEBUG] Raw Salt command result: {'stg-hdpsiddharth104.phonepe.nb6': "/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2401: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name\n/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2366: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name\n/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2461: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_OPTS: invalid variable name\nSLF4J: Class path contains multiple SLF4J bindings.\nSLF4J: Found binding in [jar:file:/usr/odp/3.2.2.0-1/hbase/lib/client-facing-thirdparty/slf4j-reload4j-1.7.33.jar!/org/slf4j/impl/StaticLoggerBinder.class]\nSLF4J: Found binding in [jar:file:/usr/odp/3.2.2.0-1/hadoop/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]\nSLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.\nSLF4J: Actual binding is of type [org.slf4j.impl.Reload4jLoggerFactory]\nhbase:001:0> unassign 'ycsb_test_table,user000000000269662,1761505625391.b2551fbb94bb5f4977976fc80773be37.', true\nTook 1.8663 seconds\nhbase:002:0>"}
+2025-10-27 12:02:18,186 [INFO] Salt cmd.run output from 'stg-hdpsiddharth104.phonepe.nb6': /usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2401: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name
+/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2366: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name
+/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2461: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_OPTS: invalid variable name
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Fou...
+2025-10-27 12:02:18,188 [INFO] Successfully issued unassign command via Salt for region ycsb_test_table,user000000000269662,1761505625391.b2551fbb94bb5f4977976fc80773be37.
+2025-10-27 12:02:18,294 [INFO] Attempting to unassign region ycsb_test_table,user000000000977528,1761505625391.fc348be6823619672ce5920f3544b715. via Salt/hbase shell (force=true)...
+2025-10-27 12:02:18,295 [DEBUG] Using cached Salt API token.
+2025-10-27 12:02:18,295 [INFO] Executing Salt command: tgt='stg-hdpsiddharth104.phonepe.nb6', fun='cmd.run', args='['echo "unassign \'ycsb_test_table,user000000000977528,1761505625391.fc348be6823619672ce5920f3544b715.\', true" | hbase shell -n']'
+2025-10-27 12:02:32,943 [DEBUG] Raw Salt command result: {'stg-hdpsiddharth104.phonepe.nb6': "/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2401: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name\n/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2366: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name\n/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2461: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_OPTS: invalid variable name\nSLF4J: Class path contains multiple SLF4J bindings.\nSLF4J: Found binding in [jar:file:/usr/odp/3.2.2.0-1/hbase/lib/client-facing-thirdparty/slf4j-reload4j-1.7.33.jar!/org/slf4j/impl/StaticLoggerBinder.class]\nSLF4J: Found binding in [jar:file:/usr/odp/3.2.2.0-1/hadoop/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]\nSLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.\nSLF4J: Actual binding is of type [org.slf4j.impl.Reload4jLoggerFactory]\nhbase:001:0> unassign 'ycsb_test_table,user000000000977528,1761505625391.fc348be6823619672ce5920f3544b715.', true\nTook 1.8319 seconds\nhbase:002:0>"}
+2025-10-27 12:02:32,946 [INFO] Salt cmd.run output from 'stg-hdpsiddharth104.phonepe.nb6': /usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2401: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name
+/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2366: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name
+/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2461: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_OPTS: invalid variable name
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Fou...
+2025-10-27 12:02:32,947 [INFO] Successfully issued unassign command via Salt for region ycsb_test_table,user000000000977528,1761505625391.fc348be6823619672ce5920f3544b715.
+2025-10-27 12:02:33,052 [INFO] Attempting to unassign region ycsb_test_table,user000000002191011,1761505625391.74748aeff7c7e8463b1b5dac2ab213e7. via Salt/hbase shell (force=true)...
+2025-10-27 12:02:33,053 [DEBUG] Using cached Salt API token.
+2025-10-27 12:02:33,054 [INFO] Executing Salt command: tgt='stg-hdpsiddharth104.phonepe.nb6', fun='cmd.run', args='['echo "unassign \'ycsb_test_table,user000000002191011,1761505625391.74748aeff7c7e8463b1b5dac2ab213e7.\', true" | hbase shell -n']'
+2025-10-27 12:02:47,917 [DEBUG] Raw Salt command result: {'stg-hdpsiddharth104.phonepe.nb6': "/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2401: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name\n/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2366: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name\n/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2461: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_OPTS: invalid variable name\nSLF4J: Class path contains multiple SLF4J bindings.\nSLF4J: Found binding in [jar:file:/usr/odp/3.2.2.0-1/hbase/lib/client-facing-thirdparty/slf4j-reload4j-1.7.33.jar!/org/slf4j/impl/StaticLoggerBinder.class]\nSLF4J: Found binding in [jar:file:/usr/odp/3.2.2.0-1/hadoop/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]\nSLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.\nSLF4J: Actual binding is of type [org.slf4j.impl.Reload4jLoggerFactory]\nhbase:001:0> unassign 'ycsb_test_table,user000000002191011,1761505625391.74748aeff7c7e8463b1b5dac2ab213e7.', true\nTook 1.8902 seconds\nhbase:002:0>"}
+2025-10-27 12:02:47,918 [INFO] Salt cmd.run output from 'stg-hdpsiddharth104.phonepe.nb6': /usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2401: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name
+/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2366: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name
+/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2461: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_OPTS: invalid variable name
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Fou...
+2025-10-27 12:02:47,919 [INFO] Successfully issued unassign command via Salt for region ycsb_test_table,user000000002191011,1761505625391.74748aeff7c7e8463b1b5dac2ab213e7.
+2025-10-27 12:02:48,024 [INFO] Attempting to unassign region ycsb_test_table,user000000000573033,1761505625391.96b81ef8cb9bfde11b3be70e8869c03e. via Salt/hbase shell (force=true)...
+2025-10-27 12:02:48,024 [DEBUG] Using cached Salt API token.
+2025-10-27 12:02:48,025 [INFO] Executing Salt command: tgt='stg-hdpsiddharth104.phonepe.nb6', fun='cmd.run', args='['echo "unassign \'ycsb_test_table,user000000000573033,1761505625391.96b81ef8cb9bfde11b3be70e8869c03e.\', true" | hbase shell -n']'
+2025-10-27 12:03:02,425 [DEBUG] Raw Salt command result: {'stg-hdpsiddharth104.phonepe.nb6': "/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2401: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name\n/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2366: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name\n/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2461: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_OPTS: invalid variable name\nSLF4J: Class path contains multiple SLF4J bindings.\nSLF4J: Found binding in [jar:file:/usr/odp/3.2.2.0-1/hbase/lib/client-facing-thirdparty/slf4j-reload4j-1.7.33.jar!/org/slf4j/impl/StaticLoggerBinder.class]\nSLF4J: Found binding in [jar:file:/usr/odp/3.2.2.0-1/hadoop/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]\nSLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.\nSLF4J: Actual binding is of type [org.slf4j.impl.Reload4jLoggerFactory]\nhbase:001:0> unassign 'ycsb_test_table,user000000000573033,1761505625391.96b81ef8cb9bfde11b3be70e8869c03e.', true\nTook 1.8455 seconds\nhbase:002:0>"}
+2025-10-27 12:03:02,428 [INFO] Salt cmd.run output from 'stg-hdpsiddharth104.phonepe.nb6': /usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2401: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name
+/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2366: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name
+/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2461: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_OPTS: invalid variable name
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Fou...
+2025-10-27 12:03:02,429 [INFO] Successfully issued unassign command via Salt for region ycsb_test_table,user000000000573033,1761505625391.96b81ef8cb9bfde11b3be70e8869c03e.
+2025-10-27 12:03:02,534 [INFO] Attempting to unassign region ycsb_test_table,user000000001483146,1761505625391.07b7a7b3cb90fd88b8604ec64cec8c7f. via Salt/hbase shell (force=true)...
+2025-10-27 12:03:02,535 [DEBUG] Using cached Salt API token.
+2025-10-27 12:03:02,535 [INFO] Executing Salt command: tgt='stg-hdpsiddharth104.phonepe.nb6', fun='cmd.run', args='['echo "unassign \'ycsb_test_table,user000000001483146,1761505625391.07b7a7b3cb90fd88b8604ec64cec8c7f.\', true" | hbase shell -n']'
+2025-10-27 12:03:17,201 [DEBUG] Raw Salt command result: {'stg-hdpsiddharth104.phonepe.nb6': "/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2401: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name\n/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2366: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name\n/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2461: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_OPTS: invalid variable name\nSLF4J: Class path contains multiple SLF4J bindings.\nSLF4J: Found binding in [jar:file:/usr/odp/3.2.2.0-1/hbase/lib/client-facing-thirdparty/slf4j-reload4j-1.7.33.jar!/org/slf4j/impl/StaticLoggerBinder.class]\nSLF4J: Found binding in [jar:file:/usr/odp/3.2.2.0-1/hadoop/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]\nSLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.\nSLF4J: Actual binding is of type [org.slf4j.impl.Reload4jLoggerFactory]\nhbase:001:0> unassign 'ycsb_test_table,user000000001483146,1761505625391.07b7a7b3cb90fd88b8604ec64cec8c7f.', true\nTook 1.8187 seconds\nhbase:002:0>"}
+2025-10-27 12:03:17,203 [INFO] Salt cmd.run output from 'stg-hdpsiddharth104.phonepe.nb6': /usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2401: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name
+/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2366: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name
+/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2461: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_OPTS: invalid variable name
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Fou...
+2025-10-27 12:03:17,204 [INFO] Successfully issued unassign command via Salt for region ycsb_test_table,user000000001483146,1761505625391.07b7a7b3cb90fd88b8604ec64cec8c7f.
+2025-10-27 12:03:17,309 [INFO] Attempting to unassign region ycsb_test_table,user000000001988764,1761505625391.552d9f129e7f34338d73ef9b032ab16f. via Salt/hbase shell (force=true)...
+2025-10-27 12:03:17,309 [DEBUG] Using cached Salt API token.
+2025-10-27 12:03:17,309 [INFO] Executing Salt command: tgt='stg-hdpsiddharth104.phonepe.nb6', fun='cmd.run', args='['echo "unassign \'ycsb_test_table,user000000001988764,1761505625391.552d9f129e7f34338d73ef9b032ab16f.\', true" | hbase shell -n']'
+2025-10-27 12:03:24,532 [DEBUG] Checking balancer state via existence of ZK path: /hbase-unsecure/balancer
+2025-10-27 12:03:24,533 [DEBUG] Connecting Kazoo client to stg-hdpsiddharth102.phonepe.nb6:2181,stg-hdpsiddharth104.phonepe.nb6:2181,stg-hdpsiddharth105.phonepe.nb6:2181...
+2025-10-27 12:03:24,538 [INFO] Connecting to stg-hdpsiddharth104.phonepe.nb6(10.57.40.171):2181, use_ssl: False
+2025-10-27 12:03:24,560 [DEBUG] Sending request(xid=None): Connect(protocol_version=0, last_zxid_seen=0, time_out=10000, session_id=0, passwd=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00', read_only=None)
+2025-10-27 12:03:24,607 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-27 12:03:24,609 [DEBUG] Kazoo connected state: CONNECTED
+2025-10-27 12:03:24,610 [DEBUG] Sending request(xid=1): Exists(path='/hbase-unsecure/balancer', watcher=None)
+2025-10-27 12:03:24,629 [DEBUG] Received response(xid=1): ZnodeStat(czxid=12884977743, mzxid=12884978511, ctime=1761534436856, mtime=1761546719330, version=13, cversion=0, aversion=0, ephemeralOwner=0, dataLength=31, numChildren=0, pzxid=12884977743)
+2025-10-27 12:03:24,629 [DEBUG] Balancer znode '/hbase-unsecure/balancer' exists, assuming balancer is ENABLED.
+2025-10-27 12:03:24,629 [DEBUG] Sending request(xid=2): Close()
+2025-10-27 12:03:24,630 [INFO] Closing connection to stg-hdpsiddharth104.phonepe.nb6:2181
+2025-10-27 12:03:24,630 [INFO] Zookeeper session closed, state: CLOSED

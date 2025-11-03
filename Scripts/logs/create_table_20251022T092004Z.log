@@ -1,0 +1,8 @@
+2025-10-22 14:50:04,419 [INFO] AUDIT: {"timestamp_utc": "2025-10-22T09:20:04.419797Z", "user": "siddharth5.intern", "action": "create_table_request", "details": {"table": "user_data", "cfs": ["personal", "details", "activity"]}}
+2025-10-22 14:50:04,420 [INFO] Running pre-checks...
+2025-10-22 14:50:04,480 [INFO] ZooKeeper check: {'stg-hdpsiddharth102.phonepe.nb6': {'ok': True, 'latency_ms': 26.68, 'error': None}, 'stg-hdpsiddharth105.phonepe.nb6': {'ok': True, 'latency_ms': 31.96, 'error': None}, 'stg-hdpsiddharth104.phonepe.nb6': {'ok': True, 'latency_ms': 34.7, 'error': None}, 'kazoo_connect': True}
+2025-10-22 14:50:04,539 [INFO] Attempting to create table user_data with CFs ['personal', 'details', 'activity']
+2025-10-22 14:50:05,724 [INFO] Create table command issued via Thrift.
+2025-10-22 14:50:07,773 [INFO] Table user_data successfully created.
+2025-10-22 14:50:07,774 [INFO] AUDIT: {"timestamp_utc": "2025-10-22T09:20:07.774225Z", "user": "siddharth5.intern", "action": "create_table_complete", "details": {"table": "user_data", "success": true}}
+2025-10-22 14:50:07,778 [INFO] Done.

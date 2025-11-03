@@ -1,0 +1,99 @@
+2025-10-23 15:07:47,722 [INFO] AUDIT: {"timestamp_utc": "2025-10-23T09:37:47.722770Z", "user": "siddharth5.intern", "action": "alter_table_request", "details": {"table": "user_data_test2", "alter_cmd": "NAME => 'cf_salt_test'"}}
+2025-10-23 15:07:47,730 [INFO] Connecting to stg-hdpsiddharth102.phonepe.nb6(10.57.40.169):2181, use_ssl: False
+2025-10-23 15:07:47,775 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-23 15:07:47,824 [INFO] Closing connection to stg-hdpsiddharth102.phonepe.nb6:2181
+2025-10-23 15:07:47,824 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-23 15:07:47,824 [INFO] ZK check result: OK=True, Details={'state': 'CONNECTED', 'server_version': (3, 5, 10)}
+2025-10-23 15:07:47,824 [INFO] Checking if table 'user_data_test2' exists...
+2025-10-23 15:07:47,932 [INFO] Table 'user_data_test2' exists.
+2025-10-23 15:07:47,932 [INFO] Attempting to alter table 'user_data_test2' with command part: NAME => 'cf_salt_test' using Salt API...
+2025-10-23 15:07:47,932 [INFO] Disabling table user_data_test2 via Salt on stg-hdpsiddharth104.phonepe.nb6...
+2025-10-23 15:07:47,932 [INFO] Requesting new Salt API token from https://stg-hdpsiddharth103.phonepe.nb6:8000 for user 'saltapiuser'...
+2025-10-23 15:07:48,223 [INFO] Successfully obtained Salt API token.
+2025-10-23 15:07:48,224 [INFO] Executing Salt command: tgt='stg-hdpsiddharth104.phonepe.nb6', fun='cmd.run', args='['echo "disable \'user_data_test2\'" | hbase shell -n']'
+2025-10-23 15:07:48,320 [ERROR] Salt API command execution failed: 400 Client Error: Bad Request for url: https://stg-hdpsiddharth103.phonepe.nb6:8000/
+2025-10-23 15:07:48,320 [ERROR] Salt API Response: <!DOCTYPE html PUBLIC
+"-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+    <title>400 Bad Request</title>
+    <style type="text/css">
+    #powered_by {
+        margin-top: 20px;
+        border-top: 2px solid black;
+        font-style: italic;
+    }
+
+    #traceback {
+        color: red;
+    }
+    </style>
+</head>
+    <body>
+        <h2>400 Bad Request</h2>
+        <p>Client disabled: 'local'. Add to 'netapi_enable_clients' master config option to enable.</p>
+        <pre id="traceback"></pre>
+    <div id="powered_by">
+      <span>
+        Powered by <a href="http://www.cherrypy.org">CherryPy 18.6.1</a>
+      </span>
+    </div>
+    </body>
+</html>
+
+2025-10-23 15:07:48,320 [ERROR] Disable or Alter command failed via Salt: Could not execute command via Salt API at https://stg-hdpsiddharth103.phonepe.nb6:8000
+Traceback (most recent call last):
+  File "/Users/siddharth5.intern/Desktop/Projects/Scripts/helpers.py", line 394, in run_salt_command
+    response.raise_for_status()
+  File "/Users/siddharth5.intern/Desktop/Projects/Scripts/venv/lib/python3.9/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://stg-hdpsiddharth103.phonepe.nb6:8000/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/siddharth5.intern/Desktop/Projects/Scripts/helpers.py", line 464, in alter_table_salt
+    result_disable = run_salt_command(cfg, target_minion, 'cmd.run', [disable_cmd_salt], logger, timeout=120)
+  File "/Users/siddharth5.intern/Desktop/Projects/Scripts/helpers.py", line 430, in run_salt_command
+    raise ConnectionError(f"Could not execute command via Salt API at {salt_url}")
+ConnectionError: Could not execute command via Salt API at https://stg-hdpsiddharth103.phonepe.nb6:8000
+2025-10-23 15:07:48,323 [WARNING] Attempting to re-enable table user_data_test2 after alter failure...
+2025-10-23 15:07:48,323 [INFO] Executing Salt command: tgt='stg-hdpsiddharth104.phonepe.nb6', fun='cmd.run', args='['echo "enable \'user_data_test2\'" | hbase shell -n']'
+2025-10-23 15:07:48,416 [ERROR] Salt API command execution failed: 400 Client Error: Bad Request for url: https://stg-hdpsiddharth103.phonepe.nb6:8000/
+2025-10-23 15:07:48,417 [ERROR] Salt API Response: <!DOCTYPE html PUBLIC
+"-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+    <title>400 Bad Request</title>
+    <style type="text/css">
+    #powered_by {
+        margin-top: 20px;
+        border-top: 2px solid black;
+        font-style: italic;
+    }
+
+    #traceback {
+        color: red;
+    }
+    </style>
+</head>
+    <body>
+        <h2>400 Bad Request</h2>
+        <p>Client disabled: 'local'. Add to 'netapi_enable_clients' master config option to enable.</p>
+        <pre id="traceback"></pre>
+    <div id="powered_by">
+      <span>
+        Powered by <a href="http://www.cherrypy.org">CherryPy 18.6.1</a>
+      </span>
+    </div>
+    </body>
+</html>
+
+2025-10-23 15:07:48,417 [CRITICAL] CRITICAL: Failed to re-enable table user_data_test2 via Salt after alter failed. MANUAL INTERVENTION REQUIRED. Error: Could not execute command via Salt API at https://stg-hdpsiddharth103.phonepe.nb6:8000
+2025-10-23 15:07:48,417 [ERROR] Alter operation failed. See logs for details.
+2025-10-23 15:07:48,417 [INFO] AUDIT: {"timestamp_utc": "2025-10-23T09:37:48.417959Z", "user": "siddharth5.intern", "action": "alter_table_failed", "details": {"table": "user_data_test2", "alter_cmd": "NAME => 'cf_salt_test'", "error": "Could not execute command via Salt API at https://stg-hdpsiddharth103.phonepe.nb6:8000"}}
+2025-10-23 15:07:48,418 [INFO] Report written to logs/report_alter_table_failed_1761212268.json

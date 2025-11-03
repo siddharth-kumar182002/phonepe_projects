@@ -1,0 +1,38 @@
+2025-10-23 11:09:53,165 [INFO] AUDIT: {"timestamp_utc": "2025-10-23T05:39:53.165455Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6"}}
+2025-10-23 11:09:53,165 [INFO] Performing pre-decommission checks...
+2025-10-23 11:09:53,266 [INFO] Connecting to stg-hdpsiddharth105.phonepe.nb6(10.57.40.172):2181, use_ssl: False
+2025-10-23 11:09:53,316 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-23 11:09:53,362 [INFO] Closing connection to stg-hdpsiddharth105.phonepe.nb6:2181
+2025-10-23 11:09:53,362 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-23 11:09:53,362 [INFO] ZooKeeper check result: OK=True, Details={'state': 'CONNECTED', 'server_version': (3, 5, 10)}
+2025-10-23 11:09:53,367 [INFO] Connecting to stg-hdpsiddharth104.phonepe.nb6(10.57.40.171):2181, use_ssl: False
+2025-10-23 11:09:53,413 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-23 11:09:53,456 [INFO] Found potential meta-region-server at b'\xff\x00\x00\x00\x14master:16000\xf7=\xe1\xb6\x13\xdb\xf2~PBUF\n+\n\x1fstg-hdpsiddharth104.phonepe.nb6\x10\x94}\x18\xb7\xb5\xd4\xf2\x993\x10\x00\x18\x03' from ZK (fallback search).
+2025-10-23 11:09:53,456 [INFO] Closing connection to stg-hdpsiddharth104.phonepe.nb6:2181
+2025-10-23 11:09:53,456 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-23 11:09:53,456 [INFO] hbase:meta region is hosted on: b'\xff\x00\x00\x00\x14master:16000\xf7=\xe1\xb6\x13\xdb\xf2~PBUF\n+\n\x1fstg-hdpsiddharth104.phonepe.nb6\x10\x94}\x18\xb7\xb5\xd4\xf2\x993\x10\x00\x18\x03'
+2025-10-23 11:09:53,456 [INFO] Target server stg-hdpsiddharth104.phonepe.nb6 does not host hbase:meta. Safe to proceed.
+2025-10-23 11:09:53,456 [INFO] Checking for regions hosted on stg-hdpsiddharth104.phonepe.nb6 using HappyBase meta scan...
+2025-10-23 11:09:53,846 [INFO] No user regions found hosted on server stg-hdpsiddharth104.phonepe.nb6. Proceeding directly to stop the component.
+2025-10-23 11:09:53,846 [INFO] Proceeding to stop the HBase RegionServer component on stg-hdpsiddharth104.phonepe.nb6 via Ambari...
+2025-10-23 11:09:53,992 [INFO] Ambari action requested to stop HBASE_REGIONSERVER on stg-hdpsiddharth104.phonepe.nb6.
+2025-10-23 11:09:53,992 [INFO] Allowing some time for Ambari to process the stop command...
+2025-10-23 11:10:03,997 [INFO] Performing post-decommission checks...
+2025-10-23 11:10:03,998 [WARNING] Could not confirm host removal from ZK /rs list after 60s: name 'retry' is not defined
+2025-10-23 11:10:03,999 [INFO] Decommission flow completed for stg-hdpsiddharth104.phonepe.nb6 in 10.83 seconds.
+2025-10-23 11:10:03,999 [INFO] AUDIT: {"timestamp_utc": "2025-10-23T05:40:03.999315Z", "user": "siddharth5.intern", "action": "decommission_complete", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6", "duration_seconds": 10.833111047744751}}
+2025-10-23 11:10:04,002 [ERROR] Decommission script failed after 10.84 seconds: name 'logger' is not defined
+Traceback (most recent call last):
+  File "/Users/siddharth5.intern/Desktop/Projects/Scripts/helpers.py", line 342, in write_report
+    logger.info(f"Report written to {path}")
+NameError: name 'logger' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/siddharth5.intern/Desktop/Projects/Scripts/decommission_rs.py", line 193, in main
+    report_path = write_report(cfg, "decommission", {"host": args.host, "status": "SUCCESS", "duration_seconds": elapsed_time})
+  File "/Users/siddharth5.intern/Desktop/Projects/Scripts/helpers.py", line 345, in write_report
+    logger.error(f"Failed to write report '{name}': {e}")
+NameError: name 'logger' is not defined
+2025-10-23 11:10:04,006 [INFO] AUDIT: {"timestamp_utc": "2025-10-23T05:40:04.006573Z", "user": "siddharth5.intern", "action": "decommission_failed", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6", "duration_seconds": 10.836700201034546, "error": "name 'logger' is not defined"}}

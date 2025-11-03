@@ -1,0 +1,5 @@
+{
+  "table": "user_data_test2",
+  "alter_cmd": "NAME => 'cf_salt_test'",
+  "result": "SUCCESS"
+}

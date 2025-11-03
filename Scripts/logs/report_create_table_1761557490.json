@@ -1,0 +1,8 @@
+{
+  "table": "new_logs35",
+  "cfs": [
+    "data2",
+    "events1"
+  ],
+  "result": "SUCCESS"
+}

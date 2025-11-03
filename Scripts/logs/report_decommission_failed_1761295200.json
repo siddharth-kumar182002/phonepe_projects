@@ -1,0 +1,5 @@
+{
+  "host": "stg-hdpsiddharth105.phonepe.nb6",
+  "duration_seconds": 0.19236421585083008,
+  "error": "HBase Master is not healthy (No HBase Master components found via Ambari.)."
+}

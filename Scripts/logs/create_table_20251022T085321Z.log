@@ -1,0 +1,4 @@
+2025-10-22 14:23:21,969 [INFO] AUDIT: {"timestamp_utc": "2025-10-22T08:53:21.968988Z", "user": "siddharth5.intern", "action": "create_table_request", "details": {"table": "test_auto", "cfs": ["cf1", "cf2"]}}
+2025-10-22 14:23:21,969 [INFO] Running pre-checks...
+2025-10-22 14:23:22,224 [INFO] ZooKeeper check: {'stg-hdpsiddharth102.phonepe.nb6': {'ok': False, 'latency_ms': None, 'error': '[Errno 8] nodename nor servname provided, or not known'}, 'stg-hdpsiddharth105.phonepe.nb6': {'ok': False, 'latency_ms': None, 'error': '[Errno 8] nodename nor servname provided, or not known'}, 'stg-hdpsiddharth104.phonepe.nb6': {'ok': False, 'latency_ms': None, 'error': '[Errno 8] nodename nor servname provided, or not known'}, 'kazoo_connect': True}
+2025-10-22 14:23:22,224 [ERROR] Aborting: ZooKeeper is not healthy.

@@ -1,0 +1,14 @@
+2025-10-23 11:21:32,880 [INFO] AUDIT: {"timestamp_utc": "2025-10-23T05:51:32.880495Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6"}}
+2025-10-23 11:21:32,880 [INFO] Performing pre-decommission checks...
+2025-10-23 11:21:32,886 [INFO] Connecting to stg-hdpsiddharth102.phonepe.nb6(10.57.40.169):2181, use_ssl: False
+2025-10-23 11:21:32,941 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-23 11:21:32,991 [INFO] Closing connection to stg-hdpsiddharth102.phonepe.nb6:2181
+2025-10-23 11:21:32,991 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-23 11:21:32,991 [INFO] ZooKeeper check result: OK=True, Details={'state': 'CONNECTED', 'server_version': (3, 5, 10)}
+2025-10-23 11:21:32,994 [INFO] Connecting to stg-hdpsiddharth105.phonepe.nb6(10.57.40.172):2181, use_ssl: False
+2025-10-23 11:21:33,054 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-23 11:21:33,100 [INFO] Found meta-region-server at stg-hdpsiddharth104.phonepe.nb6 from ZK (regex match).
+2025-10-23 11:21:33,100 [INFO] Closing connection to stg-hdpsiddharth105.phonepe.nb6:2181
+2025-10-23 11:21:33,100 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-23 11:21:33,100 [INFO] hbase:meta region is hosted on: stg-hdpsiddharth104.phonepe.nb6
+2025-10-23 11:21:33,101 [ERROR] CRITICAL: hbase:meta is hosted on the target server (stg-hdpsiddharth104.phonepe.nb6). Cannot decommission automatically. Manual intervention required.

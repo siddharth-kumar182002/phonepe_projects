@@ -1,0 +1,7 @@
+requests>=2.31.0
+PyYAML>=6.0
+happybase>=1.2.0
+kazoo>=2.8.0
+thrift>=0.16.0
+# Install hbase-thrift-py3 directly from GitHub
+git+https://github.com/akimimi/hbase-thrift-python3.git#egg=hbase-thrift-py3

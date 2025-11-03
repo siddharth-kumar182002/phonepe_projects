@@ -1,0 +1,30 @@
+2025-10-23 15:23:36,806 [INFO] AUDIT: {"timestamp_utc": "2025-10-23T09:53:36.806684Z", "user": "siddharth5.intern", "action": "alter_table_request", "details": {"table": "user_data_test2", "alter_cmd": "NAME => 'cf_salt_test'"}}
+2025-10-23 15:23:36,814 [INFO] Connecting to stg-hdpsiddharth102.phonepe.nb6(10.57.40.169):2181, use_ssl: False
+2025-10-23 15:23:36,864 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-23 15:23:36,909 [INFO] Closing connection to stg-hdpsiddharth102.phonepe.nb6:2181
+2025-10-23 15:23:36,910 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-23 15:23:36,910 [INFO] ZK check result: OK=True, Details={'state': 'CONNECTED', 'server_version': (3, 5, 10)}
+2025-10-23 15:23:36,910 [INFO] Checking if table 'user_data_test2' exists...
+2025-10-23 15:23:37,007 [INFO] Table 'user_data_test2' exists.
+2025-10-23 15:23:37,007 [INFO] Attempting to alter table 'user_data_test2' with command part: NAME => 'cf_salt_test' using Salt API...
+2025-10-23 15:23:37,007 [INFO] Disabling table user_data_test2 via Salt on stg-hdpsiddharth104.phonepe.nb6...
+2025-10-23 15:23:37,007 [INFO] Requesting new Salt API token from https://stg-hdpsiddharth103.phonepe.nb6:8000 for user 'saltapiuser'...
+2025-10-23 15:23:37,306 [INFO] Successfully obtained Salt API token.
+2025-10-23 15:23:37,310 [INFO] Executing Salt command: tgt='stg-hdpsiddharth104.phonepe.nb6', fun='cmd.run', args='['echo "disable \'user_data_test2\'" | hbase shell -n']'
+2025-10-23 15:23:51,967 [INFO] Salt cmd.run output from 'stg-hdpsiddharth104.phonepe.nb6': /usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2401: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name
+/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh:...
+2025-10-23 15:23:51,969 [INFO] Disable command sent successfully.
+2025-10-23 15:23:51,969 [INFO] Altering table user_data_test2 with 'NAME => 'cf_salt_test'' via Salt...
+2025-10-23 15:23:51,969 [INFO] Executing Salt command: tgt='stg-hdpsiddharth104.phonepe.nb6', fun='cmd.run', args='['echo "alter \'user_data_test2\', NAME => \'cf_salt_test\'" | hbase shell -n']'
+2025-10-23 15:24:07,148 [INFO] Salt cmd.run output from 'stg-hdpsiddharth104.phonepe.nb6': /usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2401: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name
+/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh:...
+2025-10-23 15:24:07,151 [INFO] Alter command sent successfully.
+2025-10-23 15:24:07,151 [INFO] Enabling table user_data_test2 via Salt...
+2025-10-23 15:24:07,151 [INFO] Executing Salt command: tgt='stg-hdpsiddharth104.phonepe.nb6', fun='cmd.run', args='['echo "enable \'user_data_test2\'" | hbase shell -n']'
+2025-10-23 15:24:21,609 [INFO] Salt cmd.run output from 'stg-hdpsiddharth104.phonepe.nb6': /usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2401: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name
+/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh:...
+2025-10-23 15:24:21,612 [INFO] Enable command sent successfully.
+2025-10-23 15:24:21,613 [INFO] Alter command via Salt API completed successfully.
+2025-10-23 15:24:21,613 [INFO] AUDIT: {"timestamp_utc": "2025-10-23T09:54:21.613366Z", "user": "siddharth5.intern", "action": "alter_table_complete", "details": {"table": "user_data_test2", "alter_cmd": "NAME => 'cf_salt_test'"}}
+2025-10-23 15:24:21,616 [INFO] Report written to logs/report_alter_table_1761213261.json
+2025-10-23 15:24:21,616 [INFO] Alter finished.

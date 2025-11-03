@@ -1,0 +1,158 @@
+{"timestamp_utc": "2025-10-22T08:53:21.968988Z", "user": "siddharth5.intern", "action": "create_table_request", "details": {"table": "test_auto", "cfs": ["cf1", "cf2"]}}
+{"timestamp_utc": "2025-10-22T08:53:30.937485Z", "user": "siddharth5.intern", "action": "create_table_request", "details": {"table": "test_auto", "cfs": ["cf1", "cf2"]}}
+{"timestamp_utc": "2025-10-22T08:53:34.805986Z", "user": "siddharth5.intern", "action": "create_table_complete", "details": {"table": "test_auto", "success": true}}
+{"timestamp_utc": "2025-10-22T08:54:56.223737Z", "user": "siddharth5.intern", "action": "alter_table_request", "details": {"table": "test_auto", "alter_cmd": "NAME => 'cf1', VERSIONS => 3"}}
+{"timestamp_utc": "2025-10-22T08:55:05.337715Z", "user": "siddharth5.intern", "action": "alter_table_request", "details": {"table": "test_auto", "alter_cmd": "NAME => 'cf1', VERSIONS => 3"}}
+{"timestamp_utc": "2025-10-22T08:55:39.623433Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-22T08:56:07.812011Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-22T09:05:20.903405Z", "user": "siddharth5.intern", "action": "create_table_request", "details": {"table": "user_data", "cfs": ["personal", "details", "activity"]}}
+{"timestamp_utc": "2025-10-22T09:05:38.534735Z", "user": "siddharth5.intern", "action": "create_table_request", "details": {"table": "user_data", "cfs": ["personal", "details", "activity"]}}
+{"timestamp_utc": "2025-10-22T09:08:35.449801Z", "user": "siddharth5.intern", "action": "create_table_request", "details": {"table": "user_data", "cfs": ["personal", "details", "activity"]}}
+{"timestamp_utc": "2025-10-22T09:08:38.350343Z", "user": "siddharth5.intern", "action": "create_table_request", "details": {"table": "user_data", "cfs": ["personal", "details", "activity"]}}
+{"timestamp_utc": "2025-10-22T09:08:47.003636Z", "user": "siddharth5.intern", "action": "create_table_request", "details": {"table": "user_data", "cfs": ["personal", "details", "activity"]}}
+{"timestamp_utc": "2025-10-22T09:20:04.419797Z", "user": "siddharth5.intern", "action": "create_table_request", "details": {"table": "user_data", "cfs": ["personal", "details", "activity"]}}
+{"timestamp_utc": "2025-10-22T09:20:07.774225Z", "user": "siddharth5.intern", "action": "create_table_complete", "details": {"table": "user_data", "success": true}}
+{"timestamp_utc": "2025-10-22T09:22:55.167919Z", "user": "siddharth5.intern", "action": "alter_table_request", "details": {"table": "user_data", "alter_cmd": "add 'new_cf'"}}
+{"timestamp_utc": "2025-10-22T09:26:01.531759Z", "user": "siddharth5.intern", "action": "alter_table_request", "details": {"table": "user_data", "alter_cmd": "add 'new_cf'"}}
+{"timestamp_utc": "2025-10-22T10:25:09.900936Z", "user": "siddharth5.intern", "action": "create_table_request", "details": {"table": "user_data_test2", "cfs": ["cf1", "cf2"]}}
+{"timestamp_utc": "2025-10-22T10:25:35.269527Z", "user": "siddharth5.intern", "action": "create_table_request", "details": {"table": "user_data_test2", "cfs": ["cf1", "cf2"]}}
+{"timestamp_utc": "2025-10-22T10:25:37.276481Z", "user": "siddharth5.intern", "action": "create_table_request", "details": {"table": "user_data_test2", "cfs": ["cf1", "cf2"]}}
+{"timestamp_utc": "2025-10-22T10:27:25.679581Z", "user": "siddharth5.intern", "action": "create_table_request", "details": {"table": "user_data_test2", "cfs": ["cf1", "cf2"]}}
+{"timestamp_utc": "2025-10-22T10:27:29.093741Z", "user": "siddharth5.intern", "action": "create_table_complete", "details": {"table": "user_data_test2", "success": true}}
+{"timestamp_utc": "2025-10-22T10:28:55.097429Z", "user": "siddharth5.intern", "action": "alter_table_request", "details": {"table": "user_data_test2", "cf_spec": {"name": "cf_rest"}}}
+{"timestamp_utc": "2025-10-22T10:31:14.291156Z", "user": "siddharth5.intern", "action": "alter_table_request", "details": {"table": "user_data_test2", "cf_spec": {"name": "cf_rest"}}}
+{"timestamp_utc": "2025-10-23T05:39:53.165455Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-23T05:40:03.999315Z", "user": "siddharth5.intern", "action": "decommission_complete", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6", "duration_seconds": 10.833111047744751}}
+{"timestamp_utc": "2025-10-23T05:40:04.006573Z", "user": "siddharth5.intern", "action": "decommission_failed", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6", "duration_seconds": 10.836700201034546, "error": "name 'logger' is not defined"}}
+{"timestamp_utc": "2025-10-23T05:42:31.374319Z", "user": "siddharth5.intern", "action": "recommission_request", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-23T05:42:46.836406Z", "user": "siddharth5.intern", "action": "recommission_complete", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6", "duration_seconds": 15.46132516860962}}
+{"timestamp_utc": "2025-10-23T05:42:46.844659Z", "user": "siddharth5.intern", "action": "recommission_failed", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6", "duration_seconds": 15.463921070098877, "error": "name 'logger' is not defined"}}
+{"timestamp_utc": "2025-10-23T05:48:34.206370Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-23T05:48:34.410196Z", "user": "siddharth5.intern", "action": "decommission_failed", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6", "duration_seconds": 0.20274806022644043, "error": "Could not parse server name from meta znode data: b'\\xff\\x00\\x00\\x00\\x14master:160001\\xefP\\x9a\\x1d\\xa0%\\x18PBUF\\n+\\n\\x1fstg-hdpsiddharth104.phonepe.nb6\\x10\\x94}\\x18\\xdc\\xd2\\xdc\\xfc\\xa03\\x10\\x00\\x18\\x03'"}}
+{"timestamp_utc": "2025-10-23T05:49:09.985893Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-23T05:49:10.193034Z", "user": "siddharth5.intern", "action": "decommission_failed", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6", "duration_seconds": 0.20590591430664062, "error": "Could not parse server name from meta znode data: b'\\xff\\x00\\x00\\x00\\x14master:160001\\xefP\\x9a\\x1d\\xa0%\\x18PBUF\\n+\\n\\x1fstg-hdpsiddharth104.phonepe.nb6\\x10\\x94}\\x18\\xdc\\xd2\\xdc\\xfc\\xa03\\x10\\x00\\x18\\x03'"}}
+{"timestamp_utc": "2025-10-23T05:51:03.291454Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-23T05:51:03.583310Z", "user": "siddharth5.intern", "action": "decommission_failed", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6", "duration_seconds": 0.2909371852874756, "error": "name 're' is not defined"}}
+{"timestamp_utc": "2025-10-23T05:51:32.880495Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-23T05:52:05.115324Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth102.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-23T05:52:15.839745Z", "user": "siddharth5.intern", "action": "decommission_complete", "details": {"host": "stg-hdpsiddharth102.phonepe.nb6", "duration_seconds": 10.723796844482422}}
+{"timestamp_utc": "2025-10-23T05:52:31.403246Z", "user": "siddharth5.intern", "action": "recommission_request", "details": {"host": "stg-hdpsiddharth102.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-23T05:52:46.837505Z", "user": "siddharth5.intern", "action": "recommission_complete", "details": {"host": "stg-hdpsiddharth102.phonepe.nb6", "duration_seconds": 15.433786869049072}}
+{"timestamp_utc": "2025-10-23T06:11:12.783349Z", "user": "siddharth5.intern", "action": "recommission_request", "details": {"host": "stg-hdpsiddharth102.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-23T06:11:18.077408Z", "user": "siddharth5.intern", "action": "recommission_complete", "details": {"host": "stg-hdpsiddharth102.phonepe.nb6", "duration_seconds": 5.2933690547943115}}
+{"timestamp_utc": "2025-10-23T06:11:30.895222Z", "user": "siddharth5.intern", "action": "recommission_request", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-23T06:11:46.328608Z", "user": "siddharth5.intern", "action": "recommission_complete", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6", "duration_seconds": 15.432782649993896}}
+{"timestamp_utc": "2025-10-23T09:37:47.722770Z", "user": "siddharth5.intern", "action": "alter_table_request", "details": {"table": "user_data_test2", "alter_cmd": "NAME => 'cf_salt_test'"}}
+{"timestamp_utc": "2025-10-23T09:37:48.417959Z", "user": "siddharth5.intern", "action": "alter_table_failed", "details": {"table": "user_data_test2", "alter_cmd": "NAME => 'cf_salt_test'", "error": "Could not execute command via Salt API at https://stg-hdpsiddharth103.phonepe.nb6:8000"}}
+{"timestamp_utc": "2025-10-23T09:40:35.325770Z", "user": "siddharth5.intern", "action": "alter_table_request", "details": {"table": "user_data_test2", "alter_cmd": "NAME => 'cf_salt_test'"}}
+{"timestamp_utc": "2025-10-23T09:41:06.721370Z", "user": "siddharth5.intern", "action": "alter_table_failed", "details": {"table": "user_data_test2", "alter_cmd": "NAME => 'cf_salt_test'", "error": "'bool' object is not subscriptable"}}
+{"timestamp_utc": "2025-10-23T09:53:36.806684Z", "user": "siddharth5.intern", "action": "alter_table_request", "details": {"table": "user_data_test2", "alter_cmd": "NAME => 'cf_salt_test'"}}
+{"timestamp_utc": "2025-10-23T09:54:21.613366Z", "user": "siddharth5.intern", "action": "alter_table_complete", "details": {"table": "user_data_test2", "alter_cmd": "NAME => 'cf_salt_test'"}}
+{"timestamp_utc": "2025-10-24T08:14:51.020760Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-24T08:14:58.023413Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth102.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-24T08:15:08.733808Z", "user": "siddharth5.intern", "action": "decommission_complete", "details": {"host": "stg-hdpsiddharth102.phonepe.nb6", "duration_seconds": 10.710004329681396}}
+{"timestamp_utc": "2025-10-24T08:15:33.334124Z", "user": "siddharth5.intern", "action": "recommission_request", "details": {"host": "stg-hdpsiddharth102.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-24T08:15:48.923107Z", "user": "siddharth5.intern", "action": "recommission_complete", "details": {"host": "stg-hdpsiddharth102.phonepe.nb6", "duration_seconds": 15.58826494216919}}
+{"timestamp_utc": "2025-10-24T08:37:17.585497Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-24T08:37:17.841436Z", "user": "siddharth5.intern", "action": "decommission_failed", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6", "duration_seconds": 0.2546560764312744, "error": "HDFS is not healthy (Could not find any NameNode host via Ambari.)."}}
+{"timestamp_utc": "2025-10-24T08:39:59.996093Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-24T08:40:00.189698Z", "user": "siddharth5.intern", "action": "decommission_failed", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6", "duration_seconds": 0.19236421585083008, "error": "HBase Master is not healthy (No HBase Master components found via Ambari.)."}}
+{"timestamp_utc": "2025-10-24T08:43:57.591151Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-24T08:43:57.767905Z", "user": "siddharth5.intern", "action": "decommission_failed", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6", "duration_seconds": 0.17554092407226562, "error": "HBase Master is not healthy (No HBase Master components found via Ambari.)."}}
+{"timestamp_utc": "2025-10-24T08:46:25.243663Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-24T08:46:25.429278Z", "user": "siddharth5.intern", "action": "decommission_failed", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6", "duration_seconds": 0.1845848560333252, "error": "HBase Master is not healthy (No HBase Master components found via Ambari.)."}}
+{"timestamp_utc": "2025-10-24T08:51:26.340391Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-24T08:51:26.505999Z", "user": "siddharth5.intern", "action": "decommission_failed", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6", "duration_seconds": 0.16458797454833984, "error": "HBase Master is not healthy (No HBase Master components found via Ambari.)."}}
+{"timestamp_utc": "2025-10-24T09:09:39.600374Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-24T09:09:50.803418Z", "user": "siddharth5.intern", "action": "decommission_complete", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6", "duration_seconds": 11.202459335327148}}
+{"timestamp_utc": "2025-10-24T09:10:49.035616Z", "user": "siddharth5.intern", "action": "recommission_request", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-24T09:11:04.516980Z", "user": "siddharth5.intern", "action": "recommission_complete", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6", "duration_seconds": 15.480622053146362}}
+{"timestamp_utc": "2025-10-24T10:44:24.752660Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-24T10:44:59.394219Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-24T10:44:59.805799Z", "user": "siddharth5.intern", "action": "decommission_failed", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6", "duration_seconds": 0.4095742702484131, "error": "CRITICAL: Target server stg-hdpsiddharth105.phonepe.nb6 hosts hbase:meta. Manual move required first."}}
+{"timestamp_utc": "2025-10-24T10:45:10.361241Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-24T10:45:21.718774Z", "user": "siddharth5.intern", "action": "decommission_complete", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6", "duration_seconds": 11.357110023498535}}
+{"timestamp_utc": "2025-10-24T10:45:38.302579Z", "user": "siddharth5.intern", "action": "recommission_request", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-24T10:45:53.828224Z", "user": "siddharth5.intern", "action": "recommission_complete", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6", "duration_seconds": 15.525285005569458}}
+{"timestamp_utc": "2025-10-24T10:46:08.692716Z", "user": "siddharth5.intern", "action": "recommission_request", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-24T10:46:09.109675Z", "user": "siddharth5.intern", "action": "recommission_complete", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6", "duration_seconds": 0.4166250228881836, "notes": "Server already started/recommissioned"}}
+{"timestamp_utc": "2025-10-24T10:46:15.691693Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-24T10:46:26.890232Z", "user": "siddharth5.intern", "action": "decommission_complete", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6", "duration_seconds": 11.197964191436768}}
+{"timestamp_utc": "2025-10-24T10:46:29.188401Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-24T10:46:29.655482Z", "user": "siddharth5.intern", "action": "decommission_complete", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6", "duration_seconds": 0.4666748046875, "notes": "Server already stopped/decommissioned"}}
+{"timestamp_utc": "2025-10-24T10:46:31.545731Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-24T10:46:32.059458Z", "user": "siddharth5.intern", "action": "decommission_complete", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6", "duration_seconds": 0.5133018493652344, "notes": "Server already stopped/decommissioned"}}
+{"timestamp_utc": "2025-10-24T10:46:34.915660Z", "user": "siddharth5.intern", "action": "recommission_request", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-24T10:46:50.438391Z", "user": "siddharth5.intern", "action": "recommission_complete", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6", "duration_seconds": 15.522348165512085}}
+{"timestamp_utc": "2025-10-26T17:57:45.088045Z", "user": "siddharth5.intern", "action": "create_table_request", "details": {"table": "new_logs", "cfs": ["data", "events"]}}
+{"timestamp_utc": "2025-10-26T17:57:50.267340Z", "user": "siddharth5.intern", "action": "create_table_complete", "details": {"table": "new_logs", "cfs": ["data", "events"], "success": true}}
+{"timestamp_utc": "2025-10-26T18:01:37.202556Z", "user": "siddharth5.intern", "action": "alter_table_request", "details": {"table": "new_logs", "alter_cmd": "NAME => 'audit'"}}
+{"timestamp_utc": "2025-10-26T18:02:05.116010Z", "user": "siddharth5.intern", "action": "alter_table_failed", "details": {"table": "new_logs", "alter_cmd": "NAME => 'audit'", "error": "Salt command failed on minion 'stg-hdpsiddharth104.phonepe.nb6'. Output indicates error."}}
+{"timestamp_utc": "2025-10-26T18:06:03.508246Z", "user": "siddharth5.intern", "action": "alter_table_request", "details": {"table": "new_logs", "alter_cmd": "NAME => 'audit'"}}
+{"timestamp_utc": "2025-10-26T18:06:49.018284Z", "user": "siddharth5.intern", "action": "alter_table_complete", "details": {"table": "new_logs", "alter_cmd": "NAME => 'audit'"}}
+{"timestamp_utc": "2025-10-26T18:08:25.524245Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth05.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-26T18:08:26.672841Z", "user": "siddharth5.intern", "action": "decommission_complete", "details": {"host": "stg-hdpsiddharth05.phonepe.nb6", "duration_seconds": 1.1478650569915771, "notes": "Server already stopped/decommissioned"}}
+{"timestamp_utc": "2025-10-26T18:09:07.902299Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth05.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-26T18:09:08.955955Z", "user": "siddharth5.intern", "action": "decommission_complete", "details": {"host": "stg-hdpsiddharth05.phonepe.nb6", "duration_seconds": 1.0532000064849854, "notes": "Server already stopped/decommissioned"}}
+{"timestamp_utc": "2025-10-26T18:10:40.948005Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-26T18:10:53.197329Z", "user": "siddharth5.intern", "action": "decommission_complete", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6", "duration_seconds": 12.247941970825195}}
+{"timestamp_utc": "2025-10-26T18:11:38.950009Z", "user": "siddharth5.intern", "action": "recommission_request", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-26T18:11:54.894904Z", "user": "siddharth5.intern", "action": "recommission_complete", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6", "duration_seconds": 15.94405722618103}}
+{"timestamp_utc": "2025-10-26T19:49:57.423166Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-26T19:50:11.161966Z", "user": "siddharth5.intern", "action": "decommission_complete", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6", "duration_seconds": 13.738157033920288}}
+{"timestamp_utc": "2025-10-26T19:51:19.185872Z", "user": "siddharth5.intern", "action": "recommission_request", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-26T19:51:35.523923Z", "user": "siddharth5.intern", "action": "recommission_complete", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6", "duration_seconds": 16.33742904663086}}
+{"timestamp_utc": "2025-10-27T01:37:47.080129Z", "user": "siddharth5.intern", "action": "create_table_request", "details": {"table": "user_data_test2", "cfs": ["cf1", "cf2"]}}
+{"timestamp_utc": "2025-10-27T01:44:09.341388Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-27T01:44:21.604660Z", "user": "siddharth5.intern", "action": "decommission_complete", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6", "duration_seconds": 12.26256513595581}}
+{"timestamp_utc": "2025-10-27T01:44:41.325046Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth102.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-27T01:44:42.339827Z", "user": "siddharth5.intern", "action": "decommission_failed", "details": {"host": "stg-hdpsiddharth102.phonepe.nb6", "duration_seconds": 1.013866901397705, "error": "Insufficient live RegionServers (1) remain after decommissioning. Need at least 2 others."}}
+{"timestamp_utc": "2025-10-27T01:44:58.146653Z", "user": "siddharth5.intern", "action": "recommission_request", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-27T01:45:14.341035Z", "user": "siddharth5.intern", "action": "recommission_complete", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6", "duration_seconds": 16.193793058395386}}
+{"timestamp_utc": "2025-10-27T03:40:11.216973Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-27T03:40:13.177255Z", "user": "siddharth5.intern", "action": "decommission_failed", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6", "duration_seconds": 1.9588720798492432, "error": "Could not determine balancer state: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte"}}
+{"timestamp_utc": "2025-10-27T03:42:02.962365Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-27T03:42:50.104816Z", "user": "siddharth5.intern", "action": "decommission_complete", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6", "duration_seconds": 47.141552209854126}}
+{"timestamp_utc": "2025-10-27T03:43:29.020607Z", "user": "siddharth5.intern", "action": "recommission_request", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-27T03:43:45.241648Z", "user": "siddharth5.intern", "action": "recommission_complete", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6", "duration_seconds": 16.220423936843872}}
+{"timestamp_utc": "2025-10-27T05:27:01.134588Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-27T05:27:46.793027Z", "user": "siddharth5.intern", "action": "decommission_complete", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6", "duration_seconds": 45.657804012298584}}
+{"timestamp_utc": "2025-10-27T05:28:14.398754Z", "user": "siddharth5.intern", "action": "recommission_request", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-27T05:28:29.860138Z", "user": "siddharth5.intern", "action": "recommission_complete", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6", "duration_seconds": 15.460738897323608}}
+{"timestamp_utc": "2025-10-27T05:41:32.126688Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-27T05:42:18.647201Z", "user": "siddharth5.intern", "action": "decommission_complete", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6", "duration_seconds": 46.519651651382446}}
+{"timestamp_utc": "2025-10-27T05:46:46.287030Z", "user": "siddharth5.intern", "action": "recommission_request", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-27T05:47:01.815845Z", "user": "siddharth5.intern", "action": "recommission_complete", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6", "duration_seconds": 15.527652025222778}}
+{"timestamp_utc": "2025-10-27T06:01:35.405444Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-27T06:02:20.593019Z", "user": "siddharth5.intern", "action": "decommission_complete", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6", "duration_seconds": 45.186702728271484}}
+{"timestamp_utc": "2025-10-27T06:02:32.549101Z", "user": "siddharth5.intern", "action": "recommission_request", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-27T06:02:48.050276Z", "user": "siddharth5.intern", "action": "recommission_complete", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6", "duration_seconds": 15.500820875167847}}
+{"timestamp_utc": "2025-10-27T06:23:00.066233Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-27T06:23:44.781566Z", "user": "siddharth5.intern", "action": "decommission_complete", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6", "duration_seconds": 44.714609146118164}}
+{"timestamp_utc": "2025-10-27T06:23:51.668401Z", "user": "siddharth5.intern", "action": "recommission_request", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-27T06:24:07.166343Z", "user": "siddharth5.intern", "action": "recommission_complete", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6", "duration_seconds": 15.497533798217773}}
+{"timestamp_utc": "2025-10-27T06:31:45.092390Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-27T06:34:09.869711Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-27T06:34:55.952791Z", "user": "siddharth5.intern", "action": "decommission_complete", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6", "duration_seconds": 46.08252191543579}}
+{"timestamp_utc": "2025-10-27T06:35:03.471661Z", "user": "siddharth5.intern", "action": "recommission_request", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-27T06:35:19.055576Z", "user": "siddharth5.intern", "action": "recommission_complete", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6", "duration_seconds": 15.583446741104126}}
+{"timestamp_utc": "2025-10-27T07:25:33.108893Z", "user": "siddharth5.intern", "action": "create_table_request", "details": {"table": "new_logs34", "cfs": ["data1", "events1"]}}
+{"timestamp_utc": "2025-10-27T07:25:37.277004Z", "user": "siddharth5.intern", "action": "create_table_complete", "details": {"table": "new_logs34", "cfs": ["data1", "events1"], "success": true}}
+{"timestamp_utc": "2025-10-27T07:26:09.551937Z", "user": "siddharth5.intern", "action": "alter_table_request", "details": {"table": "new_logs34", "alter_cmd": "NAME => 'audit'"}}
+{"timestamp_utc": "2025-10-27T07:27:26.919422Z", "user": "siddharth5.intern", "action": "alter_table_complete", "details": {"table": "new_logs34", "alter_cmd": "NAME => 'audit'"}}
+{"timestamp_utc": "2025-10-27T08:50:17.061444Z", "user": "siddharth5.intern", "action": "stop_rs_request", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-27T08:50:48.259408Z", "user": "siddharth5.intern", "action": "stop_rs_request", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-27T08:51:43.043860Z", "user": "siddharth5.intern", "action": "stop_rs_complete", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6", "duration_seconds": 54.7835419178009, "method": "crash_recovery"}}
+{"timestamp_utc": "2025-10-27T08:52:08.232230Z", "user": "siddharth5.intern", "action": "recommission_request", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-27T08:52:23.702491Z", "user": "siddharth5.intern", "action": "recommission_complete", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6", "duration_seconds": 15.469616889953613}}
+{"timestamp_utc": "2025-10-27T09:31:16.495566Z", "user": "siddharth5.intern", "action": "create_table_request", "details": {"table": "new_logs34", "cfs": ["data2", "events1"]}}
+{"timestamp_utc": "2025-10-27T09:31:26.374170Z", "user": "siddharth5.intern", "action": "create_table_request", "details": {"table": "new_logs35", "cfs": ["data2", "events1"]}}
+{"timestamp_utc": "2025-10-27T09:31:30.459179Z", "user": "siddharth5.intern", "action": "create_table_complete", "details": {"table": "new_logs35", "cfs": ["data2", "events1"], "success": true}}
+{"timestamp_utc": "2025-10-27T09:58:50.405284Z", "user": "siddharth5.intern", "action": "alter_table_request", "details": {"table": "new_logs35", "alter_cmd": "NAME => 'audit'"}}
+{"timestamp_utc": "2025-10-27T10:00:06.950715Z", "user": "siddharth5.intern", "action": "alter_table_complete", "details": {"table": "new_logs35", "alter_cmd": "NAME => 'audit'"}}
+{"timestamp_utc": "2025-10-27T10:29:19.881905Z", "user": "siddharth5.intern", "action": "stop_rs_request", "details": {"host": "stg-hdpsiddharth102.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-27T10:30:14.662288Z", "user": "siddharth5.intern", "action": "stop_rs_complete", "details": {"host": "stg-hdpsiddharth102.phonepe.nb6", "duration_seconds": 54.77979111671448, "method": "crash_recovery"}}
+{"timestamp_utc": "2025-10-27T10:34:00.050715Z", "user": "siddharth5.intern", "action": "recommission_request", "details": {"host": "stg-hdpsiddharth102.phonepe.nb6"}}
+{"timestamp_utc": "2025-10-27T10:34:15.537427Z", "user": "siddharth5.intern", "action": "recommission_complete", "details": {"host": "stg-hdpsiddharth102.phonepe.nb6", "duration_seconds": 15.486099004745483}}
+{"timestamp_utc": "2025-10-27T10:35:46.146993Z", "user": "siddharth5.intern", "action": "alter_table_request", "details": {"table": "new_logs35", "alter_cmd": "NAMEee => 'audit'"}}
+{"timestamp_utc": "2025-10-27T10:37:01.221517Z", "user": "siddharth5.intern", "action": "alter_table_failed", "details": {"table": "new_logs35", "alter_cmd": "NAMEee => 'audit'", "error": "Salt command failed on minion 'stg-hdpsiddharth104.phonepe.nb6'. Output indicates error."}}

@@ -1,0 +1,25 @@
+2025-10-27 15:01:26,374 [INFO] AUDIT: {"timestamp_utc": "2025-10-27T09:31:26.374170Z", "user": "siddharth5.intern", "action": "create_table_request", "details": {"table": "new_logs35", "cfs": ["data2", "events1"]}}
+2025-10-27 15:01:26,374 [INFO] Running pre-checks...
+2025-10-27 15:01:26,380 [INFO] Connecting to stg-hdpsiddharth102.phonepe.nb6(10.57.40.169):2181, use_ssl: False
+2025-10-27 15:01:26,439 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-27 15:01:26,482 [INFO] Closing connection to stg-hdpsiddharth102.phonepe.nb6:2181
+2025-10-27 15:01:26,482 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-27 15:01:26,482 [INFO] ZooKeeper check: OK=True, Details={'state': 'CONNECTED', 'server_version': (3, 5, 10)}
+2025-10-27 15:01:26,482 [INFO] Skipping HDFS health check.
+2025-10-27 15:01:26,482 [INFO] Checking active HBase Master via ZooKeeper...
+2025-10-27 15:01:26,485 [INFO] Connecting to stg-hdpsiddharth105.phonepe.nb6(10.57.40.172):2181, use_ssl: False
+2025-10-27 15:01:26,528 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-27 15:01:26,567 [INFO] Active HBase Master found at stg-hdpsiddharth102.phonepe.nb6 via ZK node /hbase-unsecure/master.
+2025-10-27 15:01:26,568 [INFO] Closing connection to stg-hdpsiddharth105.phonepe.nb6:2181
+2025-10-27 15:01:26,568 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-27 15:01:26,568 [INFO] HBase Master ZK check: OK=True, Message=Active HBase Master found at stg-hdpsiddharth102.phonepe.nb6 via ZK node /hbase-unsecure/master.
+2025-10-27 15:01:26,568 [INFO] Active HBase Master found at stg-hdpsiddharth102.phonepe.nb6 via ZK.
+2025-10-27 15:01:26,568 [INFO] Checking if table 'new_logs35' already exists...
+2025-10-27 15:01:26,645 [INFO] Table 'new_logs35' does not exist.
+2025-10-27 15:01:26,645 [INFO] Attempting to create table 'new_logs35' with CFs ['data2', 'events1'] via HappyBase
+2025-10-27 15:01:27,378 [INFO] Create table command issued via HappyBase.
+2025-10-27 15:01:27,379 [INFO] Running post-checks...
+2025-10-27 15:01:30,458 [INFO] Post-check PASSED: Table 'new_logs35' successfully created.
+2025-10-27 15:01:30,459 [INFO] AUDIT: {"timestamp_utc": "2025-10-27T09:31:30.459179Z", "user": "siddharth5.intern", "action": "create_table_complete", "details": {"table": "new_logs35", "cfs": ["data2", "events1"], "success": true}}
+2025-10-27 15:01:30,463 [INFO] Report written to logs/report_create_table_1761557490.json
+2025-10-27 15:01:30,463 [INFO] Create table operation finished successfully.

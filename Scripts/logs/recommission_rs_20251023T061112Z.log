@@ -1,0 +1,19 @@
+2025-10-23 11:41:12,783 [INFO] AUDIT: {"timestamp_utc": "2025-10-23T06:11:12.783349Z", "user": "siddharth5.intern", "action": "recommission_request", "details": {"host": "stg-hdpsiddharth102.phonepe.nb6"}}
+2025-10-23 11:41:12,783 [INFO] Performing pre-recommission checks...
+2025-10-23 11:41:12,790 [INFO] Connecting to stg-hdpsiddharth104.phonepe.nb6(10.57.40.171):2181, use_ssl: False
+2025-10-23 11:41:12,834 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-23 11:41:12,878 [INFO] Closing connection to stg-hdpsiddharth104.phonepe.nb6:2181
+2025-10-23 11:41:12,878 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-23 11:41:12,879 [INFO] ZooKeeper check result: OK=True, Details={'state': 'CONNECTED', 'server_version': (3, 5, 10)}
+2025-10-23 11:41:12,879 [INFO] Instructing Ambari to START HBASE_REGIONSERVER on stg-hdpsiddharth102.phonepe.nb6...
+2025-10-23 11:41:12,940 [INFO] Ambari start command requested successfully.
+2025-10-23 11:41:12,940 [INFO] Allowing some time for Ambari/Agent to process the start command...
+2025-10-23 11:41:17,945 [INFO] Waiting up to 300s for stg-hdpsiddharth102.phonepe.nb6 to appear in ZooKeeper /rs znode...
+2025-10-23 11:41:17,953 [INFO] Connecting to stg-hdpsiddharth104.phonepe.nb6(10.57.40.171):2181, use_ssl: False
+2025-10-23 11:41:18,028 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-23 11:41:18,075 [INFO] Closing connection to stg-hdpsiddharth104.phonepe.nb6:2181
+2025-10-23 11:41:18,075 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-23 11:41:18,076 [INFO] Server stg-hdpsiddharth102.phonepe.nb6 successfully registered in ZooKeeper.
+2025-10-23 11:41:18,077 [INFO] Recommission completed successfully for stg-hdpsiddharth102.phonepe.nb6 in 5.29 seconds.
+2025-10-23 11:41:18,077 [INFO] AUDIT: {"timestamp_utc": "2025-10-23T06:11:18.077408Z", "user": "siddharth5.intern", "action": "recommission_complete", "details": {"host": "stg-hdpsiddharth102.phonepe.nb6", "duration_seconds": 5.2933690547943115}}
+2025-10-23 11:41:18,080 [INFO] Report written to logs/report_recommission_1761199878.json

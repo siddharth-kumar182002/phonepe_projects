@@ -1,0 +1,25 @@
+2025-10-23 11:21:03,291 [INFO] AUDIT: {"timestamp_utc": "2025-10-23T05:51:03.291454Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6"}}
+2025-10-23 11:21:03,292 [INFO] Performing pre-decommission checks...
+2025-10-23 11:21:03,379 [INFO] Connecting to stg-hdpsiddharth102.phonepe.nb6(10.57.40.169):2181, use_ssl: False
+2025-10-23 11:21:03,427 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-23 11:21:03,478 [INFO] Closing connection to stg-hdpsiddharth102.phonepe.nb6:2181
+2025-10-23 11:21:03,478 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-23 11:21:03,478 [INFO] ZooKeeper check result: OK=True, Details={'state': 'CONNECTED', 'server_version': (3, 5, 10)}
+2025-10-23 11:21:03,481 [INFO] Connecting to stg-hdpsiddharth104.phonepe.nb6(10.57.40.171):2181, use_ssl: False
+2025-10-23 11:21:03,537 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-23 11:21:03,581 [ERROR] Failed to get or parse hbase:meta location from ZK: name 're' is not defined
+Traceback (most recent call last):
+  File "/Users/siddharth5.intern/Desktop/Projects/Scripts/helpers.py", line 209, in get_meta_server_from_zk
+    match = re.search(rb'stg-hdpsiddharth\d+\.phonepe\.nb6', data_bytes)
+NameError: name 're' is not defined
+2025-10-23 11:21:03,582 [INFO] Closing connection to stg-hdpsiddharth104.phonepe.nb6:2181
+2025-10-23 11:21:03,582 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-23 11:21:03,582 [ERROR] Decommission script failed after 0.29 seconds: name 're' is not defined
+Traceback (most recent call last):
+  File "/Users/siddharth5.intern/Desktop/Projects/Scripts/decommission_rs.py", line 84, in main
+    meta_host = get_meta_server_from_zk(cfg, logger)
+  File "/Users/siddharth5.intern/Desktop/Projects/Scripts/helpers.py", line 209, in get_meta_server_from_zk
+    match = re.search(rb'stg-hdpsiddharth\d+\.phonepe\.nb6', data_bytes)
+NameError: name 're' is not defined
+2025-10-23 11:21:03,583 [INFO] AUDIT: {"timestamp_utc": "2025-10-23T05:51:03.583310Z", "user": "siddharth5.intern", "action": "decommission_failed", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6", "duration_seconds": 0.2909371852874756, "error": "name 're' is not defined"}}
+2025-10-23 11:21:03,583 [INFO] Report written to logs/report_decommission_failed_1761198663.json

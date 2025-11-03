@@ -1,0 +1,5 @@
+{
+  "host": "stg-hdpsiddharth102.phonepe.nb6",
+  "duration_seconds": 1.013866901397705,
+  "error": "Insufficient live RegionServers (1) remain after decommissioning. Need at least 2 others."
+}

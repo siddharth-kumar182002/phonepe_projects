@@ -1,0 +1,114 @@
+2025-10-26 23:36:03,508 [INFO] AUDIT: {"timestamp_utc": "2025-10-26T18:06:03.508246Z", "user": "siddharth5.intern", "action": "alter_table_request", "details": {"table": "new_logs", "alter_cmd": "NAME => 'audit'"}}
+2025-10-26 23:36:03,508 [INFO] Running pre-checks...
+2025-10-26 23:36:03,509 [DEBUG] Connecting Kazoo client to stg-hdpsiddharth102.phonepe.nb6:2181,stg-hdpsiddharth104.phonepe.nb6:2181,stg-hdpsiddharth105.phonepe.nb6:2181...
+2025-10-26 23:36:03,514 [INFO] Connecting to stg-hdpsiddharth104.phonepe.nb6(10.57.40.171):2181, use_ssl: False
+2025-10-26 23:36:03,649 [DEBUG] Sending request(xid=None): Connect(protocol_version=0, last_zxid_seen=0, time_out=10000, session_id=0, passwd=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00', read_only=None)
+2025-10-26 23:36:03,752 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-26 23:36:03,753 [DEBUG] Kazoo connected state: CONNECTED
+2025-10-26 23:36:03,858 [DEBUG] Sending request(xid=1): Close()
+2025-10-26 23:36:03,859 [INFO] Closing connection to stg-hdpsiddharth104.phonepe.nb6:2181
+2025-10-26 23:36:03,859 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-26 23:36:03,860 [INFO] ZooKeeper check: OK=True, Details={'state': 'CONNECTED', 'server_version': (3, 5, 10)}
+2025-10-26 23:36:03,860 [INFO] Skipping HDFS health check.
+2025-10-26 23:36:03,860 [INFO] Checking active HBase Master via ZooKeeper...
+2025-10-26 23:36:03,860 [DEBUG] Connecting Kazoo client to stg-hdpsiddharth102.phonepe.nb6:2181,stg-hdpsiddharth104.phonepe.nb6:2181,stg-hdpsiddharth105.phonepe.nb6:2181...
+2025-10-26 23:36:03,864 [INFO] Connecting to stg-hdpsiddharth104.phonepe.nb6(10.57.40.171):2181, use_ssl: False
+2025-10-26 23:36:03,908 [DEBUG] Sending request(xid=None): Connect(protocol_version=0, last_zxid_seen=0, time_out=10000, session_id=0, passwd=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00', read_only=None)
+2025-10-26 23:36:03,963 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-26 23:36:03,969 [DEBUG] Kazoo connected state: CONNECTED
+2025-10-26 23:36:03,969 [DEBUG] Sending request(xid=1): Exists(path='/hbase-unsecure/master', watcher=None)
+2025-10-26 23:36:04,035 [DEBUG] Received response(xid=1): ZnodeStat(czxid=12884948838, mzxid=12884948838, ctime=1760685762347, mtime=1760685762347, version=0, cversion=0, aversion=0, ephemeralOwner=72213291896560244, dataLength=79, numChildren=0, pzxid=12884948838)
+2025-10-26 23:36:04,036 [DEBUG] Sending request(xid=2): GetData(path='/hbase-unsecure/master', watcher=None)
+2025-10-26 23:36:04,111 [DEBUG] Received response(xid=2): (b'\xff\x00\x00\x00\x14master:16000\xba\xdb\x90\x98\x1b\xc3}\x8bPBUF\n+\n\x1fstg-hdpsiddharth102.phonepe.nb6\x10\x80}\x18\xc5\xa8\xb2\x88\x9f3\x10\x00\x18\x8a}', ZnodeStat(czxid=12884948838, mzxid=12884948838, ctime=1760685762347, mtime=1760685762347, version=0, cversion=0, aversion=0, ephemeralOwner=72213291896560244, dataLength=79, numChildren=0, pzxid=12884948838))
+2025-10-26 23:36:04,112 [DEBUG] Raw data from ZK node /hbase-unsecure/master: b'\xff\x00\x00\x00\x14master:16000\xba\xdb\x90\x98\x1b\xc3}\x8bPBUF\n+\n\x1fstg-hdpsiddharth102.phonepe.nb6\x10\x80}\x18\xc5\xa8\xb2\x88\x9f3\x10\x00\x18\x8a}'
+2025-10-26 23:36:04,112 [INFO] Active HBase Master found at stg-hdpsiddharth102.phonepe.nb6 via ZK node /hbase-unsecure/master.
+2025-10-26 23:36:04,112 [DEBUG] Sending request(xid=3): Close()
+2025-10-26 23:36:04,112 [INFO] Closing connection to stg-hdpsiddharth104.phonepe.nb6:2181
+2025-10-26 23:36:04,113 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-26 23:36:04,113 [INFO] HBase Master ZK check: OK=True, Message=Active HBase Master found at stg-hdpsiddharth102.phonepe.nb6 via ZK node /hbase-unsecure/master.
+2025-10-26 23:36:04,113 [INFO] Active HBase Master is stg-hdpsiddharth102.phonepe.nb6 via ZK.
+2025-10-26 23:36:04,113 [INFO] Checking if table 'new_logs' exists...
+2025-10-26 23:36:04,174 [DEBUG] Thrift server probe successful: stg-hdpsiddharth102.phonepe.nb6:9090
+2025-10-26 23:36:04,212 [DEBUG] HappyBase connection opened successfully to stg-hdpsiddharth102.phonepe.nb6:9090.
+2025-10-26 23:36:04,266 [DEBUG] Table 'new_logs' exists check via HappyBase: True. (Tables found: ['my_table', 'new_customer_data', 'new_logs', 'test_auto', 'user_data', 'user_data_test2'])
+2025-10-26 23:36:04,267 [INFO] Table 'new_logs' exists.
+2025-10-26 23:36:04,267 [INFO] Checking for regions in transition (RIT)...
+2025-10-26 23:36:04,267 [DEBUG] Checking for regions in transition (RIT) in ZK...
+2025-10-26 23:36:04,267 [DEBUG] Connecting Kazoo client to stg-hdpsiddharth102.phonepe.nb6:2181,stg-hdpsiddharth104.phonepe.nb6:2181,stg-hdpsiddharth105.phonepe.nb6:2181...
+2025-10-26 23:36:04,272 [INFO] Connecting to stg-hdpsiddharth104.phonepe.nb6(10.57.40.171):2181, use_ssl: False
+2025-10-26 23:36:04,316 [DEBUG] Sending request(xid=None): Connect(protocol_version=0, last_zxid_seen=0, time_out=10000, session_id=0, passwd=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00', read_only=None)
+2025-10-26 23:36:04,366 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-26 23:36:04,366 [DEBUG] Kazoo connected state: CONNECTED
+2025-10-26 23:36:04,367 [DEBUG] Sending request(xid=1): Exists(path='/hbase-unsecure/region-in-transition', watcher=None)
+2025-10-26 23:36:04,420 [DEBUG] RIT znode '/hbase-unsecure/region-in-transition' does not exist.
+2025-10-26 23:36:04,421 [DEBUG] Sending request(xid=2): Exists(path='/hbase-unsecure/rit', watcher=None)
+2025-10-26 23:36:04,476 [DEBUG] RIT znode '/hbase-unsecure/rit' does not exist.
+2025-10-26 23:36:04,476 [DEBUG] No RIT znodes found, assuming 0 regions in transition.
+2025-10-26 23:36:04,477 [DEBUG] Sending request(xid=3): Close()
+2025-10-26 23:36:04,478 [INFO] Closing connection to stg-hdpsiddharth104.phonepe.nb6:2181
+2025-10-26 23:36:04,478 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-26 23:36:04,479 [INFO] Found 0 regions in transition.
+2025-10-26 23:36:04,479 [INFO] Checking HBase balancer state (will be disabled during alter if active)...
+2025-10-26 23:36:04,479 [DEBUG] Checking balancer state at ZK path: /hbase-unsecure/balancer
+2025-10-26 23:36:04,479 [DEBUG] Connecting Kazoo client to stg-hdpsiddharth102.phonepe.nb6:2181,stg-hdpsiddharth104.phonepe.nb6:2181,stg-hdpsiddharth105.phonepe.nb6:2181...
+2025-10-26 23:36:04,489 [INFO] Connecting to stg-hdpsiddharth104.phonepe.nb6(10.57.40.171):2181, use_ssl: False
+2025-10-26 23:36:04,578 [DEBUG] Sending request(xid=None): Connect(protocol_version=0, last_zxid_seen=0, time_out=10000, session_id=0, passwd=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00', read_only=None)
+2025-10-26 23:36:04,624 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-26 23:36:04,625 [DEBUG] Kazoo connected state: CONNECTED
+2025-10-26 23:36:04,626 [DEBUG] Sending request(xid=1): Exists(path='/hbase-unsecure/balancer', watcher=None)
+2025-10-26 23:36:04,674 [DEBUG] Balancer state znode does not exist, assuming balancer is disabled.
+2025-10-26 23:36:04,675 [DEBUG] Sending request(xid=2): Close()
+2025-10-26 23:36:04,675 [INFO] Closing connection to stg-hdpsiddharth104.phonepe.nb6:2181
+2025-10-26 23:36:04,675 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-26 23:36:04,676 [INFO] HBase balancer is currently DISABLED.
+2025-10-26 23:36:04,677 [INFO] Attempting to alter table 'new_logs' with command part: NAME => 'audit' using Salt API...
+2025-10-26 23:36:04,677 [DEBUG] Checking balancer state at ZK path: /hbase-unsecure/balancer
+2025-10-26 23:36:04,677 [DEBUG] Connecting Kazoo client to stg-hdpsiddharth102.phonepe.nb6:2181,stg-hdpsiddharth104.phonepe.nb6:2181,stg-hdpsiddharth105.phonepe.nb6:2181...
+2025-10-26 23:36:04,683 [INFO] Connecting to stg-hdpsiddharth102.phonepe.nb6(10.57.40.169):2181, use_ssl: False
+2025-10-26 23:36:04,725 [DEBUG] Sending request(xid=None): Connect(protocol_version=0, last_zxid_seen=0, time_out=10000, session_id=0, passwd=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00', read_only=None)
+2025-10-26 23:36:04,780 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-26 23:36:04,781 [DEBUG] Kazoo connected state: CONNECTED
+2025-10-26 23:36:04,782 [DEBUG] Sending request(xid=1): Exists(path='/hbase-unsecure/balancer', watcher=None)
+2025-10-26 23:36:04,830 [DEBUG] Balancer state znode does not exist, assuming balancer is disabled.
+2025-10-26 23:36:04,832 [DEBUG] Sending request(xid=2): Close()
+2025-10-26 23:36:04,833 [INFO] Closing connection to stg-hdpsiddharth102.phonepe.nb6:2181
+2025-10-26 23:36:04,833 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-26 23:36:04,837 [INFO] Disabling table new_logs via Salt on stg-hdpsiddharth104.phonepe.nb6...
+2025-10-26 23:36:04,838 [INFO] Requesting new Salt API token from https://stg-hdpsiddharth103.phonepe.nb6:8000 for user 'saltapiuser'...
+2025-10-26 23:36:05,343 [INFO] Successfully obtained Salt API token.
+2025-10-26 23:36:05,345 [INFO] Executing Salt command: tgt='stg-hdpsiddharth104.phonepe.nb6', fun='cmd.run', args='['echo "disable \'new_logs\'" | hbase shell -n']'
+2025-10-26 23:36:19,441 [DEBUG] Raw Salt command result: {'stg-hdpsiddharth104.phonepe.nb6': "/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2401: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name\n/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2366: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name\n/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2461: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_OPTS: invalid variable name\nSLF4J: Class path contains multiple SLF4J bindings.\nSLF4J: Found binding in [jar:file:/usr/odp/3.2.2.0-1/hbase/lib/client-facing-thirdparty/slf4j-reload4j-1.7.33.jar!/org/slf4j/impl/StaticLoggerBinder.class]\nSLF4J: Found binding in [jar:file:/usr/odp/3.2.2.0-1/hadoop/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]\nSLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.\nSLF4J: Actual binding is of type [org.slf4j.impl.Reload4jLoggerFactory]\nhbase:001:0> disable 'new_logs'\nTook 1.2166 seconds\nhbase:002:0>"}
+2025-10-26 23:36:19,442 [INFO] Salt cmd.run output from 'stg-hdpsiddharth104.phonepe.nb6': /usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2401: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name
+/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2366: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name
+/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2461: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_OPTS: invalid variable name
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Fou...
+2025-10-26 23:36:19,445 [INFO] Disable command sent successfully.
+2025-10-26 23:36:19,445 [INFO] Altering table new_logs with 'NAME => 'audit'' via Salt...
+2025-10-26 23:36:19,445 [DEBUG] Using cached Salt API token.
+2025-10-26 23:36:19,445 [INFO] Executing Salt command: tgt='stg-hdpsiddharth104.phonepe.nb6', fun='cmd.run', args='['echo "alter \'new_logs\', NAME => \'audit\'" | hbase shell -n']'
+2025-10-26 23:36:34,348 [DEBUG] Raw Salt command result: {'stg-hdpsiddharth104.phonepe.nb6': "/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2401: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name\n/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2366: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name\n/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2461: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_OPTS: invalid variable name\nSLF4J: Class path contains multiple SLF4J bindings.\nSLF4J: Found binding in [jar:file:/usr/odp/3.2.2.0-1/hbase/lib/client-facing-thirdparty/slf4j-reload4j-1.7.33.jar!/org/slf4j/impl/StaticLoggerBinder.class]\nSLF4J: Found binding in [jar:file:/usr/odp/3.2.2.0-1/hadoop/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]\nSLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.\nSLF4J: Actual binding is of type [org.slf4j.impl.Reload4jLoggerFactory]\nhbase:001:0> alter 'new_logs', NAME => 'audit'\nUpdating all regions with the new schema...\nAll regions updated.\nDone.\nTook 2.0673 seconds\nhbase:002:0>"}
+2025-10-26 23:36:34,349 [INFO] Salt cmd.run output from 'stg-hdpsiddharth104.phonepe.nb6': /usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2401: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name
+/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2366: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name
+/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2461: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_OPTS: invalid variable name
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Fou...
+2025-10-26 23:36:34,352 [INFO] Alter command sent successfully.
+2025-10-26 23:36:34,352 [INFO] Enabling table new_logs via Salt...
+2025-10-26 23:36:34,352 [DEBUG] Using cached Salt API token.
+2025-10-26 23:36:34,352 [INFO] Executing Salt command: tgt='stg-hdpsiddharth104.phonepe.nb6', fun='cmd.run', args='['echo "enable \'new_logs\'" | hbase shell -n']'
+2025-10-26 23:36:48,708 [DEBUG] Raw Salt command result: {'stg-hdpsiddharth104.phonepe.nb6': "/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2401: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name\n/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2366: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name\n/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2461: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_OPTS: invalid variable name\nSLF4J: Class path contains multiple SLF4J bindings.\nSLF4J: Found binding in [jar:file:/usr/odp/3.2.2.0-1/hbase/lib/client-facing-thirdparty/slf4j-reload4j-1.7.33.jar!/org/slf4j/impl/StaticLoggerBinder.class]\nSLF4J: Found binding in [jar:file:/usr/odp/3.2.2.0-1/hadoop/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]\nSLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.\nSLF4J: Actual binding is of type [org.slf4j.impl.Reload4jLoggerFactory]\nhbase:001:0> enable 'new_logs'\nTook 1.4842 seconds\nhbase:002:0>"}
+2025-10-26 23:36:48,709 [INFO] Salt cmd.run output from 'stg-hdpsiddharth104.phonepe.nb6': /usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2401: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name
+/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2366: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name
+/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2461: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_OPTS: invalid variable name
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Fou...
+2025-10-26 23:36:48,711 [INFO] Enable command sent successfully.
+2025-10-26 23:36:48,712 [INFO] Verifying table is enabled after alter...
+2025-10-26 23:36:48,759 [DEBUG] Thrift server probe successful: stg-hdpsiddharth102.phonepe.nb6:9090
+2025-10-26 23:36:48,814 [DEBUG] HappyBase connection opened successfully to stg-hdpsiddharth102.phonepe.nb6:9090.
+2025-10-26 23:36:49,017 [INFO] Post-check PASSED: Table 'new_logs' is enabled.
+2025-10-26 23:36:49,018 [INFO] Alter command via Salt API completed successfully.
+2025-10-26 23:36:49,018 [INFO] AUDIT: {"timestamp_utc": "2025-10-26T18:06:49.018284Z", "user": "siddharth5.intern", "action": "alter_table_complete", "details": {"table": "new_logs", "alter_cmd": "NAME => 'audit'"}}
+2025-10-26 23:36:49,020 [INFO] Report written to logs/report_alter_table_1761502009.json
+2025-10-26 23:36:49,020 [INFO] Alter finished.

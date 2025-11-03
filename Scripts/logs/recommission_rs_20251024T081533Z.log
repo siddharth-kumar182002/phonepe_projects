@@ -1,0 +1,24 @@
+2025-10-24 13:45:33,334 [INFO] AUDIT: {"timestamp_utc": "2025-10-24T08:15:33.334124Z", "user": "siddharth5.intern", "action": "recommission_request", "details": {"host": "stg-hdpsiddharth102.phonepe.nb6"}}
+2025-10-24 13:45:33,334 [INFO] Performing pre-recommission checks...
+2025-10-24 13:45:33,339 [INFO] Connecting to stg-hdpsiddharth105.phonepe.nb6(10.57.40.172):2181, use_ssl: False
+2025-10-24 13:45:33,383 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-24 13:45:33,432 [INFO] Closing connection to stg-hdpsiddharth105.phonepe.nb6:2181
+2025-10-24 13:45:33,432 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-24 13:45:33,432 [INFO] ZooKeeper check result: OK=True, Details={'state': 'CONNECTED', 'server_version': (3, 5, 10)}
+2025-10-24 13:45:33,432 [INFO] Instructing Ambari to START HBASE_REGIONSERVER on stg-hdpsiddharth102.phonepe.nb6...
+2025-10-24 13:45:33,522 [INFO] Ambari start command requested successfully.
+2025-10-24 13:45:33,522 [INFO] Allowing some time for Ambari/Agent to process the start command...
+2025-10-24 13:45:38,527 [INFO] Waiting up to 300s for stg-hdpsiddharth102.phonepe.nb6 to appear in ZooKeeper /rs znode...
+2025-10-24 13:45:38,532 [INFO] Connecting to stg-hdpsiddharth102.phonepe.nb6(10.57.40.169):2181, use_ssl: False
+2025-10-24 13:45:38,604 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-24 13:45:38,786 [INFO] Closing connection to stg-hdpsiddharth102.phonepe.nb6:2181
+2025-10-24 13:45:38,787 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-24 13:45:38,789 [WARNING] Operation failed: Host stg-hdpsiddharth102.phonepe.nb6 not yet found in ZK /rs list: ['stg-hdpsiddharth104.phonepe.nb6', 'stg-hdpsiddharth105.phonepe.nb6']. Retrying in 10.00s... (29 tries left)
+2025-10-24 13:45:48,803 [INFO] Connecting to stg-hdpsiddharth105.phonepe.nb6(10.57.40.172):2181, use_ssl: False
+2025-10-24 13:45:48,870 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-24 13:45:48,919 [INFO] Closing connection to stg-hdpsiddharth105.phonepe.nb6:2181
+2025-10-24 13:45:48,921 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-24 13:45:48,922 [INFO] Server stg-hdpsiddharth102.phonepe.nb6 successfully registered in ZooKeeper.
+2025-10-24 13:45:48,923 [INFO] Recommission completed successfully for stg-hdpsiddharth102.phonepe.nb6 in 15.59 seconds.
+2025-10-24 13:45:48,923 [INFO] AUDIT: {"timestamp_utc": "2025-10-24T08:15:48.923107Z", "user": "siddharth5.intern", "action": "recommission_complete", "details": {"host": "stg-hdpsiddharth102.phonepe.nb6", "duration_seconds": 15.58826494216919}}
+2025-10-24 13:45:48,923 [INFO] Report written to logs/report_recommission_1761293748.json

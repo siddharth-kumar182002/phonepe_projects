@@ -1,0 +1,33 @@
+ambari:
+  host: "stg-hdpsiddharth103.phonepe.nb6"
+  port: 8080
+  username: "admin"
+  password: "admin"
+  cluster_name: "ambari"
+
+hbase:
+  zk_quorum:
+    - "stg-hdpsiddharth102.phonepe.nb6"
+    - "stg-hdpsiddharth104.phonepe.nb6"
+    - "stg-hdpsiddharth105.phonepe.nb6"
+  zk_port: 2181
+  thrift: # Used by HappyBase
+    host: "stg-hdpsiddharth102.phonepe.nb6"
+    port: 9090
+  regionserver_port: 16020
+  regionserver_hosts:
+    - "stg-hdpsiddharth102.phonepe.nb6"
+    - "stg-hdpsiddharth104.phonepe.nb6"
+    - "stg-hdpsiddharth105.phonepe.nb6"
+  zk_hbase_parent_znode: "/hbase-unsecure"
+
+salt: # <-- NEW SECTION for Salt API
+  api_url: "https://stg-hdpsiddharth103.phonepe.nb6:8000" # Use https and correct host/port
+  api_user: "saltapiuser"
+  api_password: "1234" # <-- CHANGE THIS
+  # Target host for running HBase shell commands (must be a Salt Minion)
+  hbase_shell_target: "stg-hdpsiddharth104.phonepe.nb6" # Or any minion with hbase client
+
+logging:
+  log_dir: "logs"
+  retention_days: 30

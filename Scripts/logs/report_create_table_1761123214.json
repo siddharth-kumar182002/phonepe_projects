@@ -1,0 +1,8 @@
+{
+  "table": "test_auto",
+  "cfs": [
+    "cf1",
+    "cf2"
+  ],
+  "result": "SUCCESS"
+}

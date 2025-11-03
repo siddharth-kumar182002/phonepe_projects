@@ -1,0 +1,38 @@
+2025-10-23 11:12:31,374 [INFO] AUDIT: {"timestamp_utc": "2025-10-23T05:42:31.374319Z", "user": "siddharth5.intern", "action": "recommission_request", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6"}}
+2025-10-23 11:12:31,374 [INFO] Performing pre-recommission checks...
+2025-10-23 11:12:31,383 [INFO] Connecting to stg-hdpsiddharth105.phonepe.nb6(10.57.40.172):2181, use_ssl: False
+2025-10-23 11:12:31,437 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-23 11:12:31,491 [INFO] Closing connection to stg-hdpsiddharth105.phonepe.nb6:2181
+2025-10-23 11:12:31,491 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-23 11:12:31,491 [INFO] ZooKeeper check result: OK=True, Details={'state': 'CONNECTED', 'server_version': (3, 5, 10)}
+2025-10-23 11:12:31,491 [INFO] Instructing Ambari to START HBASE_REGIONSERVER on stg-hdpsiddharth104.phonepe.nb6...
+2025-10-23 11:12:31,601 [INFO] Ambari start command requested successfully.
+2025-10-23 11:12:31,602 [INFO] Allowing some time for Ambari/Agent to process the start command...
+2025-10-23 11:12:36,606 [INFO] Waiting up to 300s for stg-hdpsiddharth104.phonepe.nb6 to appear in ZooKeeper /rs znode...
+2025-10-23 11:12:36,611 [INFO] Connecting to stg-hdpsiddharth104.phonepe.nb6(10.57.40.171):2181, use_ssl: False
+2025-10-23 11:12:36,680 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-23 11:12:36,725 [INFO] Closing connection to stg-hdpsiddharth104.phonepe.nb6:2181
+2025-10-23 11:12:36,725 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-23 11:12:36,726 [WARNING] Retryable error: Host stg-hdpsiddharth104.phonepe.nb6 not yet found in ZK /rs list: ['stg-hdpsiddharth105.phonepe.nb6', 'stg-hdpsiddharth102.phonepe.nb6']. Retries left: 29
+2025-10-23 11:12:46,737 [INFO] Connecting to stg-hdpsiddharth105.phonepe.nb6(10.57.40.172):2181, use_ssl: False
+2025-10-23 11:12:46,786 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-23 11:12:46,829 [INFO] Closing connection to stg-hdpsiddharth105.phonepe.nb6:2181
+2025-10-23 11:12:46,834 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-23 11:12:46,836 [INFO] Server stg-hdpsiddharth104.phonepe.nb6 successfully registered in ZooKeeper.
+2025-10-23 11:12:46,836 [INFO] Recommission completed successfully for stg-hdpsiddharth104.phonepe.nb6 in 15.46 seconds.
+2025-10-23 11:12:46,836 [INFO] AUDIT: {"timestamp_utc": "2025-10-23T05:42:46.836406Z", "user": "siddharth5.intern", "action": "recommission_complete", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6", "duration_seconds": 15.46132516860962}}
+2025-10-23 11:12:46,838 [ERROR] Recommission script failed after 15.46 seconds: name 'logger' is not defined
+Traceback (most recent call last):
+  File "/Users/siddharth5.intern/Desktop/Projects/Scripts/helpers.py", line 342, in write_report
+    logger.info(f"Report written to {path}")
+NameError: name 'logger' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/siddharth5.intern/Desktop/Projects/Scripts/recommission_rs.py", line 86, in main
+    report_path = write_report(cfg, "recommission", {"host": args.host, "status": "SUCCESS", "duration_seconds": elapsed_time})
+  File "/Users/siddharth5.intern/Desktop/Projects/Scripts/helpers.py", line 345, in write_report
+    logger.error(f"Failed to write report '{name}': {e}")
+NameError: name 'logger' is not defined
+2025-10-23 11:12:46,844 [INFO] AUDIT: {"timestamp_utc": "2025-10-23T05:42:46.844659Z", "user": "siddharth5.intern", "action": "recommission_failed", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6", "duration_seconds": 15.463921070098877, "error": "name 'logger' is not defined"}}

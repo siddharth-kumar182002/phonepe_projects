@@ -1,0 +1,16 @@
+2025-10-24 14:07:17,585 [INFO] AUDIT: {"timestamp_utc": "2025-10-24T08:37:17.585497Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6"}}
+2025-10-24 14:07:17,586 [INFO] Performing pre-decommission checks...
+2025-10-24 14:07:17,593 [INFO] Connecting to stg-hdpsiddharth104.phonepe.nb6(10.57.40.171):2181, use_ssl: False
+2025-10-24 14:07:17,640 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-24 14:07:17,686 [INFO] Closing connection to stg-hdpsiddharth104.phonepe.nb6:2181
+2025-10-24 14:07:17,686 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-24 14:07:17,686 [INFO] ZooKeeper check: OK=True, Details={'state': 'CONNECTED', 'server_version': (3, 5, 10)}
+2025-10-24 14:07:17,686 [INFO] Checking HDFS health via Ambari...
+2025-10-24 14:07:17,840 [INFO] HDFS health check: OK=False, Message=Could not find any NameNode host via Ambari.
+2025-10-24 14:07:17,840 [ERROR] Decommission script failed after 0.25 seconds: HDFS is not healthy (Could not find any NameNode host via Ambari.).
+Traceback (most recent call last):
+  File "/Users/siddharth5.intern/Desktop/Projects/Scripts/decommission_rs.py", line 280, in main
+    if not hdfs_ok: raise RuntimeError(f"HDFS is not healthy ({hdfs_msg}).")
+RuntimeError: HDFS is not healthy (Could not find any NameNode host via Ambari.).
+2025-10-24 14:07:17,841 [INFO] AUDIT: {"timestamp_utc": "2025-10-24T08:37:17.841436Z", "user": "siddharth5.intern", "action": "decommission_failed", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6", "duration_seconds": 0.2546560764312744, "error": "HDFS is not healthy (Could not find any NameNode host via Ambari.)."}}
+2025-10-24 14:07:17,842 [INFO] Report written to logs/report_decommission_failed_1761295037.json

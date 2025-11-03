@@ -1,0 +1,5 @@
+2025-10-22 14:38:47,003 [INFO] AUDIT: {"timestamp_utc": "2025-10-22T09:08:47.003636Z", "user": "siddharth5.intern", "action": "create_table_request", "details": {"table": "user_data", "cfs": ["personal", "details", "activity"]}}
+2025-10-22 14:38:47,003 [INFO] Running pre-checks...
+2025-10-22 14:38:47,073 [INFO] ZooKeeper check: {'stg-hdpsiddharth105.phonepe.nb6': {'ok': True, 'latency_ms': 26.74, 'error': None}, 'stg-hdpsiddharth104.phonepe.nb6': {'ok': True, 'latency_ms': 34.11, 'error': None}, 'stg-hdpsiddharth102.phonepe.nb6': {'ok': True, 'latency_ms': 34.45, 'error': None}, 'kazoo_connect': True}
+2025-10-22 14:38:47,174 [INFO] HDFS check: Could not find Active NameNode and no NameNodes components listed.
+2025-10-22 14:38:47,174 [ERROR] Aborting: HDFS not ready. Could not find Active NameNode and no NameNodes components listed.

@@ -1,0 +1,18 @@
+2025-10-27 15:01:16,495 [INFO] AUDIT: {"timestamp_utc": "2025-10-27T09:31:16.495566Z", "user": "siddharth5.intern", "action": "create_table_request", "details": {"table": "new_logs34", "cfs": ["data2", "events1"]}}
+2025-10-27 15:01:16,496 [INFO] Running pre-checks...
+2025-10-27 15:01:16,559 [INFO] Connecting to stg-hdpsiddharth104.phonepe.nb6(10.57.40.171):2181, use_ssl: False
+2025-10-27 15:01:16,611 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-27 15:01:16,659 [INFO] Closing connection to stg-hdpsiddharth104.phonepe.nb6:2181
+2025-10-27 15:01:16,659 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-27 15:01:16,659 [INFO] ZooKeeper check: OK=True, Details={'state': 'CONNECTED', 'server_version': (3, 5, 10)}
+2025-10-27 15:01:16,660 [INFO] Skipping HDFS health check.
+2025-10-27 15:01:16,660 [INFO] Checking active HBase Master via ZooKeeper...
+2025-10-27 15:01:16,663 [INFO] Connecting to stg-hdpsiddharth104.phonepe.nb6(10.57.40.171):2181, use_ssl: False
+2025-10-27 15:01:16,707 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-27 15:01:16,754 [INFO] Active HBase Master found at stg-hdpsiddharth102.phonepe.nb6 via ZK node /hbase-unsecure/master.
+2025-10-27 15:01:16,755 [INFO] Closing connection to stg-hdpsiddharth104.phonepe.nb6:2181
+2025-10-27 15:01:16,755 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-27 15:01:16,755 [INFO] HBase Master ZK check: OK=True, Message=Active HBase Master found at stg-hdpsiddharth102.phonepe.nb6 via ZK node /hbase-unsecure/master.
+2025-10-27 15:01:16,755 [INFO] Active HBase Master found at stg-hdpsiddharth102.phonepe.nb6 via ZK.
+2025-10-27 15:01:16,755 [INFO] Checking if table 'new_logs34' already exists...
+2025-10-27 15:01:16,867 [ERROR] Table 'new_logs34' already exists. Aborting.

@@ -1,0 +1,9 @@
+{
+  "table": "user_data",
+  "cfs": [
+    "personal",
+    "details",
+    "activity"
+  ],
+  "result": "SUCCESS"
+}

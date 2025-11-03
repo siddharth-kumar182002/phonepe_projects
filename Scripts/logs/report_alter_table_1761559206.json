@@ -1,0 +1,5 @@
+{
+  "table": "new_logs35",
+  "alter_cmd": "NAME => 'audit'",
+  "result": "SUCCESS"
+}

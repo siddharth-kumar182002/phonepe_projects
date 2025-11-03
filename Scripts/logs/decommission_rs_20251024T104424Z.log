@@ -1,0 +1,12 @@
+2025-10-24 16:14:24,752 [INFO] AUDIT: {"timestamp_utc": "2025-10-24T10:44:24.752660Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth105.phonepe.nb6"}}
+2025-10-24 16:14:24,753 [INFO] Performing pre-decommission checks...
+2025-10-24 16:14:24,753 [DEBUG] Connecting Kazoo client to stg-hdpsiddharth102.phonepe.nb6:2181,stg-hdpsiddharth104.phonepe.nb6:2181,stg-hdpsiddharth105.phonepe.nb6:2181...
+2025-10-24 16:14:25,820 [WARNING] Cannot resolve stg-hdpsiddharth102.phonepe.nb6: [Errno 8] nodename nor servname provided, or not known
+2025-10-24 16:14:25,840 [WARNING] Cannot resolve stg-hdpsiddharth104.phonepe.nb6: [Errno 8] nodename nor servname provided, or not known
+2025-10-24 16:14:25,861 [WARNING] Cannot resolve stg-hdpsiddharth105.phonepe.nb6: [Errno 8] nodename nor servname provided, or not known
+2025-10-24 16:14:26,574 [WARNING] Cannot resolve stg-hdpsiddharth102.phonepe.nb6: [Errno 8] nodename nor servname provided, or not known
+2025-10-24 16:14:26,578 [WARNING] Cannot resolve stg-hdpsiddharth104.phonepe.nb6: [Errno 8] nodename nor servname provided, or not known
+2025-10-24 16:14:26,580 [WARNING] Cannot resolve stg-hdpsiddharth105.phonepe.nb6: [Errno 8] nodename nor servname provided, or not known
+2025-10-24 16:14:28,436 [WARNING] Cannot resolve stg-hdpsiddharth102.phonepe.nb6: [Errno 8] nodename nor servname provided, or not known
+2025-10-24 16:14:28,439 [WARNING] Cannot resolve stg-hdpsiddharth104.phonepe.nb6: [Errno 8] nodename nor servname provided, or not known
+2025-10-24 16:14:28,441 [WARNING] Cannot resolve stg-hdpsiddharth105.phonepe.nb6: [Errno 8] nodename nor servname provided, or not known

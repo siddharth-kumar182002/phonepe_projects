@@ -1,0 +1,6 @@
+2025-10-22 15:55:37,276 [INFO] AUDIT: {"timestamp_utc": "2025-10-22T10:25:37.276481Z", "user": "siddharth5.intern", "action": "create_table_request", "details": {"table": "user_data_test2", "cfs": ["cf1", "cf2"]}}
+2025-10-22 15:55:37,276 [INFO] Running pre-checks...
+2025-10-22 15:55:37,282 [INFO] Connecting to stg-hdpsiddharth104.phonepe.nb6(10.57.40.171):2181, use_ssl: False
+2025-10-22 15:55:37,307 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-22 15:55:37,307 [INFO] ZooKeeper check: {'error': "'KazooClient' object has no attribute 'connected_host'"}
+2025-10-22 15:55:37,307 [ERROR] Aborting: ZooKeeper is not healthy.

@@ -1,0 +1,6 @@
+{
+  "host": "stg-hdpsiddharth104.phonepe.nb6",
+  "status": "FAILED",
+  "duration_seconds": 0.20590591430664062,
+  "error": "Could not parse server name from meta znode data: b'\\xff\\x00\\x00\\x00\\x14master:160001\\xefP\\x9a\\x1d\\xa0%\\x18PBUF\\n+\\n\\x1fstg-hdpsiddharth104.phonepe.nb6\\x10\\x94}\\x18\\xdc\\xd2\\xdc\\xfc\\xa03\\x10\\x00\\x18\\x03'"
+}

@@ -1,0 +1,45 @@
+2025-10-23 15:10:35,325 [INFO] AUDIT: {"timestamp_utc": "2025-10-23T09:40:35.325770Z", "user": "siddharth5.intern", "action": "alter_table_request", "details": {"table": "user_data_test2", "alter_cmd": "NAME => 'cf_salt_test'"}}
+2025-10-23 15:10:35,332 [INFO] Connecting to stg-hdpsiddharth102.phonepe.nb6(10.57.40.169):2181, use_ssl: False
+2025-10-23 15:10:35,375 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-23 15:10:35,416 [INFO] Closing connection to stg-hdpsiddharth102.phonepe.nb6:2181
+2025-10-23 15:10:35,416 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-23 15:10:35,416 [INFO] ZK check result: OK=True, Details={'state': 'CONNECTED', 'server_version': (3, 5, 10)}
+2025-10-23 15:10:35,416 [INFO] Checking if table 'user_data_test2' exists...
+2025-10-23 15:10:35,494 [INFO] Table 'user_data_test2' exists.
+2025-10-23 15:10:35,494 [INFO] Attempting to alter table 'user_data_test2' with command part: NAME => 'cf_salt_test' using Salt API...
+2025-10-23 15:10:35,494 [INFO] Disabling table user_data_test2 via Salt on stg-hdpsiddharth104.phonepe.nb6...
+2025-10-23 15:10:35,494 [INFO] Requesting new Salt API token from https://stg-hdpsiddharth103.phonepe.nb6:8000 for user 'saltapiuser'...
+2025-10-23 15:10:35,820 [INFO] Successfully obtained Salt API token.
+2025-10-23 15:10:35,823 [INFO] Executing Salt command: tgt='stg-hdpsiddharth104.phonepe.nb6', fun='cmd.run', args='['echo "disable \'user_data_test2\'" | hbase shell -n']'
+2025-10-23 15:10:51,255 [ERROR] Unexpected error during Salt command execution: 'bool' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/siddharth5.intern/Desktop/Projects/Scripts/helpers.py", line 416, in run_salt_command
+    logger.info(f"Salt cmd.run output from '{target}': {minion_output[:200]}...") # Log snippet
+TypeError: 'bool' object is not subscriptable
+2025-10-23 15:10:51,259 [ERROR] Disable or Alter command failed via Salt: 'bool' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/siddharth5.intern/Desktop/Projects/Scripts/helpers.py", line 464, in alter_table_salt
+    result_disable = run_salt_command(cfg, target_minion, 'cmd.run', [disable_cmd_salt], logger, timeout=120)
+  File "/Users/siddharth5.intern/Desktop/Projects/Scripts/helpers.py", line 416, in run_salt_command
+    logger.info(f"Salt cmd.run output from '{target}': {minion_output[:200]}...") # Log snippet
+TypeError: 'bool' object is not subscriptable
+2025-10-23 15:10:51,259 [WARNING] Attempting to re-enable table user_data_test2 after alter failure...
+2025-10-23 15:10:51,259 [INFO] Executing Salt command: tgt='stg-hdpsiddharth104.phonepe.nb6', fun='cmd.run', args='['echo "enable \'user_data_test2\'" | hbase shell -n']'
+2025-10-23 15:11:06,719 [ERROR] Unexpected error during Salt command execution: 'bool' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/siddharth5.intern/Desktop/Projects/Scripts/helpers.py", line 464, in alter_table_salt
+    result_disable = run_salt_command(cfg, target_minion, 'cmd.run', [disable_cmd_salt], logger, timeout=120)
+  File "/Users/siddharth5.intern/Desktop/Projects/Scripts/helpers.py", line 416, in run_salt_command
+    logger.info(f"Salt cmd.run output from '{target}': {minion_output[:200]}...") # Log snippet
+TypeError: 'bool' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/siddharth5.intern/Desktop/Projects/Scripts/helpers.py", line 416, in run_salt_command
+    logger.info(f"Salt cmd.run output from '{target}': {minion_output[:200]}...") # Log snippet
+TypeError: 'bool' object is not subscriptable
+2025-10-23 15:11:06,720 [CRITICAL] CRITICAL: Failed to re-enable table user_data_test2 via Salt after alter failed. MANUAL INTERVENTION REQUIRED. Error: 'bool' object is not subscriptable
+2025-10-23 15:11:06,721 [ERROR] Alter operation failed. See logs for details.
+2025-10-23 15:11:06,721 [INFO] AUDIT: {"timestamp_utc": "2025-10-23T09:41:06.721370Z", "user": "siddharth5.intern", "action": "alter_table_failed", "details": {"table": "user_data_test2", "alter_cmd": "NAME => 'cf_salt_test'", "error": "'bool' object is not subscriptable"}}
+2025-10-23 15:11:06,722 [INFO] Report written to logs/report_alter_table_failed_1761212466.json

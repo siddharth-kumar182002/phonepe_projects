@@ -1,0 +1,6 @@
+{
+  "host": "stg-hdpsiddharth104.phonepe.nb6",
+  "status": "FAILED",
+  "duration_seconds": 10.836700201034546,
+  "error": "name 'logger' is not defined"
+}

@@ -1,0 +1,20 @@
+2025-10-27 08:45:36,805 [INFO] Connecting to stg-hdpsiddharth102.phonepe.nb6(10.57.40.169):2181, use_ssl: False
+2025-10-27 08:45:36,903 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-27 08:45:36,956 [INFO] Closing connection to stg-hdpsiddharth102.phonepe.nb6:2181
+2025-10-27 08:45:36,956 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-27 08:45:36,963 [INFO] Connecting to stg-hdpsiddharth104.phonepe.nb6(10.57.40.171):2181, use_ssl: False
+2025-10-27 08:45:37,057 [INFO] Zookeeper connection established, state: CONNECTED
+2025-10-27 08:45:37,169 [INFO] Closing connection to stg-hdpsiddharth104.phonepe.nb6:2181
+2025-10-27 08:45:37,170 [INFO] Zookeeper session closed, state: CLOSED
+2025-10-27 08:45:37,313 [INFO] Scanning hbase:meta to find a sample region...
+2025-10-27 08:45:37,568 [INFO] Found sample region to unassign: my_table,,1759315339043.6ecd485054d191921f3db51fe49748d5.
+2025-10-27 08:47:07,073 [INFO] Attempting to unassign region my_table,,1759315339043.6ecd485054d191921f3db51fe49748d5. via Salt/hbase shell (force=true)...
+2025-10-27 08:47:07,074 [INFO] Requesting new Salt API token from https://stg-hdpsiddharth103.phonepe.nb6:8000 for user 'saltapiuser'...
+2025-10-27 08:47:07,638 [INFO] Successfully obtained Salt API token.
+2025-10-27 08:47:07,639 [INFO] Executing Salt command: tgt='stg-hdpsiddharth104.phonepe.nb6', fun='cmd.run', args='['echo "unassign \'my_table,,1759315339043.6ecd485054d191921f3db51fe49748d5.\', true" | hbase shell -n']'
+2025-10-27 08:47:22,947 [INFO] Salt cmd.run output from 'stg-hdpsiddharth104.phonepe.nb6': /usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2401: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name
+/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2366: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_USER: invalid variable name
+/usr/odp/3.2.2.0-1/hadoop/libexec/hadoop-functions.sh: line 2461: HADOOP_ORG.APACHE.HADOOP.HBASE.UTIL.GETJAVAPROPERTY_OPTS: invalid variable name
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Fou...
+2025-10-27 08:47:22,950 [INFO] Successfully issued unassign command via Salt for region my_table,,1759315339043.6ecd485054d191921f3db51fe49748d5.

@@ -1,0 +1,5 @@
+2025-10-22 14:35:38,534 [INFO] AUDIT: {"timestamp_utc": "2025-10-22T09:05:38.534735Z", "user": "siddharth5.intern", "action": "create_table_request", "details": {"table": "user_data", "cfs": ["personal", "details", "activity"]}}
+2025-10-22 14:35:38,535 [INFO] Running pre-checks...
+2025-10-22 14:35:38,596 [INFO] ZooKeeper check: {'stg-hdpsiddharth104.phonepe.nb6': {'ok': True, 'latency_ms': 27.72, 'error': None}, 'stg-hdpsiddharth102.phonepe.nb6': {'ok': True, 'latency_ms': 35.39, 'error': None}, 'stg-hdpsiddharth105.phonepe.nb6': {'ok': True, 'latency_ms': 35.59, 'error': None}, 'kazoo_connect': True}
+2025-10-22 14:35:38,704 [INFO] HDFS check: Could not determine HDFS Safemode status from Ambari. JMX value: ''
+2025-10-22 14:35:38,704 [ERROR] Aborting: HDFS not ready. Could not determine HDFS Safemode status from Ambari. JMX value: ''

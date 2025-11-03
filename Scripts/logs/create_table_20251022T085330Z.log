@@ -1,0 +1,9 @@
+2025-10-22 14:23:30,937 [INFO] AUDIT: {"timestamp_utc": "2025-10-22T08:53:30.937485Z", "user": "siddharth5.intern", "action": "create_table_request", "details": {"table": "test_auto", "cfs": ["cf1", "cf2"]}}
+2025-10-22 14:23:30,937 [INFO] Running pre-checks...
+2025-10-22 14:23:30,984 [INFO] ZooKeeper check: {'stg-hdpsiddharth102.phonepe.nb6': {'ok': True, 'latency_ms': 15.65, 'error': None}, 'stg-hdpsiddharth105.phonepe.nb6': {'ok': True, 'latency_ms': 15.64, 'error': None}, 'stg-hdpsiddharth104.phonepe.nb6': {'ok': True, 'latency_ms': 15.82, 'error': None}, 'kazoo_connect': True}
+2025-10-22 14:23:31,096 [INFO] HDFS check: HDFS appears STARTED (via Ambari)
+2025-10-22 14:23:31,173 [INFO] Attempting to create table test_auto with CFs ['cf1', 'cf2']
+2025-10-22 14:23:32,749 [INFO] Create table command issued via Thrift.
+2025-10-22 14:23:34,805 [INFO] Table test_auto successfully created.
+2025-10-22 14:23:34,806 [INFO] AUDIT: {"timestamp_utc": "2025-10-22T08:53:34.805986Z", "user": "siddharth5.intern", "action": "create_table_complete", "details": {"table": "test_auto", "success": true}}
+2025-10-22 14:23:34,809 [INFO] Done.

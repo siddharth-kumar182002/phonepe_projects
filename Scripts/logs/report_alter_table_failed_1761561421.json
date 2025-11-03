@@ -1,0 +1,5 @@
+{
+  "table": "new_logs35",
+  "alter_cmd": "NAMEee => 'audit'",
+  "error": "Salt command failed on minion 'stg-hdpsiddharth104.phonepe.nb6'. Output indicates error."
+}

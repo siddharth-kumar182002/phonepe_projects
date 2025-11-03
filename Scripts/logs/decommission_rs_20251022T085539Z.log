@@ -1,0 +1,2 @@
+2025-10-22 14:25:39,623 [INFO] AUDIT: {"timestamp_utc": "2025-10-22T08:55:39.623433Z", "user": "siddharth5.intern", "action": "decommission_request", "details": {"host": "stg-hdpsiddharth104.phonepe.nb6"}}
+2025-10-22 14:25:39,669 [INFO] ZK details: {'stg-hdpsiddharth105.phonepe.nb6': {'ok': True, 'latency_ms': 16.34, 'error': None}, 'stg-hdpsiddharth104.phonepe.nb6': {'ok': True, 'latency_ms': 16.94, 'error': None}, 'stg-hdpsiddharth102.phonepe.nb6': {'ok': True, 'latency_ms': 17.23, 'error': None}, 'kazoo_connect': True}
